@@ -1,0 +1,131 @@
+#video_trailer {
+	padding-top: 36px;
+	padding-left: 44px;
+}
+
+
+body {
+	margin:0;
+	background-color: #117e99;
+}
+p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 1.5em;
+}
+
+a {
+	color: #fafafa;
+}
+.btn {
+  background: #34d997;
+  background-image: -webkit-linear-gradient(top, #34d997, #2bb878);
+  background-image: -moz-linear-gradient(top, #34d997, #2bb878);
+  background-image: -ms-linear-gradient(top, #34d997, #2bb878);
+  background-image: -o-linear-gradient(top, #34d997, #2bb878);
+  background-image: linear-gradient(to bottom, #34d997, #2bb878);
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #000 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+.box {
+/*	background: rgba(54, 25, 25, .5);
+	padding-left: 30px;
+	padding-right:30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    border-radius: 25px;
+    margin-top: 15px;
+    display: block;
+*/
+}
+.block {
+	min-height: 100px;
+}
+#nav {
+	text-align: right;
+}
+.heading {
+	font-family: 'Bitter', serif;
+	color: #ffffff;
+	margin-top: 80px;
+}
+
+
+
+
+#game {
+	width: 294px;
+	height: 490px;
+	padding-top:25px;
+	padding-left:30px;
+}
+.text {
+	font-family: 'Questrial', sans-serif;
+	color: #dddddd;
+	line-height: 1.1em;
+}
+
+#column-1 {
+	width: 30%;
+	min-width: 400px;
+}
+
+#column-2 {
+	width: 55%;
+}
+.col {
+	float: left;
+
+}
+.logo {
+	width: 90%;
+	text-align: center;
+}
+
+#wrapper {
+	background: url('img/building_bg_a.png') bottom center no-repeat, url('img/sky_night_line.png') top center repeat-x;
+	background-size: 1200px 489px, auto 100%;
+	position: relative;
+	margin: 0 auto;
+	width: 90%;
+	min-height: 1450px;
+	padding: 5%;
+}
+
+#footer {
+}
+
+#content {
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+#info {
+
+	float: right;
+}
+#video_trailer {
+	position: relative;
+	background: transparent url('img/phone_template.png') no-repeat;
+	height: 651px;
+	/*
+	margin-top:26px;
+	margin-left:-8px;
+	*/
+}
