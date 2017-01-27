@@ -125,8 +125,8 @@ div.download ul li {
   display: inline;
 }
 
-div.download img {
-  max-height: calc(90% - 20px);
+ul.download li a img {
+  width: 200px;
   padding: 20px;
 }
 
@@ -156,6 +156,10 @@ div.socmeds li {
   padding: 10px;
 }
 
+div.socmeds li img {
+  max-width: 100%;
+}
+
 div.socmeds li.twitter {
   width: 30px;
 }
@@ -168,14 +172,11 @@ div.socmeds li.googleplus {
   width: 30px;
 }
 
-div.socmeds li img {
-  max-width: 100%;
-}
-
 p.socialmedia {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
+
 
 /************
 Team CSS
