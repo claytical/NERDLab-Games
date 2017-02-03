@@ -5,37 +5,6 @@
   <meta charset="utf-8">
 
   <title>Zoo Rush</title>
-  <script>
-    // This is the URL of the video you want to load
-    var videoUrl = 'https://vimeo.com/90608047';
-
-    // This is the oEmbed endpoint for Vimeo (we're using JSON)
-    // (Vimeo also supports oEmbed discovery. See the PHP example.)
-    var endpoint = 'http://www.vimeo.com/api/oembed.json';
-
-    // Tell Vimeo what function to call
-    var callback = 'embedVideo';
-
-    // Put together the URL
-    var url = endpoint + '?url=' + encodeURIComponent(videoUrl) + '&callback=' + callback + '&width=640';
-
-    // This function puts the video on the page
-    function embedVideo(video) {
-        document.getElementById('embed').innerHTML = unescape(video.html);
-    }
-
-    // This function loads the data from Vimeo
-    function init() {
-        var js = document.createElement('script');
-        js.setAttribute('type', 'text/javascript');
-        js.setAttribute('src', url);
-        document.getElementsByTagName('head').item(0).appendChild(js);
-    }
-
-    // Call our init function when the page loads
-    window.onload = init;
-
-  </script>
 
   <meta name="description" content="Zoo Rush A Game About Sickle Cell Disease">
   <meta name="author" content="NerdLab">
@@ -62,11 +31,11 @@
     </div>
   </header>
 
-  <div id="containingBlock">
-    <div class="videoWrapper">
-      <div id="embed">Loading video...</div>
-    </div>
-</div>
+  <div id="demovideo">
+    <span class="video-height"></span>
+    <iframe src="https://vimeo.com/90608047" frameborder="0"></iframe>
+  </div>
+
 
   <div class="parallax-window" data-parallax="scroll" id="testing" data-image-src="images/ZooStillImage.png"></div>
 
