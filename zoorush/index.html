@@ -10,9 +10,10 @@
   <meta name="author" content="NerdLab">
 
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="js/parallax.js-1.4.2/parallax.js"></script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  <script src="js/parallax.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
@@ -31,13 +32,18 @@
     </div>
   </header>
 
-  <div id="demovideo">
-    <span class="video-height"></span>
-    <iframe src="https://vimeo.com/90608047" frameborder="0"></iframe>
+  <div class="fullscreen background parallax" style="background-image:url('./images/zoorushbackground2.png'); clear:both;" data-img-width="1600" data-img-height="500" data-diff="100">
+    <div class="content-a">
+        <div class="content-b">
+            Centered content
+        </div>
+    </div>
   </div>
 
-
-  <div class="parallax-window" data-parallax="scroll" id="testing" data-image-src="images/ZooStillImage.png"></div>
+  <div id="demovideo">
+    <span class="video-height"></span>
+    <iframe id="demovimeo" src="https://player.vimeo.com/video/90608047" width="640" height="356" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
 
   <div class="content">
 
@@ -85,6 +91,9 @@
 
   </div>
 
-  <!--<script src="js/scripts.js"></script>-->
+  <!-- include jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/parallax.js"></script>
+
 </body>
 </html>
