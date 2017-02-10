@@ -263,7 +263,7 @@ div.content {
 }
 
 section.youtube {
-  background-color: black;
+  background-color: #3f3f3f;
   width: 100%;
   margin-top: 60px;
   margin-bottom: 20px;
@@ -348,7 +348,7 @@ div.socmeds li img {
   height: 30px;
   padding: 10px;
   border-radius: 50%;
-  background-color: black;
+  background-color: #3f3f3f;
 }
 
 div.socmeds li.twitter {
@@ -391,6 +391,7 @@ div.team {
   text-align: center;
   background-color: rgba(255,255,255,0.5);
   border-radius: 20px;
+  position: relative;
 }
 
 .team li a {
@@ -399,12 +400,16 @@ div.team {
 }
 
 .team h1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
   font-size: 1.8em;
   font-family: 'Roboto', sans-serif;
   color: #545454;
 }
 
 .team h2 {
+  padding-bottom: 20px;
+  line-height: 1em;
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
   color: #545454;
@@ -412,7 +417,7 @@ div.team {
 
 .team h3 {
   font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .team div {
@@ -457,13 +462,16 @@ div.nancy {
 
 div.socialprofile {
   width: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 130px;
 }
 
 div.socialprofile img {
   max-width: 100%;
   padding: 10px;
   border-radius: 50%;
-  background-color: #979997;
+  background-color: #3f3f3f;
 }
 
 .parallax-window {
