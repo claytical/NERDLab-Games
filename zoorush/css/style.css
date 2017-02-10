@@ -191,7 +191,6 @@ section.information {
   color: black;
   line-height: 2em;
   text-align: left;
-  margin-bottom: 60px;
   padding-bottom: 80px;
 }
 
@@ -235,6 +234,7 @@ div#downarrow {
   margin-top: 80px;
   background-image: url("../images/downarrow.png");
   background-size: cover;
+  cursor: pointer;
 }
 
 div.logo {
@@ -249,10 +249,12 @@ div.logo img {
 }
 
 div.content {
-  padding: 10px;
   width: 100%;
   margin: auto;
   margin-top: 20px;
+  padding-bottom: 80px;
+  display: block;
+  clear: both;
   background: #8ccef1;
   background: -webkit-linear-gradient(#8ccef1, #cccccc); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#8ccef1, #cccccc); /* For Opera 11.1 to 12.0 */
@@ -270,7 +272,6 @@ section.youtube {
 div.youtube {
   width: 700px;
   margin: auto;
-  text-align: center;
 }
 
 p.download {
@@ -373,8 +374,10 @@ Team CSS
 ===========================================*/
 
 div.team {
-  width: 80%;
+  width: 100%;
   margin: auto;
+  display: block;
+  clear: both;
 }
 
 .team li {
