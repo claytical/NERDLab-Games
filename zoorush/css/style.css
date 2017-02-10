@@ -173,11 +173,11 @@ div.description {
   margin: auto;
   margin-top: 0px;
   padding-top: 60px;
-  color: white;
+  color: black;
   font-size: 1.2em;
   font-weight: bold;
   line-height: 1.5em;
-  text-align: center;
+  text-align: left;
 }
 
 p.description {
@@ -187,7 +187,6 @@ p.description {
 section.information {
   width: 80%;
   margin: auto;
-  background-color: rgba(255,255,255,0.8);
   color: black;
   line-height: 2em;
   text-align: left;
@@ -371,7 +370,7 @@ Team CSS
 ===========================================*/
 
 div.team {
-  width: 100%;
+  width: 80%;
   margin: auto;
   display: block;
   clear: both;
