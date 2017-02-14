@@ -188,9 +188,10 @@ section.information {
   width: 80%;
   margin: auto;
   color: black;
+  background-color: transparent;
   line-height: 2em;
   text-align: left;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 h2.information {
@@ -287,11 +288,13 @@ p.download {
 }
 
 div.download {
-  width: 100%;
+  width: 800px;
   height: 100px;
   clear: both;
   text-align: center;
-  background-color: white;
+  margin: auto;
+  background-color: transparent;
+  padding-bottom: 40px;
   margin-top: 60px;
 }
 
@@ -370,13 +373,17 @@ Team CSS
 ===========================================*/
 
 div.team {
-  width: 80%;
+  width: 100%;
+  max-width: 1480px;
   margin: auto;
   display: block;
   clear: both;
+  text-align: center;
+  padding: 0px;
 }
 
 .team li {
+  display: inline;
   list-style-type: none;
   padding: 10px;
   margin: 25px;
@@ -390,9 +397,14 @@ div.team {
   position: relative;
 }
 
-.team li a {
+.team li a.personalsite {
   text-decoration: none;
   color: #15addc;
+	position: absolute;
+	bottom: 80px;
+	left: 50%; /* position the left edge of the element at the middle of the parent */
+
+  transform: translate(-50%, 0%);
 }
 
 .team h1 {
@@ -482,4 +494,13 @@ div.socialprofile img {
 #testing {
   width: 100%;
   height: 500px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #3f3f3f;
+  position: absolute;
+  bottom: 0px;
+  z-index: 100;
 }
