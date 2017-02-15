@@ -28,6 +28,7 @@ time, mark, audio {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
+	clear: both;
 }
 body {
 	line-height: 1;
@@ -380,27 +381,23 @@ Team CSS
 
 div.team {
   width: 100%;
-  max-width: 1480px;
   margin: auto;
-  display: block;
-  clear: both;
   text-align: center;
   padding: 0px;
 }
 
 .team li {
-  display: inline;
   list-style-type: none;
   padding: 10px;
   margin: 25px;
   width: 300px;
   height: 450px;
-  float: left;
   word-wrap: break-word;
-  text-align: center;
   background-color: rgba(255,255,255,0.5);
   border-radius: 20px;
   position: relative;
+	display:inline-block;
+	vertical-align: top;
 }
 
 .team li a.personalsite {
@@ -409,7 +406,6 @@ div.team {
 	position: absolute;
 	bottom: 80px;
 	left: 50%; /* position the left edge of the element at the middle of the parent */
-
   transform: translate(-50%, 0%);
 }
 
