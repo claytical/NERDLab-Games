@@ -5,7 +5,6 @@ http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 ====================================================================*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,12 +47,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*====================================================================*/
+
 
 /* ==================================================================
 Parralax Style rules
 ====================================================================*/
-
-* background setup */
+/* background setup */
 .background {
     background-repeat:no-repeat;
     /* custom background-position */
@@ -118,8 +118,6 @@ h2 {
     /* ie8- graceful degradation */
     background-position:50% 50%\9 !important;
 }
-
-
 /*====================================================================*/
 
 
@@ -145,9 +143,10 @@ iframe#demovimeo {
     left: 0;
 }
 
-section.youtube {
+section.youtube_section {
 	margin-top: 0px;
 	padding-top: 0px;
+	width: 100%;
 }
 
 #youtube {
@@ -167,9 +166,12 @@ iframe#videoyoutube {
     top: 0;
     left: 0;
 }
-
 /*===================================================================*/
 
+
+/* ====================================================================
+  	Description section, Soc Med links, & Information section
+==================================================================== */
 iframe#sicklecell {
   margin-left: 20px;
 }
@@ -193,11 +195,12 @@ p.description {
 section.information {
   width: 80%;
   margin: auto;
+	margin-bottom: 0px;
   color: black;
   background-color: transparent;
   line-height: 2em;
   text-align: left;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 h2.information {
@@ -229,6 +232,8 @@ h2.subtitle {
   margin: auto;
   margin-top: -15px;
 }
+/*====================================================================*/
+
 
 /* ====================================================================
     Logo and header
@@ -256,10 +261,8 @@ div.logo img {
 
 div.content {
   width: 100%;
-  margin: auto;
   margin-top: 0px;
 	margin-bottom: 0px;
-  padding-bottom: 80px;
   display: block;
   clear: both;
   background: #8ccef1;
@@ -267,18 +270,6 @@ div.content {
   background: -o-linear-gradient(#8ccef1, #cccccc); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#8ccef1, #cccccc); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#8ccef1, #cccccc); /* Standard syntax */
-}
-
-section.youtube {
-  background-color: #3f3f3f;
-  width: 100%;
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
-
-div.youtube {
-  width: 700px;
-  margin: auto;
 }
 
 p.download {
@@ -373,12 +364,12 @@ p.socialmedia {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
+/*========================================================*/
 
 
-/*===========================================
-Team CSS
-===========================================*/
-
+/*========================================================
+	Team CSS
+========================================================*/
 div.team {
   width: 100%;
   margin: auto;
@@ -483,24 +474,16 @@ div.socialprofile img {
   border-radius: 50%;
   background-color: #3f3f3f;
 }
+/*========================================================*/
 
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
-}
 
-.parallax-container {
-  width: 100%;
-}
-
-#testing {
-  width: 100%;
-  height: 500px;
-}
-
+/*========================================================
+	Footer styles
+========================================================*/
 footer {
   width: 100%;
   height: 100px;
   background-color: #3f3f3f;
   z-index: 100;
 }
+/*========================================================*/
