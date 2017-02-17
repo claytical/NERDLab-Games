@@ -208,7 +208,7 @@ h2.information {
   padding-bottom: 40px;
   font-size: 2em;
   padding-top: 80px;
-  margin-left: 40px;
+  margin-left: 30px;
   margin-right: 60px;
 }
 
@@ -474,6 +474,23 @@ div.socialprofile img {
   border-radius: 50%;
   background-color: #3f3f3f;
 }
+/*========================================================*/
+
+
+/*========================================================
+	Awards section styles
+========================================================*/
+ul.awards li {
+	display: inline-block;
+	list-style: none;
+}
+
+ul.awards li img {
+	float: left;
+	width: 500px;
+	max-width: 100%;
+}
+
 /*========================================================*/
 
 
