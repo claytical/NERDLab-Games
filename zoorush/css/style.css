@@ -57,17 +57,19 @@ table {
 	margin-top: 70px;
 	padding-bottom: 40px;
   font-size: 2.5em;
-  font-family: 'Roboto', sans-serif;
-  color: #3f3f3f;
+  font-family: 'Istok Web', sans-serif;
+  color: white;
 	text-align: center;
 	width: 100%;
 }
-h1.mainheader {
+
+.awards h1.mainheader {
 	margin-top: 70px;
-	padding-bottom: 40px;
+	padding-bottom: 50px;
+	padding-top: 50px;
   font-size: 2.5em;
-  font-family: 'Roboto', sans-serif;
-  color: #3f3f3f;
+  font-family: 'Istok Web', sans-serif;
+  color: white;
 	text-align: center;
 	width: 100%;
 }
@@ -128,10 +130,11 @@ body {
   font-family: sans-serif;
   line-height: 1.8em;
   font-size: 1.3em;
+	font-family: 'Lora', serif;
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Istok Web', sans-serif;
 }
 
 /* background setup */
@@ -208,7 +211,7 @@ div.description {
   padding-top: 60px;
   color: black;
   font-size: 1.2em;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.5em;
   text-align: left;
 	position: relative;
@@ -260,7 +263,7 @@ div.title {
 h2.subtitle {
   width: 600px;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 1.5em;
   margin: auto;
   margin-top: -15px;
@@ -268,7 +271,7 @@ h2.subtitle {
 
 p.download {
   float: left;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Istok Web', sans-serif;
   font-weight: bold;
   display: inline;
   font-size: 1.5em;
@@ -359,7 +362,7 @@ p.socialmedia {
   float: left;
   padding-right: 20px;
   text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lora', serif;
   margin-top: 12px;
 }
 
@@ -390,11 +393,6 @@ div.socmeds li.facebook {
 div.socmeds li.googleplus {
   width: 30px;
 }
-
-p.socialmedia {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-}
 /*========================================================*/
 
 
@@ -415,8 +413,8 @@ div.team {
   width: 300px;
   height: 450px;
   word-wrap: break-word;
-  background-color: rgba(255,255,255,0.5);
   border-radius: 20px;
+  /*background-color: rgba(255,255,255,1);*/
   position: relative;
 	display: inline-block;
 	vertical-align: top;
@@ -424,7 +422,7 @@ div.team {
 
 .team li a.personalsite {
   text-decoration: none;
-  color: #15addc;
+  color: white;
 	position: absolute;
 	bottom: 80px;
 	left: 50%; /* position the left edge of the element at the middle of the parent */
@@ -434,20 +432,20 @@ div.team {
 .team h1{
 	padding-top: 20px;
 	font-size: 1.8em;
-	font-family: 'Roboto', sans-serif;
-	color: #545454;
+	font-family: 'Istok Web', sans-serif;
+	color: white;
 }
 
 .team h2 {
 	padding-top: 10px;
   line-height: 1em;
   font-size: 1em;
-  font-family: 'Roboto', sans-serif;
-  color: #545454;
+  font-family: 'Lora', serif;
+  color: white;
 }
 
 .team h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Istok Web', sans-serif;
   font-size: 0.8em;
 }
 
@@ -511,43 +509,39 @@ div.socialprofile img {
 	Awards section styles
 ========================================================*/
 div.awards {
-	background: #8ccef1;
-  background: -webkit-linear-gradient(#8ccef1, #feed9b); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#8ccef1, #feed9b); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#8ccef1, #feed9b); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#8ccef1, #feed9b); /* Standard syntax */
+	background: black;
 }
 
 ul.awards {
 	display: flex;
   justify-content: center;
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lora', serif;
 }
 
 ul.awards li {
-	height: 500px;
-	width: 600px;
+  color: white;
+	height: 300px;
+	width: 400px;
 	margin: 10px;
 	list-style-type: none;
-	display: inline-block;
 	text-align: center;
 	vertical-align: top;
 }
 
 ul.awards li img {
-	height: 400px;
+	height: 200px;
 	text-align: center;
-	margin-top: 15px;
+	display: block;
+	margin: auto;
 }
 
 ul.awards li div {
 	overflow: auto;
 	margin: auto;
-	height: 500px;
+	height: 300px;
 	float: left;
 }
-
 /*========================================================*/
 
 
@@ -602,11 +596,6 @@ div.socmeds2 li.facebook {
 
 div.socmeds2 li.googleplus {
   width: 30px;
-}
-
-p.socialmedia {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
 }
 
 div.NerdLAB {
