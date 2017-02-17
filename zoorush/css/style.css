@@ -51,6 +51,30 @@ table {
 
 
 /* ==================================================================
+	General Style rules
+====================================================================*/
+.team h1.mainheader {
+	margin-top: 70px;
+	padding-bottom: 40px;
+  font-size: 2.5em;
+  font-family: 'Roboto', sans-serif;
+  color: #3f3f3f;
+	text-align: center;
+	width: 100%;
+}
+h1.mainheader {
+	margin-top: 70px;
+	padding-bottom: 40px;
+  font-size: 2.5em;
+  font-family: 'Roboto', sans-serif;
+  color: #3f3f3f;
+	text-align: center;
+	width: 100%;
+}
+/*====================================================================*/
+
+
+/* ==================================================================
 Parralax Style rules
 ====================================================================*/
 /* background setup */
@@ -407,16 +431,15 @@ div.team {
   transform: translate(-50%, 0%);
 }
 
-.team h1 {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 1.8em;
-  font-family: 'Roboto', sans-serif;
-  color: #545454;
+.team h1{
+	padding-top: 20px;
+	font-size: 1.8em;
+	font-family: 'Roboto', sans-serif;
+	color: #545454;
 }
 
 .team h2 {
-  padding-bottom: 20px;
+	padding-top: 10px;
   line-height: 1em;
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
@@ -487,6 +510,14 @@ div.socialprofile img {
 /*========================================================
 	Awards section styles
 ========================================================*/
+div.awards {
+	background: #8ccef1;
+  background: -webkit-linear-gradient(#8ccef1, #feed9b); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#8ccef1, #feed9b); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#8ccef1, #feed9b); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#8ccef1, #feed9b); /* Standard syntax */
+}
+
 ul.awards {
 	display: flex;
   justify-content: center;
@@ -517,15 +548,6 @@ ul.awards li div {
 	float: left;
 }
 
-.awards h1 {
-  padding-top: 40px;
-  padding-bottom: 50px;
-  font-size: 1.8em;
-  font-family: 'Roboto', sans-serif;
-  color: #545454;
-	width: 100%;
-	text-align: center;
-}
 /*========================================================*/
 
 
@@ -534,8 +556,68 @@ ul.awards li div {
 ========================================================*/
 footer {
   width: 100%;
-  height: 100px;
   background-color: #3f3f3f;
   z-index: 100;
+	overflow: auto;
+}
+
+p.email {
+	display: inline;
+}
+
+div.socmeds2 {
+  float: right;
+  margin-top: 12px;
+	margin-right: 25px;
+  color: white;
+}
+
+ul.socialmedia {
+  display: inline;
+}
+
+div.socmeds2 li {
+  list-style-type: none;
+  display: inline;
+  float: left;
+  padding: 10px;
+	margin-right: 15px;
+}
+
+div.socmeds2 li img {
+  max-width: 100%;
+  height: 30px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+div.socmeds2 li.twitter {
+  width: 30px;
+}
+
+div.socmeds2 li.facebook {
+  width: 30px;
+}
+
+div.socmeds2 li.googleplus {
+  width: 30px;
+}
+
+p.socialmedia {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+div.NerdLAB {
+	float: left;
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: white;
+}
+
+div.NerdLAB a {
+	color: white;
 }
 /*========================================================*/
