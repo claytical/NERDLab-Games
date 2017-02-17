@@ -130,7 +130,7 @@ body {
   font-family: sans-serif;
   line-height: 1.8em;
   font-size: 1.3em;
-	font-family: 'Lora', serif;
+	font-family: 'PT Sans', serif;
 }
 
 h2 {
@@ -263,7 +263,7 @@ div.title {
 h2.subtitle {
   width: 600px;
   color: white;
-  font-family: 'Lora', serif;
+  font-family: 'PT Sans', serif;
   font-size: 1.5em;
   margin: auto;
   margin-top: -15px;
@@ -362,7 +362,7 @@ p.socialmedia {
   float: left;
   padding-right: 20px;
   text-transform: uppercase;
-  font-family: 'Lora', serif;
+  font-family: 'PT Sans', serif;
   margin-top: 12px;
 }
 
@@ -440,7 +440,7 @@ div.team {
 	padding-top: 10px;
   line-height: 1em;
   font-size: 1em;
-  font-family: 'Lora', serif;
+  font-family: 'PT Sans', serif;
   color: white;
 }
 
@@ -516,12 +516,12 @@ ul.awards {
 	display: flex;
   justify-content: center;
 	text-align: center;
-	font-family: 'Lora', serif;
+	font-family: 'PT Sans', serif;
 }
 
 ul.awards li {
   color: white;
-	height: 300px;
+	height: 400px;
 	width: 400px;
 	margin: 10px;
 	list-style-type: none;
@@ -530,7 +530,7 @@ ul.awards li {
 }
 
 ul.awards li img {
-	height: 200px;
+	height: 300px;
 	text-align: center;
 	display: block;
 	margin: auto;
@@ -539,7 +539,7 @@ ul.awards li img {
 ul.awards li div {
 	overflow: auto;
 	margin: auto;
-	height: 300px;
+	height: 400px;
 	float: left;
 }
 /*========================================================*/
