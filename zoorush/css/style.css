@@ -510,13 +510,14 @@ div.socialprofile img {
 ========================================================*/
 div.awards {
 	background: black;
+	width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 0px;
 }
 
-ul.awards {
-	display: flex;
-  justify-content: center;
-	text-align: center;
-	font-family: 'PT Sans', serif;
+.awards div {
+	margin: auto;
 }
 
 ul.awards li {
@@ -525,22 +526,19 @@ ul.awards li {
 	width: 400px;
 	margin: 40px;
 	list-style-type: none;
-	text-align: center;
+  padding: 10px;
+  word-wrap: break-word;
+  border-radius: 20px;
+  /*background-color: rgba(255,255,255,1);*/
+  position: relative;
+	display: inline-block;
 	vertical-align: top;
 }
 
 ul.awards li img {
 	height: 300px;
 	text-align: center;
-	display: block;
 	margin: auto;
-}
-
-ul.awards li div {
-	overflow: auto;
-	margin: auto;
-	height: 400px;
-	float: left;
 }
 /*========================================================*/
 
