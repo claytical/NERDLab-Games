@@ -430,12 +430,15 @@ div.team {
 .team li a.personalsite {
   text-decoration: none;
   color: white;
-	margin: auto;
+	position: absolute;
+	bottom: 80px;
+	left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, 0%);
 }
 
 .team h1{
 	padding-top: 20px;
-	font-size: 1.8em;
+	font-size: 1.3em;
 	font-family: 'Istok Web', sans-serif;
 	color: white;
 }
@@ -445,7 +448,8 @@ div.team {
   line-height: 1em;
   font-size: 1em;
   font-family: 'PT Sans', serif;
-  color: white;
+  color: #3f3f3f;
+	font-weight: normal;
 }
 
 .team h3 {
@@ -494,10 +498,10 @@ div.nancy {
 }
 
 div.socialprofile {
-  width: 40px;
+  width: 20px;
   position: absolute;
-  bottom: 0;
-  left: 130px;
+  top: -12px;
+  left: 240px;
 }
 
 div.socialprofile img {
