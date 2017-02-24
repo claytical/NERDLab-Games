@@ -35,7 +35,7 @@ $(window).scroll(function() {
 		}
 		else {
 			$('.learnMore').fadeIn();
-		}   	
+		}
     }
 
 
@@ -43,7 +43,7 @@ $(window).scroll(function() {
 		$('.titleText').fadeOut("easing");
 	}
 	else {
-		$('.titleText').fadeIn("easing");	
+		$('.titleText').fadeIn("easing");
 	}
 
 
@@ -68,12 +68,13 @@ $(window).scroll(function() {
 
 
 
-	
+
 
 	console.log(windowScroll);
 	console.log("windowWidth", windowWidth);
 
 });
+/*
 	$('.a1').hide();
 	$('.a2').hide();
 	$('.a3').hide();
@@ -105,3 +106,4 @@ $(window).scroll(function() {
 		}
 		console.log(myCounter);
 	}, 5000);
+*/

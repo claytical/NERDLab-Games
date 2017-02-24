@@ -23,6 +23,9 @@ time, mark, audio {
 	border: 0;
 	font-size: 100%;
 }
+div {
+	clear: both;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -256,7 +259,7 @@ p.information {
 
 div.title {
   margin: auto;
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
 
@@ -270,6 +273,8 @@ h2.subtitle {
 }
 
 p.download {
+	width: 100%;
+	max-width: 400px;
   float: left;
   font-family: 'Istok Web', sans-serif;
   font-weight: bold;
@@ -281,7 +286,8 @@ p.download {
 }
 
 div.download {
-  width: 900px;
+  width: 100%;
+	max-width: 900px;
   height: 100px;
   clear: both;
   text-align: center;
@@ -324,7 +330,8 @@ div#downarrow {
 }
 
 div.logo {
-  width: 800px;
+	width: 100%;
+  max-width: 800px;
   margin: auto;
   margin-top: 0px;
   padding-top: 0px;
@@ -525,8 +532,9 @@ ul.awards li {
 	height: 400px;
 	width: 400px;
 	margin: 40px;
+	margin-bottom: 10px;
 	list-style-type: none;
-  padding: 10px;
+  padding: 0px;
   word-wrap: break-word;
   border-radius: 20px;
   /*background-color: rgba(255,255,255,1);*/
@@ -608,3 +616,14 @@ div.NerdLAB a {
 	color: white;
 }
 /*========================================================*/
+
+
+/*========================================================
+	Smaller screen styles
+========================================================*/
+
+@media all and (max-width: 600px) {
+  ul.download li a img {
+		padding: 10px;
+	}
+}
