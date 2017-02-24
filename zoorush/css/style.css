@@ -61,7 +61,7 @@ table {
 	padding-bottom: 40px;
   font-size: 2.5em;
   font-family: 'Istok Web', sans-serif;
-  color: white;
+  color: #3f3f3f;
 	text-align: center;
 	width: 100%;
 }
@@ -240,6 +240,7 @@ section.information {
   line-height: 2em;
   text-align: left;
   padding-bottom: 80px;
+	color: #3f3f3f;
 }
 
 h2.information {
@@ -259,14 +260,15 @@ p.information {
 
 div.title {
   margin: auto;
-  width: 100%;
+  width: 80%;
   text-align: center;
 }
 
 h2.subtitle {
   width: 600px;
   color: white;
-  font-family: 'PT Sans', serif;
+  font-family: 'Baloo', sans-serif;
+	font-weight: normal;
   font-size: 1.5em;
   margin: auto;
   margin-top: -15px;
@@ -411,6 +413,7 @@ div.team {
   margin: auto;
   text-align: center;
   padding: 0px;
+	color: #3f3f3f;
 }
 
 .team li {
@@ -440,7 +443,7 @@ div.team {
 	padding-top: 20px;
 	font-size: 1.3em;
 	font-family: 'Istok Web', sans-serif;
-	color: white;
+	color: #3f3f3f;
 }
 
 .team h2 {
@@ -517,7 +520,7 @@ div.socialprofile img {
 	Awards section styles
 ========================================================*/
 div.awards {
-	background: black;
+	background: #3f3f3f;
 	width: 100%;
   margin: auto;
   text-align: center;
