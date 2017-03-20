@@ -74,7 +74,6 @@ $(window).scroll(function() {
 	console.log("windowWidth", windowWidth);
 
 });
-/*
 	$('.a1').hide();
 	$('.a2').hide();
 	$('.a3').hide();
@@ -106,4 +105,3 @@ $(window).scroll(function() {
 		}
 		console.log(myCounter);
 	}, 5000);
-*/

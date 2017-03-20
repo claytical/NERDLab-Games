@@ -1,0 +1,326 @@
+/* SASS stylesheet: Don Grey Cafe
+   Base styles
+   Created by Laura Kurtzberg */
+
+@import 'reset';
+
+/*****************************************************************
+ Variables
+*****************************************************************/
+
+// Color Palette
+$Mint-Leaf: #85c9b4;
+$Jasmine: #e6e7e8;
+$Chrysanth: #ffce07;
+$Charcoal: #434345;
+$Chamomile: #ffdb6c;
+
+// Font Faces and Font Stacks
+@font-face {
+   font-family: Canter-Light;
+   src: url(../fonts/Canter-Light.woff);
+}
+
+@font-face {
+  font-family: Canter-Outline;
+  src: url(../fonts/Canter-Outline.woff);
+}
+
+$title: Canter-Outline, sans-serif;
+$headings: Canter-Light, sans-serif;
+$mainFont: Oswald, sans-serif;
+
+/*****************************************************************
+ Global Styles
+*****************************************************************/
+body {
+  font-family: $mainFont;
+  font-weight: 300;
+  font-size: 27px;
+}
+
+h1.title {
+  font-family: $title;
+  font-size: 10em;
+}
+
+.subheading {
+  font-family: $mainFont;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+span.highlight {
+  color: $Mint-Leaf;
+}
+
+img {
+  max-width: 100%;
+}
+
+div.positioned-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section {
+  display: block;
+  position: static;
+  clear: both;
+}
+
+//Link Styles
+a {
+  color: $Mint-Leaf;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $Chrysanth;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: $Chamomile;
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+}
+
+/*****************************************************************
+ Header Styles
+*****************************************************************/
+header {
+  display: block;
+  position: relative;
+  clear: both;
+  width: 100%;
+  height: 700px;
+  height: 100vh;
+  background-image: url('../images/wood-table.png');
+  background-repeat: repeat-x;
+  background-size: 100% 100%;
+
+  h1 {
+    position: static;
+    padding-top: 60px;
+    margin-left: 80px;
+    margin-right: 40px;
+    color: $Jasmine;
+    z-index: 100;
+    line-height: 0.8em;
+  }
+
+  p.description {
+    color: $Jasmine;
+    line-height: 1.2em;
+    padding-top: 40px;
+    margin-left: 90px;
+    max-width: 45%;
+  }
+
+  img.teacontainer {
+    max-width: 40%;
+    position: absolute;
+    right: 50px;
+    bottom: 10%;
+  }
+
+  img.logo {
+    width: 200px;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+}
+
+//Download Button
+div.download {
+  margin-left: 90px;
+  margin-top: 40px;
+  border-radius: 35px;
+  :hover {
+    opacity: 0.8;
+  }
+
+  img.googleplay {
+    width: 300px;
+  }
+}
+
+//Learn More Indicator
+div.learnMore {
+  width: 150px;
+  color: $Jasmine;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 100px);
+
+  p {
+    padding: 10px;
+  }
+
+  img.downarrow {
+    max-width: 100px;
+  }
+}
+
+/*****************************************************************
+ Awards / Badges Section Styles
+*****************************************************************/
+
+section.awards {
+  color: $Charcoal;
+  overflow: auto;
+  background-image: url('../images/naranjas.png');
+  background-size: 262px;
+  background-repeat: repeat;
+  padding: 50px;
+  padding-bottom: 0px;
+  height: 500px;
+
+  div.centered {
+    width: 80%;
+    margin: auto;
+  }
+
+  img.badge {
+    margin-top: 0px;
+    width: 400px;
+    max-width: 40%;
+    float: left;
+  }
+
+  p {
+    line-height: 1.2em;
+    padding-top: 15px;
+    margin-left: 60px;
+    width: 50%;
+    float: left;
+  }
+
+  p:nth-child(2) {
+    margin-top: 80px;
+  }
+
+}
+
+/*****************************************************************
+ Footer and Social Media
+*****************************************************************/
+footer {
+  width: 100%;
+  background-color: $Charcoal;
+  z-index: 100;
+	overflow: auto;
+  padding-bottom: 50px;
+}
+
+div.NerdLAB {
+	float: left;
+  width: 200px;
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: $Jasmine;
+  width: 50%;
+}
+
+div.socmeds {
+  float: right;
+  margin-top: 20px;
+  margin-right: 40px;
+  color: white;
+}
+
+ul.socialmedia {
+  display: inline;
+}
+
+p.socialmedia {
+  display: inline;
+  float: left;
+  padding-right: 20px;
+  text-transform: uppercase;
+  font-family: 'PT Sans', serif;
+  margin-top: 12px;
+}
+
+div.socmeds li {
+  list-style-type: none;
+  display: inline;
+  float: left;
+  padding: 10px;
+  margin-left: 15px;
+}
+
+div.socmeds li img {
+  max-width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+div.socmeds li.twitter {
+  width: 45px;
+  :hover {
+    opacity: 0.7;
+  }
+}
+
+div.socmeds li.facebook {
+  width: 45px;
+  :hover {
+    opacity: 0.7;
+  }
+}
+
+div.socmeds li.googleplus {
+  width: 45px;
+}
+
+/********************************************************************
+ Parralax Style rules
+********************************************************************/
+
+/* background setup */
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+
+/* fullscreen setup */
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+}
+.fullscreen,
+.content-a {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.fullscreen.overflow,
+.fullscreen.overflow .content-a {
+    height:auto;
+    min-height:100%;
+}
+
+/* content centering styles */
+.content-a {
+    display:table;
+}
+.content-b {
+	display:table-cell;
+    position:relative;
+	vertical-align:middle;
+	text-align:center;
+}

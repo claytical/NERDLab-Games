@@ -1,5 +1,5 @@
 body {
-	background-color: #434345;
+	background-color: #161616;
 	overflow-x: hidden;
 }
 
@@ -10,7 +10,7 @@ body {
 	color: white;
 	text-align: center;
 	padding: 12px;
-	top: 50px;
+	margin-top: 5%;
 	color: #ED6418;
 }
 
@@ -29,10 +29,16 @@ body {
 	padding: 13px;
 }
 
+.text {
+	color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+}
+
 .handcops {
 	height: 320px;
 	width: 27%;
-	background-image: url("../img/handcops.svg");
+	background-image: url("../images/handcops.svg");
 	position: right;
 	background-repeat: no-repeat;
 	margin-left: 3%;
@@ -43,7 +49,7 @@ body {
 .condoms {
 	height: 300px;
 	width: 25%;
-	background-image: url("../img/condoms.svg");
+	background-image: url("../images/condoms.svg");
 	position: right;
 	background-repeat: no-repeat;
 	margin-left: 45%;
@@ -64,14 +70,14 @@ body {
 }
 
 .facebook {
-	background-image: url("../img/facebook.svg");
+	background-image: url("../images/facebook.svg");
 	background-position: center;
 	background-size: 80%;
 	background-repeat: no-repeat;
 }
 
 .twitter {
-	background-image: url("../img/twitter.svg");
+	background-image: url("../images/twitter.svg");
 	background-position: center;
 	background-size: 80%;
 	background-repeat: no-repeat;
@@ -79,7 +85,7 @@ body {
 }
 
 .instagram {
-	background-image: url("../img/instagram.svg");
+	background-image: url("../images/instagram.svg");
 	background-position: center;
 	background-size: 80%;
 	background-repeat: no-repeat;
@@ -88,7 +94,7 @@ body {
 
 .button {
 	height: 90px;
-	width: auto;
+	width: 250px;
 	border-radius: 10px;
 	background: #0C0C0C;
 	position: absolute;
@@ -100,7 +106,7 @@ body {
 
 .button2 {
 	height: 120px;
-	width: auto;
+	width: 250px;
 	border-radius: 10px;
 	background: #0C0C0C;
 	text-align: right;
@@ -109,7 +115,6 @@ body {
 	right: .001%;
 	box-shadow: 10px 10px 15px #000000;
 }
-
 
 .buttonRegular {
 	height: 90px;
@@ -120,7 +125,6 @@ body {
 	margin: 0 auto;
 	margin-top: 10px;
 }
-
 .playIt {
 	font-size: 3em;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -128,8 +132,16 @@ body {
 	padding: 12px;
 }
 
-.maincolor {
-	color: #85c9b4; /*mint leaf*/
+.playItCenter {
+	font-size: 1.2em;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+	color: white;
+	padding: 15px;
+}
+
+.orange {
+	color: #ED6418;
 }
 
 .learnMore {
@@ -165,13 +177,13 @@ body {
 }
 
 .textDescriptionAnimation {
-	transform: translate(0px, -100px);
+	transform: translate(0px, -170px);
 	transition: transform 1000ms ease-out;
 	animation-delay: 1000ms;
 }
 
 .textDescriptionBackground {
-	height: 100vh;
+	height: 120vh;
 	width: 100%;
 }
 
@@ -185,10 +197,10 @@ body {
 	box-shadow: inset 0 0 50px #000000;
 }
 
-.GameJam {
+.meaningfulGame {
 	height: 250px;
 	width: 100%;
-	background-image: url("../img/globalgamejam.png");
+	background-image: url("../images/Badge.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background position: center;
@@ -202,6 +214,7 @@ body {
 	text-align: center;
 	padding: 13px;
 	top: 20%;
+
 }
 
 .quotation {
@@ -209,7 +222,7 @@ body {
 	height: 50px;
 	width: 100%;
 	position: absolute;
-	background-image: url("../img/quotesUp.svg");
+	background-image: url("../images/quotesUp.svg");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background position: center;
@@ -221,7 +234,7 @@ body {
 	height: 50px;
 	width: 100%;
 	position: absolute;
-	background-image: url("../img/quotesDown.svg");
+	background-image: url("../images/quotesDown.svg");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background position: center;
@@ -271,6 +284,15 @@ a:hover {
 	margin-top: 15%;
 }
 
+.buyOption {
+	margin-top: -10%;
+	margin-bottom: 10%;
+}
+
+.form-group {
+	margin-bottom: 55px;
+}
+
 @media only screen and (max-device-width: 480px) {     /*Mobile Device*/
 
 .titleText {
@@ -285,7 +307,7 @@ a:hover {
 .handcops {
 	height: 80px;
 	width: 90%;
-	background-image: url("../img/handcops.svg");
+	background-image: url("../images/handcops.svg");
 	position: center;
 	background-repeat: no-repeat;
 	overflow: hidden;
@@ -295,7 +317,7 @@ a:hover {
 .condoms {
 	height: 80px;
 	width: 30%;
-	background-image: url("../img/condoms.svg");
+	background-image: url("../images/condoms.svg");
 	position: center;
 	background-repeat: no-repeat;
 	overflow: hidden;
@@ -315,14 +337,14 @@ a:hover {
 }
 
 .facebook {
-	background-image: url("../img/facebook.svg");
+	background-image: url("/../images/facebook.svg");
 	background-position: center;
 	background-size: 80%;
 	background-repeat: no-repeat;
 }
 
 .twitter {
-	background-image: url("../img/twitter.svg");
+	background-image: url("../images/twitter.svg");
 	background-position: center;
 	background-size: 80%;
 	background-repeat: no-repeat;
@@ -330,7 +352,7 @@ a:hover {
 }
 
 .instagram {
-	background-image: url("../img/instagram.svg");
+	background-image: url("../images/instagram.svg");
 	background-position: center;
 	background-size: 80%;
 	background-repeat: no-repeat;
@@ -339,7 +361,7 @@ a:hover {
 
 .button {
 	height: 40px;
-	width: 250px;
+	width: 200px;
 	border-radius: 10px;
 	background: #0C0C0C;
 	position: absolute;
@@ -349,7 +371,7 @@ a:hover {
 
 .button2 {
 	height: 40px;
-	width: 250px;
+	width: 200px;
 	border-radius: 10px;
 	background: #0C0C0C;
 	position: absolute;
@@ -395,7 +417,7 @@ a:hover {
 .meaningfulGame {
 	height: 150px;
 	width: 100%;
-	background-image: url("../img/Badge.png");
+	background-image: url("../images/Badge.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background position: center;
@@ -422,7 +444,7 @@ a:hover {
 	height: 20px;
 	width: 100%;
 	position: absolute;
-	background-image: url("../img/quotesUp.svg");
+	background-image: url("../images/quotesUp.svg");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background position: center;
@@ -434,7 +456,7 @@ a:hover {
 	height: 20px;
 	width: 100%;
 	position: absolute;
-	background-image: url("../img/quotesDown.svg");
+	background-image: url("../images/quotesDown.svg");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background position: center;
@@ -448,7 +470,6 @@ a:hover {
 @media only screen and (max-width: 1500px) {     /* Laptop size */
 
 body {
-	background-color: pink;
 	overflow-x: hidden;
 }
 
@@ -477,7 +498,7 @@ body {
 }
 
 .awardAnimationOutRight {
-	transform: translate(-330px, 0px);
+	transform: translate(-660px, 0px);
 	transition: transform 1000ms ease-out;
 	animation-delay: 1000ms;
 
@@ -490,19 +511,19 @@ body {
 	border-radius: 10px;
 	border-color: #ED6418;
 	margin: 0 auto;
-	margin-bottom: 80px;
 }
 
 .press {
 	width: 100%;
-	height: 170vh;
+	height: 130vh;
 }
 
 .textCenter {
+	color: white;
 	text-align: center;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 2.5em;
-	margin-top: 5%;
+	margin-top: -5%;
 }
 
 .faq {
@@ -516,3 +537,35 @@ body {
 }
 
 }
+
+/*@media only screen and (min-width: 1510px) {
+
+body {
+	background-color: blue;
+	overflow-x: hidden;
+}
+
+.handcops {
+	height: 320px;
+	width: 27%;
+	background-image: url("/../images/handcops.svg");
+	position: right;
+	background-repeat: no-repeat;
+	margin-left: 3%;
+	overflow: auto;
+}
+
+.condoms {
+	position: absolute;
+	height: 300px;
+	width: 25%;
+	background-image: url("/../images/condoms.svg");
+	position: right;
+	background-repeat: no-repeat;
+	margin-left: 70%;
+	overflow: auto;
+	margin-top: -300px;
+
+}
+
+}*/
