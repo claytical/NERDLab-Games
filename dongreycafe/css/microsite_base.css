@@ -202,6 +202,10 @@ footer {
   z-index: 100;
   overflow: auto;
   padding-bottom: 50px; }
+  footer div.nerdlab-logo {
+    float: left; }
+    footer div.nerdlab-logo img {
+      width: 100px; }
 
 div.NerdLAB {
   float: left;

@@ -218,6 +218,13 @@ footer {
   z-index: 100;
 	overflow: auto;
   padding-bottom: 50px;
+
+  div.nerdlab-logo {
+    float: left;
+    img {
+      width: 100px;
+    }
+  }
 }
 
 div.NerdLAB {
