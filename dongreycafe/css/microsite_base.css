@@ -63,7 +63,8 @@ table {
 body {
   font-family: Oswald, sans-serif;
   font-weight: 300;
-  font-size: 27px; }
+  font-size: 27px;
+  background-color: #434345; }
 
 h1.title {
   font-family: Canter-Outline, sans-serif;
@@ -203,7 +204,8 @@ footer {
   overflow: auto;
   padding-bottom: 50px; }
   footer div.nerdlab-logo {
-    float: left; }
+    display: block;
+    padding: 40px; }
     footer div.nerdlab-logo img {
       width: 100px; }
 
@@ -296,5 +298,39 @@ html, body {
   position: relative;
   vertical-align: middle;
   text-align: center; }
+
+/* Contact */
+div.contact {
+  width: 80%;
+  margin: auto;
+  padding: 100px;
+  color: white;
+  background-color: #434345; }
+
+button.btn-primary {
+  padding: 5px 15px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer;
+  order-radius: 5px; }
+
+div.form-group {
+  display: block; }
+  div.form-group small {
+    font-size: 0.8em;
+    padding-bottom: 30px;
+    display: block; }
+
+textarea {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+input {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 50px; }
 
 /*# sourceMappingURL=microsite_base.css.map */

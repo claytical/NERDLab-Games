@@ -37,6 +37,7 @@ body {
   font-family: $mainFont;
   font-weight: 300;
   font-size: 27px;
+  background-color: $Charcoal;
 }
 
 h1.title {
@@ -220,7 +221,8 @@ footer {
   padding-bottom: 50px;
 
   div.nerdlab-logo {
-    float: left;
+    display: block;
+    padding: 40px;
     img {
       width: 100px;
     }
@@ -330,4 +332,46 @@ html, body {
     position:relative;
 	vertical-align:middle;
 	text-align:center;
+}
+
+/* Contact */
+
+div.contact {
+  width: 80%;
+  margin: auto;
+  padding: 100px;
+  color: white;
+  background-color: $Charcoal;
+}
+
+button.btn-primary {
+  padding:5px 15px;
+  background:#ccc;
+  border:0 none;
+  cursor:pointer;
+  order-radius: 5px;
+}
+
+div.form-group {
+  display: block;
+
+  small {
+    font-size: 0.8em;
+    padding-bottom: 30px;
+    display: block;
+  }
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 50px;
 }
