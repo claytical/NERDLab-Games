@@ -6,6 +6,7 @@
     height: auto;
     padding-bottom: 100px; }
     header h1 {
+      padding-top: 60px;
       margin-left: 40px; }
     header img.teacontainer {
       right: 30px;
@@ -55,8 +56,17 @@
       margin-bottom: 50px; }
 
   div.NerdLAB {
-    width: 80%; } }
+    width: 80%; }
+
+  footer {
+    width: 100%; }
+
+  div.contact {
+    width: 100%;
+    padding: 20px; } }
 @media (max-width: 480px) {
+  header h1 {
+    padding-top: 60px; }
   header p.description {
     max-width: 90%;
     font-size: 0.8em;
@@ -70,6 +80,13 @@
     display: none; }
 
   div.NerdLAB {
-    width: 80%; } }
+    width: 80%; }
+
+  footer {
+    width: 100%; }
+
+  div.contact {
+    width: 100%;
+    padding: 40px; } }
 
 /*# sourceMappingURL=microsite_mobilephone.css.map */

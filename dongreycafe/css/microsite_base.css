@@ -122,8 +122,8 @@ header {
   background-size: 100% 100%; }
   header h1 {
     position: static;
-    padding-top: 60px;
-    margin-left: 80px;
+    padding-top: 100px;
+    margin-left: 140px;
     margin-right: 40px;
     color: #e6e7e8;
     z-index: 100;
@@ -132,12 +132,12 @@ header {
     color: #e6e7e8;
     line-height: 1.2em;
     padding-top: 40px;
-    margin-left: 90px;
+    margin-left: 150px;
     max-width: 45%; }
   header img.teacontainer {
     max-width: 40%;
     position: absolute;
-    right: 50px;
+    right: 150px;
     bottom: 10%; }
   header img.logo {
     width: 200px;
@@ -145,7 +145,7 @@ header {
     margin-top: 5%; }
 
 div.download {
-  margin-left: 90px;
+  margin-left: 150px;
   margin-top: 40px;
   border-radius: 35px; }
   div.download :hover {
@@ -158,12 +158,31 @@ div.learnMore {
   color: #e6e7e8;
   text-align: center;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: calc(50% - 100px); }
   div.learnMore p {
     padding: 10px; }
-  div.learnMore img.downarrow {
+  div.learnMore img#downarrow {
     max-width: 100px; }
+
+/*****************************************************************
+ Demo Video Section Styles
+*****************************************************************/
+#demovideo {
+  width: 100%;
+  position: relative;
+  margin-bottom: 0px; }
+
+#demovideo > .video-height {
+  padding-top: 55%;
+  display: block; }
+
+iframe#demovimeo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 /*****************************************************************
  Awards / Badges Section Styles
@@ -171,9 +190,10 @@ div.learnMore {
 section.awards {
   color: #434345;
   overflow: auto;
-  background-image: url("../images/naranjas.png");
+  background-color: #a8d9ca;
+  /*background-image: url('../images/naranjas.png');
   background-size: 262px;
-  background-repeat: repeat;
+  background-repeat: repeat;*/
   padding: 50px;
   padding-bottom: 0px;
   height: 500px; }
@@ -184,7 +204,9 @@ section.awards {
     margin-top: 0px;
     width: 400px;
     max-width: 40%;
-    float: left; }
+    float: left;
+    border-radius: 200px;
+    box-shadow: 0px 0px 25px white; }
   section.awards p {
     line-height: 1.2em;
     padding-top: 15px;
@@ -198,14 +220,15 @@ section.awards {
  Footer and Social Media
 *****************************************************************/
 footer {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   background-color: #434345;
   z-index: 100;
   overflow: auto;
   padding-bottom: 50px; }
   footer div.nerdlab-logo {
     display: block;
-    padding: 40px; }
+    padding: 25px; }
     footer div.nerdlab-logo img {
       width: 100px; }
 
@@ -247,7 +270,8 @@ div.socmeds li img {
   height: 40px;
   padding: 10px;
   border-radius: 50%;
-  background-color: black; }
+  background-color: #2a2a2b;
+  border: 5px solid #2f2f30; }
 
 div.socmeds li.twitter {
   width: 45px; }
@@ -299,7 +323,9 @@ html, body {
   vertical-align: middle;
   text-align: center; }
 
-/* Contact */
+/*************************************************************
+ Contact Section
+ *************************************************************/
 div.contact {
   width: 80%;
   margin: auto;

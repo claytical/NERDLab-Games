@@ -2,22 +2,29 @@
    Tablet size specific styles
    Created by Laura Kurtzberg */
 
-@media (max-width: 1024px) {
+@media (max-width: 1500px) {
+  h1 {
+    padding-top: 60px;
+  }
+  
   header {
     height: auto;
     padding-bottom: 100px;
     h1.title {
-      margin-left: 40px;
+      margin-left: 60px;
     }
     p.description {
-      margin-left: 50px;
+      margin-left: 70px;
       max-width: 40%;
+    }
+    img.teacontainer {
+      right: 60px;
     }
   }
 
   //Download Button
   div.download {
-    margin-left: 50px;
+    margin-left: 70px;
     img.googleplay {
       width: 250px;
     }
@@ -49,6 +56,7 @@
 @media (max-width: 800px) {
   header {
     h1 {
+      padding-top: 60px;
       margin-left: 40px;
       line-height: 0.8em;
     }
@@ -58,6 +66,9 @@
     }
     p.description:nth-child(3) {
       display: none;
+    }
+    img.teacontainer {
+      right: 40px;
     }
   }
 
@@ -89,5 +100,9 @@
     p:last-child {
       padding-bottom: 40px;
     }
+  }
+  div.contact {
+    width: 100%;
+    padding: 80px;
   }
 }
