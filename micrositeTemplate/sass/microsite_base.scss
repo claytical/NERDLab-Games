@@ -1,0 +1,418 @@
+/* SASS stylesheet: NERDLab Microsite
+   Base styles
+   Created by Laura Kurtzberg */
+
+@import 'reset';
+
+/*****************************************************************
+ Variables
+*****************************************************************/
+
+// Color Palette
+$Highlight-Color: #0998C6;
+$Background-Color: #FFFFFF;
+$Text-Color: #0F0F0F;
+$Main-Color-One: #7F7F7F;
+$Main-Color-Two: #85c9b4;
+
+// Optional add local Font Faces, and create Font Stacks
+/*
+@font-face {
+   font-family: Canter-Light;
+   src: url(../fonts/Canter-Light.woff);
+}
+
+@font-face {
+  font-family: Canter-Outline;
+  src: url(../fonts/Canter-Outline.woff);
+}
+*/
+
+$title: Sans-serif;
+$headings: Sans-serif;
+$mainFont: Sans-Serif;
+
+/*****************************************************************
+ Global Styles
+*****************************************************************/
+body {
+  font-family: $mainFont;
+  font-weight: 300;
+  font-size: 27px;
+  background-color: $Background-Color;
+  color: $Text-Color;
+}
+
+h1.title {
+  font-family: $title;
+  font-size: 7em;
+}
+
+.subheading {
+  font-family: $mainFont;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+span.highlight {
+  color: $Highlight-Color;
+}
+
+img {
+  max-width: 100%;
+}
+
+div.positioned-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section {
+  display: block;
+  position: static;
+  clear: both;
+  height: auto;
+  width: 80%;
+  margin: auto;
+}
+
+//Link Styles
+a {
+  color: $Highlight-Color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $Main-Color-One;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: $Main-Color-Two;
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+}
+
+//Nerdlab banner
+
+div.nerdlab-banner {
+  height: 50px;
+  padding: 20px;
+  background-color: $Highlight-Color;
+  line-height: 50px;
+
+  img {
+    width: 50px;
+    float: left;
+    vertical-align: middle;
+  }
+
+  p {
+    color: white;
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+/*****************************************************************
+ Header Styles
+*****************************************************************/
+header {
+  display: block;
+  position: relative;
+  clear: both;
+  width: 100%;
+  height: 90vh;
+
+  h1 {
+    position: static;
+    padding-top: 100px;
+    margin-left: 140px;
+    margin-right: 40px;
+    color: $Text-Color;
+    z-index: 100;
+    line-height: 1em;
+  }
+
+  p.description {
+    color: $Text-Color;
+    line-height: 1.2em;
+    padding-top: 40px;
+    margin-left: 150px;
+    max-width: 45%;
+  }
+
+  img.teacontainer {
+    max-width: 40%;
+    position: absolute;
+    right: 150px;
+    bottom: 10%;
+  }
+
+  img.logo {
+    width: 200px;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+}
+
+//Download Button
+div.download {
+  margin-left: 150px;
+  margin-top: 40px;
+  border-radius: 35px;
+  :hover {
+    opacity: 0.8;
+  }
+
+  img.googleplay {
+    width: 300px;
+  }
+}
+
+//Learn More Indicator
+div.learnMore {
+  width: 150px;
+  color: $Text-Color;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 100px);
+
+  p {
+    padding: 10px;
+  }
+
+  img#downarrow {
+    max-width: 100px;
+  }
+}
+
+/*****************************************************************
+ Demo Video Section Styles
+*****************************************************************/
+
+#demovideo {
+    width: 100%;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+#demovideo > .video-height {
+    padding-top: 55%;
+    display: block;
+}
+
+iframe#demovimeo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*****************************************************************
+ Awards / Badges Section Styles
+*****************************************************************/
+
+section.awards {
+	background: $Background-Color;
+  margin: auto;
+  margin-top: 80px;
+  text-align: center;
+  padding: 20px;
+}
+
+ul.awards li {
+  color: white;
+	height: 400px;
+	width: 400px;
+	margin: 40px;
+	margin-bottom: 10px;
+	list-style-type: none;
+  padding: 0px;
+  word-wrap: break-word;
+  border-radius: 20px;
+  /*background-color: rgba(255,255,255,1);*/
+  position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+ul.awards li img {
+	height: 300px;
+	text-align: center;
+}
+
+/*****************************************************************
+ Footer and Social Media
+*****************************************************************/
+footer {
+  margin: auto;
+  background-color: $Main-Color-Two;
+  z-index: 100;
+	overflow: auto;
+  padding-bottom: 50px;
+
+  div.nerdlab-logo {
+    display: block;
+    padding: 25px;
+    img {
+      width: 100px;
+    }
+  }
+}
+
+div.NerdLAB {
+	float: left;
+  width: 200px;
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: $Text-Color;
+  width: 50%;
+}
+
+div.socmeds {
+  float: right;
+  margin-top: 20px;
+  margin-right: 40px;
+  color: white;
+}
+
+ul.socialmedia {
+  display: inline;
+}
+
+p.socialmedia {
+  display: inline;
+  float: left;
+  padding-right: 20px;
+  text-transform: uppercase;
+  font-family: Serif;
+  margin-top: 12px;
+}
+
+div.socmeds li {
+  list-style-type: none;
+  display: inline;
+  float: left;
+  padding: 10px;
+  margin-left: 15px;
+}
+
+div.socmeds li img {
+  max-width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: darken($Background-Color, 10%);
+  border: 5px solid darken($Background-Color, 8%);
+}
+
+div.socmeds li.twitter {
+  width: 45px;
+  :hover {
+    opacity: 0.7;
+  }
+}
+
+div.socmeds li.facebook {
+  width: 45px;
+  :hover {
+    opacity: 0.7;
+  }
+}
+
+div.socmeds li.googleplus {
+  width: 45px;
+}
+
+/********************************************************************
+ Parralax Style rules
+********************************************************************/
+
+/* background setup */
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+
+/* fullscreen setup */
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+}
+.fullscreen,
+.content-a {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.fullscreen.overflow,
+.fullscreen.overflow .content-a {
+    height:auto;
+    min-height:100%;
+}
+
+/* content centering styles */
+.content-a {
+    display:table;
+}
+.content-b {
+	display:table-cell;
+    position:relative;
+	vertical-align:middle;
+	text-align:center;
+}
+
+/*************************************************************
+ Contact Section
+ *************************************************************/
+
+section.contact {
+  margin: auto;
+  padding: 100px;
+  color: $Text-Color;
+  background-color: $Background-Color;
+}
+
+button.btn-primary {
+  padding:5px 15px;
+  background:#ccc;
+  border:0 none;
+  cursor:pointer;
+  order-radius: 5px;
+}
+
+div.form-group {
+  display: block;
+
+  small {
+    font-size: 0.8em;
+    padding-bottom: 30px;
+    display: block;
+  }
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 50px;
+}
