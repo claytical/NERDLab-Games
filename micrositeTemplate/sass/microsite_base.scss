@@ -76,6 +76,7 @@ section {
   height: auto;
   width: 80%;
   margin: auto;
+  margin-top: 65px;
 }
 
 //Link Styles
@@ -118,6 +119,7 @@ div.nerdlab-banner {
     margin-left: 20px;
   }
 }
+
 
 /*****************************************************************
  Header Styles
@@ -223,7 +225,6 @@ iframe#demovimeo {
 section.awards {
 	background: $Background-Color;
   margin: auto;
-  margin-top: 80px;
   text-align: center;
   padding: 20px;
 }
@@ -373,6 +374,16 @@ html, body {
 	vertical-align:middle;
 	text-align:center;
 }
+
+/*****************************************************************
+  FAQ Section
+*****************************************************************/
+section.faq {
+  p.question {
+    font-weight: bold;
+  }
+}
+
 
 /*************************************************************
  Contact Section

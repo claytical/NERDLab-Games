@@ -99,7 +99,8 @@ section {
   clear: both;
   height: auto;
   width: 80%;
-  margin: auto; }
+  margin: auto;
+  margin-top: 65px; }
 
 a {
   color: #0998C6;
@@ -209,7 +210,6 @@ iframe#demovimeo {
 section.awards {
   background: #FFFFFF;
   margin: auto;
-  margin-top: 80px;
   text-align: center;
   padding: 20px; }
 
@@ -337,6 +337,12 @@ html, body {
   position: relative;
   vertical-align: middle;
   text-align: center; }
+
+/*****************************************************************
+  FAQ Section
+*****************************************************************/
+section.faq p.question {
+  font-weight: bold; }
 
 /*************************************************************
  Contact Section
