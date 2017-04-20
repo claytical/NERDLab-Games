@@ -10,11 +10,12 @@
   <meta name="author" content="Game Creator">
 
   <!-- Add Google Fonts Here -->
-  <link href="https://fonts.googleapis.com/css?family=Oswald:300,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   <link rel="stylesheet" href="css/microsite_base.css">
   <link rel="stylesheet" href="css/microsite_tablet.css">
   <link rel="stylesheet" href="css/microsite_mobilephone.css">
+  <script src="https://use.fontawesome.com/ce0a8a07a0.js"></script>
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,29 +26,29 @@
   <div class="nerdlab-banner"><div class="nerdlab-logo"><img src="images/nerdlab-cube.png" alt="nerdlab logo"/></div><p>NERDLab</p></div>
 
   <header>
-      <h1 class="title">Game Title</h1>
+      <div class="titlediv"><h1 class="title">Game Title</h1></div>
       <p class="description">This is where the first section of description could go.</p>
       <p class="description">This is where the second section of description could go.</p>
       <div class="download"><a href="#" target="_blank" rel="noopener noreferrer"><img class="googleplay" src="images/googleplay.png" alt="available on google play"/></a></div>
       <div class="download"><a href="#" target="_blank" rel="noopener noreferrer"><img class="googleplay" src="images/appstore.png" alt="available on appstore"/></a></div>
       <div class="learnMore">
-        <img id="downarrow" src="images/downarrow.png" alt="more content below" />
+        <img id="downarrow" src="images/arrow.png" alt="more content below" />
       </div>
       <br class="clear" />
   </header>
 
-  <section class="awards">
-      <ul class="awards">
-        <li><div><img src="images/balefirelabs.png" alt="Balefire Top Rated EdApp Award badge" /></div></li>
-        <li><div><img src="images/aejmc-firstplace.png" alt="AEJMC Web Competition badge" /></div></li>
-        <li><div><img src="images/seriousplay.png" alt="Serious Play award badge" /></div></li>
-      </ul>
+  <section class="awardblock">
+      <img src="images/balefirelabs.png" alt="Balefire Top Rated EdApp Award badge" />
+      <img src="images/aejmc-firstplace.png" alt="AEJMC Web Competition badge" />
+      <img src="images/seriousplay.png" alt="Serious Play award badge" />
   </section>
 
+  <div class="staticblock">
   <section id="demovideo">
     <span class="video-height"></span>
     <iframe id="demovimeo" src="https://player.vimeo.com/video/210962496" width="640" height="356" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </section>
+  </div>
 
   <section class="faq">
     <h2 class="subheading">FAQ</h2>
@@ -72,27 +73,13 @@
   </div>
 
   <footer>
-    <div class="NerdLAB">
-      <div class="nerdlab-logo"><img src="images/nerdlab-cube.png" alt="nerdlab logo"/></div>
-      <p class="subheading"> A NERDLab Game</p>
-      <p>We are a student-faculty cooperative driven by
-        research, development, and an enthusiasm for
-        social impact. Based at the Interactive Media
-        program at the University of Miami School of
-        Communication, we function as an incubator for
-        initiatives that collaborate locally, nationally, and in
-        the global space. NERDLab integrates classic and
-        novel techniques to produce projects that inspire
-        and educate through innovation and fun. See some
-        of our work <a href="#">here.</a></p>
-    </div>
-
-    <div class="socmeds">
-      <ul class="socialmedia">
-        <li class="twitter"><a href="#"><img src="images/twitter.png" alt="Twitter"/></a></li>
-        <li class="facebook"><a href="#"><img src="images/facebook.png" alt="Facebook"/></a></li>
-      </ul>
-    </div>
+    <div class="circle"><img class="arrow" src="images/arrow.png" alt="click to return to top"/></div>
+    <ul class="socialmedia">
+      <li class="vimeo"><a href="#" title="email us"><i class="fa fa-vimeo fa-lg" aria-hidden="true"></a></i></li>
+      <li class="twitter"><a href="#" title="email us"><i class="fa fa-twitter fa-lg" aria-hidden="true"></a></i></li>
+      <li class="email"><a href="#" title="email us"><i class="fa fa-at fa-lg" aria-hidden="true"></a></i></li>
+    </ul>
+    <p class="footertext">NERDLab is a student-faculty cooperative driven by research, development, and an enthusiasm for social impact.</p>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

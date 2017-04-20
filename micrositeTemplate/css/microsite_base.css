@@ -51,33 +51,26 @@ table {
 /*****************************************************************
  Variables
 *****************************************************************/
-/*
 @font-face {
-   font-family: Canter-Light;
-   src: url(../fonts/Canter-Light.woff);
-}
+  font-family: BebasNeue;
+  src: url(../fonts/BebasNeue.woff); }
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Roboto, sans-serif; }
 
-@font-face {
-  font-family: Canter-Outline;
-  src: url(../fonts/Canter-Outline.woff);
-}
-*/
 /*****************************************************************
  Global Styles
 *****************************************************************/
 body {
-  font-family: Sans-Serif;
+  font-family: Roboto, Sans-Serif;
   font-weight: 300;
-  font-size: 27px;
+  font-size: 1.1em;
   background-color: #FFFFFF;
   color: #0F0F0F; }
 
-h1.title {
-  font-family: Sans-serif;
-  font-size: 7em; }
-
 .subheading {
-  font-family: Sans-Serif;
+  font-family: Roboto, Sans-Serif;
   font-weight: 600;
   font-size: 32px;
   margin-bottom: 20px; }
@@ -123,11 +116,13 @@ div.nerdlab-banner {
   background-color: #0998C6;
   line-height: 50px;
   position: fixed;
+  z-index: 1000;
   width: 100%; }
   div.nerdlab-banner img {
     width: 50px;
     float: left;
-    vertical-align: middle; }
+    vertical-align: middle;
+    margin-left: 50px; }
   div.nerdlab-banner p {
     color: white;
     float: left;
@@ -142,14 +137,17 @@ header {
   clear: both;
   width: 100%;
   height: 90vh; }
-  header h1 {
-    position: static;
-    padding-top: 100px;
-    margin-left: 140px;
-    margin-right: 40px;
+  header h1.title {
+    font-family: BebasNeue, Sans-serif;
+    font-size: 7em;
+    padding-top: 250px;
+    padding-bottom: 150px;
     color: #0F0F0F;
     z-index: 100;
-    line-height: 1em; }
+    line-height: 1em;
+    margin-left: 60px; }
+  header div.titlediv {
+    background-color: grey; }
   header p.description {
     color: #0F0F0F;
     line-height: 1.2em;
@@ -190,10 +188,19 @@ div.learnMore {
 /*****************************************************************
  Demo Video Section Styles
 *****************************************************************/
-#demovideo {
+div.staticblock {
+  position: static;
+  display: block;
+  background-color: red;
+  width: 100%;
+  clear: both; }
+
+section#demovideo {
   width: 100%;
   position: relative;
-  margin-bottom: 0px; }
+  display: block;
+  margin-bottom: 0px;
+  clear: both; }
 
 #demovideo > .video-height {
   padding-top: 55%;
@@ -209,11 +216,18 @@ iframe#demovimeo {
 /*****************************************************************
  Awards / Badges Section Styles
 *****************************************************************/
-section.awards {
-  background: #FFFFFF;
-  margin: auto;
-  text-align: center;
-  padding: 20px; }
+section.awardblock {
+  text-align: center; }
+
+section.awardblock img {
+  height: 210px;
+  display: inline-block; }
+
+ul.awards {
+  position: static;
+  display: block;
+  height: auto;
+  background-color: black; }
 
 ul.awards li {
   color: white;
@@ -235,74 +249,51 @@ ul.awards li img {
   text-align: center; }
 
 /*****************************************************************
- Footer and Social Media
+  Footer Styles
 *****************************************************************/
 footer {
-  margin: auto;
-  background-color: #85c9b4;
-  z-index: 100;
-  overflow: auto;
-  padding-bottom: 50px; }
-  footer div.nerdlab-logo {
-    display: block;
-    padding: 25px; }
-    footer div.nerdlab-logo img {
-      width: 100px; }
+  height: 350px;
+  background-color: #0998C6;
+  text-align: center;
+  font-size: 1.1em; }
 
-div.NerdLAB {
-  float: left;
-  width: 200px;
-  margin-left: 25px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  color: #0F0F0F;
-  width: 50%; }
+/* Circle tab above the footer */
+footer .circle {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: -50px;
+  border-radius: 70px;
+  width: 140px;
+  height: 140px;
+  background-color: #0998C6;
+  line-height: 90px; }
 
-div.socmeds {
-  float: right;
-  margin-top: 20px;
-  margin-right: 40px;
+/* Arrow inside the Circle tab above the footer */
+footer .circle img.arrow {
+  width: 50px;
+  transform: rotateX(180deg); }
+
+footer ul.socialmedia {
+  text-align: center;
+  width: 500px;
+  margin: auto; }
+
+footer ul.socialmedia li {
+  display: inline-block;
+  width: 50px;
+  height: 50px; }
+
+footer ul.socialmedia li a {
   color: white; }
 
-ul.socialmedia {
-  display: inline; }
+footer p.footertext {
+  width: 500px;
+  margin: auto;
+  color: white;
+  font-weight: bold; }
 
-p.socialmedia {
-  display: inline;
-  float: left;
-  padding-right: 20px;
-  text-transform: uppercase;
-  font-family: Serif;
-  margin-top: 12px; }
-
-div.socmeds li {
-  list-style-type: none;
-  display: inline;
-  float: left;
-  padding: 10px;
-  margin-left: 15px; }
-
-div.socmeds li img {
-  max-width: 100%;
-  height: 40px;
-  padding: 10px;
-  border-radius: 50%;
-  background-color: #e6e6e6;
-  border: 5px solid #ebebeb; }
-
-div.socmeds li.twitter {
-  width: 45px; }
-  div.socmeds li.twitter :hover {
-    opacity: 0.7; }
-
-div.socmeds li.facebook {
-  width: 45px; }
-  div.socmeds li.facebook :hover {
-    opacity: 0.7; }
-
-div.socmeds li.googleplus {
-  width: 45px; }
-
+/*****************************************************************/
 /********************************************************************
  Parralax Style rules
 ********************************************************************/
@@ -343,14 +334,17 @@ html, body {
 /*****************************************************************
   FAQ Section
 *****************************************************************/
-section.faq p {
-  font-style: italic; }
-section.faq p.question {
-  margin-bottom: 10px;
-  margin-top: 80px;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 1.5em; }
+section.faq {
+  padding-top: 100px;
+  padding-bottom: 170px; }
+  section.faq p {
+    font-style: italic; }
+  section.faq p.question {
+    margin-bottom: 10px;
+    margin-top: 80px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.5em; }
 
 /*************************************************************
  Contact Section
