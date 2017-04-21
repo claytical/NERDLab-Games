@@ -136,7 +136,9 @@ header {
   position: relative;
   clear: both;
   width: 100%;
-  height: 90vh; }
+  height: 90vh;
+  padding-left: 60px;
+  background-color: grey; }
   header h1.title {
     font-family: BebasNeue, Sans-serif;
     font-size: 7em;
@@ -144,15 +146,11 @@ header {
     padding-bottom: 150px;
     color: #0F0F0F;
     z-index: 100;
-    line-height: 1em;
-    margin-left: 60px; }
-  header div.titlediv {
-    background-color: grey; }
+    line-height: 1em; }
   header p.description {
     color: #0F0F0F;
     line-height: 1.2em;
     padding-top: 40px;
-    margin-left: 150px;
     max-width: 45%; }
   header img.teacontainer {
     max-width: 40%;
@@ -221,32 +219,8 @@ section.awardblock {
 
 section.awardblock img {
   height: 210px;
-  display: inline-block; }
-
-ul.awards {
-  position: static;
-  display: block;
-  height: auto;
-  background-color: black; }
-
-ul.awards li {
-  color: white;
-  height: 400px;
-  width: 400px;
-  margin: 40px;
-  margin-bottom: 10px;
-  list-style-type: none;
-  padding: 0px;
-  word-wrap: break-word;
-  border-radius: 20px;
-  /*background-color: rgba(255,255,255,1);*/
-  position: relative;
   display: inline-block;
-  vertical-align: top; }
-
-ul.awards li img {
-  height: 300px;
-  text-align: center; }
+  padding: 20px; }
 
 /*****************************************************************
   Footer Styles
@@ -276,7 +250,8 @@ footer .circle img.arrow {
 
 footer ul.socialmedia {
   text-align: center;
-  width: 500px;
+  width: 90%;
+  max-width: 500px;
   margin: auto; }
 
 footer ul.socialmedia li {
@@ -288,7 +263,8 @@ footer ul.socialmedia li a {
   color: white; }
 
 footer p.footertext {
-  width: 500px;
+  width: 90%;
+  max-width: 500px;
   margin: auto;
   color: white;
   font-weight: bold; }

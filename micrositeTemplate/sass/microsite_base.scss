@@ -128,6 +128,8 @@ header {
   clear: both;
   width: 100%;
   height: 90vh;
+  padding-left: 60px;
+  background-color: grey;
 
   h1.title {
     font-family: $title;
@@ -137,18 +139,17 @@ header {
     color: $Text-Color;
     z-index: 100;
     line-height: 1em;
-    margin-left: 60px;
   }
 
+  //set a background color for just the section behind the title
   div.titlediv {
-    background-color: grey;
+    //background-color: grey;
   }
 
   p.description {
     color: $Text-Color;
     line-height: 1.2em;
     padding-top: 40px;
-    margin-left: 150px;
     max-width: 45%;
   }
 
@@ -241,34 +242,7 @@ section.awardblock {
 section.awardblock img {
   height: 210px;
   display: inline-block;
-}
-
-ul.awards {
-  position: static;
-  display: block;
-  height: auto;
-  background-color: black;
-}
-
-ul.awards li {
-  color: white;
-	height: 400px;
-	width: 400px;
-	margin: 40px;
-	margin-bottom: 10px;
-	list-style-type: none;
-  padding: 0px;
-  word-wrap: break-word;
-  border-radius: 20px;
-  /*background-color: rgba(255,255,255,1);*/
-  position: relative;
-	display: inline-block;
-	vertical-align: top;
-}
-
-ul.awards li img {
-	height: 300px;
-	text-align: center;
+  padding: 20px;
 }
 
 /*****************************************************************
@@ -302,7 +276,8 @@ footer .circle img.arrow {
 
 footer ul.socialmedia {
 	text-align: center;
-	width: 500px;
+  width: 90%;
+	max-width: 500px;
 	margin: auto;
 }
 
@@ -317,7 +292,8 @@ footer ul.socialmedia li a {
 }
 
 footer p.footertext {
-	width: 500px;
+  width: 90%;
+	max-width: 500px;
 	margin: auto;
 	color: white;
 	font-weight: bold;

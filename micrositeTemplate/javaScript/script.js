@@ -22,3 +22,5 @@ $(window).scroll(function() {
     }
   }
 });
+
+document.getElementById("uparrow").onclick = function() {$('html, body').animate({ scrollTop: 0 }, 'fast');};

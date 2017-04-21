@@ -4,15 +4,22 @@
 @media (max-width: 680px) {
   header {
     height: auto;
-    padding-bottom: 100px; }
-    header h1 {
-      padding-top: 60px;
-      margin-left: 40px; }
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center; }
+    header h1.title {
+      font-size: 6em;
+      text-align: center;
+      margin-left: 0;
+      padding-left: 0;
+      padding-top: 250px;
+      padding-bottom: 100px; }
     header p.description {
-      max-width: 50%;
-      font-size: 0.8em;
+      max-width: 100%;
+      font-size: 1.2em;
       line-height: 1.2em;
-      margin-left: 45px; }
+      padding: 40px;
+      text-align: center; }
     header p.description:nth-child(3) {
       display: none; }
 
@@ -25,9 +32,6 @@
     margin-top: 30px; }
     div.download img.googleplay {
       width: 150px; }
-
-  h1.title {
-    font-size: 4em; }
 
   div.learnMore {
     display: none;
@@ -46,7 +50,7 @@
       width: 250px;
       max-width: 100%; }
     section.awards p {
-      font-size: 0.8em;
+      font-size: 1em;
       line-height: 1.2em;
       padding-top: 15px;
       margin-left: 0px;
@@ -62,16 +66,26 @@
   footer {
     width: 100%; } }
 @media (max-width: 480px) {
-  header h1 {
-    padding-top: 60px; }
-  header p.description {
-    max-width: 90%;
-    font-size: 0.8em;
-    line-height: 1.2em;
-    margin-left: 45px;
-    margin-right: 40px; }
-  header p.description:nth-child(3) {
-    display: none; }
+  header {
+    height: auto;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center; }
+    header h1.title {
+      max-width: 98%;
+      margin: auto;
+      font-size: 6em;
+      text-align: center;
+      padding-top: 250px;
+      padding-bottom: 100px; }
+    header p.description {
+      max-width: 100%;
+      font-size: 1.2em;
+      line-height: 1.2em;
+      padding: 40px;
+      text-align: center; }
+    header p.description:nth-child(3) {
+      display: none; }
 
   section {
     width: 100%;
