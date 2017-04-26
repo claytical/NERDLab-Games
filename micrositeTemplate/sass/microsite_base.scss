@@ -122,14 +122,33 @@ div.nerdlab-banner {
 /*****************************************************************
  Header Styles
 *****************************************************************/
+div.subpagelogo {
+  background-color: #0998C6;
+  padding: 10px;
+  text-decoration: none;
+  position: fixed;
+  width: calc(100% - 20px);
+  height: 60px;
+  z-index: 1000;
+  text-align: center;
+
+  img.logo {
+    height: 60px;
+  	margin: 0;
+  }
+}
+
 header {
+  background-color: grey;
+  background-image: url('../images/sample-1700by800.png');
+  background-size: cover;
   display: block;
   position: relative;
   clear: both;
   width: 100%;
+  min-height: 600px;
   height: 90vh;
   padding-left: 60px;
-  background-color: grey;
 
   h1.title {
     font-family: $title;
@@ -146,39 +165,37 @@ header {
     //background-color: grey;
   }
 
-  p.description {
-    color: $Text-Color;
-    line-height: 1.2em;
-    padding-top: 40px;
-    max-width: 45%;
-  }
-
   img.teacontainer {
     max-width: 40%;
     position: absolute;
     right: 150px;
     bottom: 10%;
   }
-
-  img.logo {
-    width: 200px;
-    margin-left: 5%;
-    margin-top: 5%;
-  }
 }
 
 //Download Button
-div.download {
-  margin-left: 150px;
-  margin-top: 40px;
-  border-radius: 35px;
-  :hover {
-    opacity: 0.8;
-  }
 
-  img.googleplay {
-    width: 300px;
-  }
+div#download-container {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  width: 200px;
+  height: 200px;
+  z-index: 100;
+}
+
+div.download {
+  width: 198px;
+  height: 59px;
+  padding: 1px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgba(200,200,200,0.5);
+}
+
+div.download:hover {
+  border-radius: 10px;
+  background-color: rgba(200,200,200, 0.8);
 }
 
 //Learn More Indicator
@@ -195,7 +212,7 @@ div.learnMore {
   }
 
   img#downarrow {
-    max-width: 100px;
+    max-width: 80px;
   }
 }
 
