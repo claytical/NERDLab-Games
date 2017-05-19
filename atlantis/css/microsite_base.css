@@ -66,8 +66,8 @@ body {
   font-family: Roboto, Sans-Serif;
   font-weight: 300;
   font-size: 1.1em;
-  background-color: #FFFFFF;
-  color: #0F0F0F; }
+  background-color: #000000;
+  color: #FFFFFF; }
 
 .subheading {
   font-family: Roboto, Sans-Serif;
@@ -76,7 +76,7 @@ body {
   margin-bottom: 20px; }
 
 span.highlight {
-  color: #0998C6; }
+  color: #5eb1ff; }
 
 img {
   max-width: 100%; }
@@ -96,7 +96,7 @@ section {
   margin-top: 65px; }
 
 a {
-  color: #0998C6;
+  color: #5eb1ff;
   text-decoration: none; }
 
 a:hover {
@@ -113,7 +113,7 @@ a:visited {
 div.nerdlab-banner {
   height: 50px;
   padding: 20px;
-  background-color: #0998C6;
+  background-color: #5eb1ff;
   line-height: 50px;
   position: fixed;
   z-index: 1000;
@@ -146,7 +146,7 @@ div.subpagelogo {
 
 header {
   background-color: grey;
-  background-image: url("../images/bg1700x800.png");
+  background-image: url("../images/sample-1700by800.png");
   background-size: cover;
   display: block;
   position: relative;
@@ -160,7 +160,7 @@ header {
     font-size: 7em;
     padding-top: 250px;
     padding-bottom: 150px;
-    color: #0F0F0F;
+    color: #FFFFFF;
     z-index: 100;
     line-height: 1em; }
   header img.teacontainer {
@@ -191,7 +191,7 @@ div.download:hover {
 
 div.learnMore {
   width: 150px;
-  color: #0F0F0F;
+  color: #FFFFFF;
   text-align: center;
   position: absolute;
   bottom: 20px;
@@ -346,8 +346,8 @@ section.faq {
 section.contact {
   margin: auto;
   padding: 100px;
-  color: #0F0F0F;
-  background-color: #FFFFFF; }
+  color: #FFFFFF;
+  background-color: #000000; }
 
 button.btn-primary {
   padding: 5px 15px;
