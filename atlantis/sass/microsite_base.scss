@@ -15,6 +15,10 @@ $Text-Color: #F0F0F0;
 $Main-Color-One: #7F7F7F;
 $Main-Color-Two: #85c9b4;
 
+
+// Images
+
+$BannerImage: '../images/logo-1700by800.png';
 // Optional add local Font Faces, and create Font Stacks
 /*
 @font-face {
@@ -32,6 +36,7 @@ html, body {
 $title: 'Oswald', sans-serif;
 $headings: 'Oswald', sans-serif;
 $mainFont: 'Droid Sans', sans-serif;
+
 /*****************************************************************
  Global Styles
 *****************************************************************/
@@ -133,7 +138,7 @@ div.nerdlab-banner {
  Header Styles
 *****************************************************************/
 div.subpagelogo {
-  background-color: #0998C6;
+  background-color: $Background-Color;
   padding: 10px;
   text-decoration: none;
   position: fixed;
@@ -150,7 +155,7 @@ div.subpagelogo {
 
 header {
   background-color: grey;
-  background-image: url('../images/sample-1700by800.png');
+  background-image: url($BannerImage);
   background-size: cover;
   display: block;
   position: relative;

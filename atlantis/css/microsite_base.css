@@ -142,7 +142,7 @@ div.nerdlab-banner {
  Header Styles
 *****************************************************************/
 div.subpagelogo {
-  background-color: #0998C6;
+  background-color: #172C40;
   padding: 10px;
   text-decoration: none;
   position: fixed;
@@ -156,7 +156,7 @@ div.subpagelogo {
 
 header {
   background-color: grey;
-  background-image: url("../images/sample-1700by800.png");
+  background-image: url("../images/logo-1700by800.png");
   background-size: cover;
   display: block;
   position: relative;
