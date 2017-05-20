@@ -9,17 +9,19 @@
 *****************************************************************/
 
 // Color Palette
-$Highlight-Color: #5eb1ff;
-$Background-Color: #000000;
-$Text-Color: #FFFFFF;
+$Highlight-Color: #AAD6FF;
+$Background-Color: #172C40;
+$Text-Color: #F0F0F0;
 $Main-Color-One: #7F7F7F;
 $Main-Color-Two: #85c9b4;
 
 // Optional add local Font Faces, and create Font Stacks
+/*
 @font-face {
    font-family: BebasNeue;
    src: url(../fonts/BebasNeue.woff);
 }
+*/
 
 html, body {
   height: 100%;
@@ -27,10 +29,9 @@ html, body {
   font-family: Roboto, sans-serif;
 }
 
-$title: BebasNeue, Sans-serif;
-$headings: BebasNeue, Sans-serif;
-$mainFont: Roboto, Sans-Serif;
-
+$title: 'Oswald', sans-serif;
+$headings: 'Oswald', sans-serif;
+$mainFont: 'Droid Sans', sans-serif;
 /*****************************************************************
  Global Styles
 *****************************************************************/
@@ -47,6 +48,15 @@ body {
   font-weight: 600;
   font-size: 32px;
   margin-bottom: 20px;
+}
+
+p.light-background {
+  color: $Background-Color;
+}
+
+.description {
+  font-size: 27px;
+  line-height: 1.2em;
 }
 
 span.highlight {
