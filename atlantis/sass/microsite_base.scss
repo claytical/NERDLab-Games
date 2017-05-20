@@ -88,9 +88,10 @@ section {
   position: static;
   clear: both;
   height: auto;
-  width: 80%;
   margin: auto;
-  margin-top: 65px;
+  padding-top: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 //Link Styles
@@ -301,7 +302,7 @@ footer .circle {
 	border-radius: 70px;
 	width: 140px;
 	height: 140px;
-	background-color: #0998C6;
+	background-color: $Background-Color;
 	line-height: 90px;
 }
 
