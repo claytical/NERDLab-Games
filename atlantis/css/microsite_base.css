@@ -69,7 +69,7 @@ body {
   font-family: "Droid Sans", sans-serif;
   font-weight: 300;
   font-size: 1.1em;
-  background-color: #172C40;
+  background-color: #5eb1ff;
   color: #F0F0F0; }
 
 .subheading {
@@ -78,8 +78,9 @@ body {
   font-size: 32px;
   margin-bottom: 20px; }
 
-p.light-background {
-  color: #172C40; }
+.dark-background {
+  color: #F0F0F0;
+  background-color: #172C40; }
 
 .description {
   font-size: 27px;
@@ -142,7 +143,7 @@ div.nerdlab-banner {
  Header Styles
 *****************************************************************/
 div.subpagelogo {
-  background-color: #172C40;
+  background-color: #5eb1ff;
   padding: 10px;
   text-decoration: none;
   position: fixed;
@@ -170,7 +171,7 @@ header {
     font-size: 7em;
     padding-top: 250px;
     padding-bottom: 150px;
-    color: #F0F0F0;
+    /*    color: $Text-Color;*/
     z-index: 100;
     line-height: 1em; }
   header img.teacontainer {
@@ -201,7 +202,7 @@ div.download:hover {
 
 div.learnMore {
   width: 150px;
-  color: #F0F0F0;
+  /*  color: $Text-Color;*/
   text-align: center;
   position: absolute;
   bottom: 20px;
@@ -255,7 +256,7 @@ section.awardblock img {
 *****************************************************************/
 footer {
   height: 350px;
-  background-color: #0998C6;
+  background-color: #5eb1ff;
   text-align: center;
   font-size: 1.1em; }
 
@@ -356,8 +357,8 @@ section.faq {
 section.contact {
   margin: auto;
   padding: 100px;
-  color: #F0F0F0;
-  background-color: #172C40; }
+  /*  color: $Text-Color;*/
+  background-color: #5eb1ff; }
 
 button.btn-primary {
   padding: 5px 15px;

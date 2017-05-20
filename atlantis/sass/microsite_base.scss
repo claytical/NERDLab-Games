@@ -10,10 +10,12 @@
 
 // Color Palette
 $Highlight-Color: #AAD6FF;
-$Background-Color: #172C40;
-$Text-Color: #F0F0F0;
-$Main-Color-One: #7F7F7F;
-$Main-Color-Two: #85c9b4;
+$Background-Color: #5eb1ff;
+$Dark-Background-Color: #172C40;
+$Dark-Text-Color: #172C40;
+$Light-Text-Color: #F0F0F0;
+$Link-Color: #7F7F7F;
+$Visited-Link-Color: #85c9b4;
 
 
 // Images
@@ -45,7 +47,7 @@ body {
   font-weight: 300;
   font-size: 1.1em;
   background-color: $Background-Color;
-  color: $Text-Color;
+  color: $Light-Text-Color;
 }
 
 .subheading {
@@ -55,9 +57,12 @@ body {
   margin-bottom: 20px;
 }
 
-p.light-background {
-  color: $Background-Color;
+.dark-background {
+  color: $Light-Text-Color;
+  background-color: $Dark-Background-Color;
 }
+
+
 
 .description {
   font-size: 27px;
@@ -95,12 +100,12 @@ a {
 }
 
 a:hover {
-  color: $Main-Color-One;
+  color: $Link-Color;
   text-decoration: underline;
 }
 
 a:visited {
-  color: $Main-Color-Two;
+  color: $Visited-Link-Color;
   text-decoration: none;
 }
 
@@ -170,7 +175,7 @@ header {
     font-size: 7em;
     padding-top: 250px;
     padding-bottom: 150px;
-    color: $Text-Color;
+/*    color: $Text-Color;*/
     z-index: 100;
     line-height: 1em;
   }
@@ -216,7 +221,7 @@ div.download:hover {
 //Learn More Indicator
 div.learnMore {
   width: 150px;
-  color: $Text-Color;
+/*  color: $Text-Color;*/
   text-align: center;
   position: absolute;
   bottom: 20px;
@@ -282,7 +287,7 @@ section.awardblock img {
 *****************************************************************/
 footer {
 	height: 350px;
-	background-color: #0998C6;
+	background-color: $Background-Color;
 	text-align: center;
 	font-size: 1.1em;
 }
@@ -404,7 +409,7 @@ section.faq {
 section.contact {
   margin: auto;
   padding: 100px;
-  color: $Text-Color;
+/*  color: $Text-Color;*/
   background-color: $Background-Color;
 }
 
