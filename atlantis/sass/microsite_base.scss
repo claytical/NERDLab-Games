@@ -2,6 +2,7 @@
    Base styles
    Created by Laura Kurtzberg */
 
+@import 'reset';
 
 /*****************************************************************
  Variables
@@ -201,6 +202,8 @@ div.download {
     padding: 20px;
     border-style: solid;
     box-shadow: 5px 5px 5px #111;
+    border-radius: 10px;
+
 }
 div.download a {
     color: $Dark-Text-Color;
@@ -209,8 +212,7 @@ div.download a {
     display: block;
 }
 div.download:hover {
-  border-radius: 10px;
-  background-color: rgba(200,200,200, 0.8);
+  background-color: rgba(255,255,255, 0.7);
 }
 
 //Learn More Indicator

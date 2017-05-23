@@ -51,12 +51,6 @@ table {
 /*****************************************************************
  Variables
 *****************************************************************/
-/*
-@font-face {
-   font-family: BebasNeue;
-   src: url(../fonts/BebasNeue.woff);
-}
-*/
 html, body {
   height: 100%;
   overflow-x: hidden;
@@ -183,23 +177,24 @@ header {
 
 div#download-container {
   position: absolute;
-  top: 80px;
-  right: 80px;
-  width: 200px;
-  height: 200px;
-  z-index: 100; }
+  float: right; }
 
 div.download {
-  width: 198px;
-  height: 59px;
-  padding: 1px;
-  margin-top: 20px;
-  border-radius: 10px;
-  background-color: rgba(200, 200, 200, 0.5); }
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  border-style: solid;
+  box-shadow: 5px 5px 5px #111;
+  border-radius: 10px; }
+
+div.download a {
+  color: #172C40;
+  font-family: Oswald;
+  margin: 15px;
+  display: block; }
 
 div.download:hover {
-  border-radius: 10px;
-  background-color: rgba(200, 200, 200, 0.8); }
+  background-color: rgba(255, 255, 255, 0.7); }
 
 div.learnMore {
   width: 150px;
