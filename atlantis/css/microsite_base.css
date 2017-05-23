@@ -168,8 +168,10 @@ div.download {
 }
 
 div.download a {
-  color: darkslategrey;
+  color: #172C40;
   font-family: Oswald;
+  margin: 15px;
+  display: block;
 }
 
 div.download:hover {

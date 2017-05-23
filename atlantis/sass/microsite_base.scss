@@ -2,7 +2,6 @@
    Base styles
    Created by Laura Kurtzberg */
 
-@import 'reset';
 
 /*****************************************************************
  Variables
@@ -204,8 +203,10 @@ div.download {
     box-shadow: 5px 5px 5px #111;
 }
 div.download a {
-    color: darkslategrey;
+    color: $Dark-Text-Color;
     font-family: Oswald;
+    margin: 15px;
+    display: block;
 }
 div.download:hover {
   border-radius: 10px;
