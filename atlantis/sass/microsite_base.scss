@@ -22,12 +22,7 @@ $Visited-Link-Color: #85c9b4;
 
 $BannerImage: '../images/logo-1700by800.png';
 // Optional add local Font Faces, and create Font Stacks
-/*
-@font-face {
-   font-family: BebasNeue;
-   src: url(../fonts/BebasNeue.woff);
-}
-*/
+
 
 html, body {
   height: 100%;
@@ -197,23 +192,21 @@ header {
 //Download Button
 
 div#download-container {
-  position: absolute;
-  top: 80px;
-  right: 80px;
-  width: 200px;
-  height: 200px;
-  z-index: 100;
+    position: absolute;
+    float: right;
 }
 
 div.download {
-  width: 198px;
-  height: 59px;
-  padding: 1px;
-  margin-top: 20px;
-  border-radius: 10px;
-  background-color: rgba(200,200,200,0.5);
+    background-color: rgba(255,255,255, .8);
+    text-align: center;
+    padding: 20px;
+    border-style: solid;
+    box-shadow: 5px 5px 5px #111;
 }
-
+div.download a {
+    color: darkslategrey;
+    font-family: Oswald;
+}
 div.download:hover {
   border-radius: 10px;
   background-color: rgba(200,200,200, 0.8);
