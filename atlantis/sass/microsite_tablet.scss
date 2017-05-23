@@ -25,26 +25,12 @@
   //Download Button
 
   div#download-container {
-    position: absolute;
-    top: 80px;
-    right: 80px;
-    width: 200px;
-    height: 200px;
-    z-index: 100;
   }
 
   div.download {
-    width: 198px;
-    height: 59px;
-    padding: 1px;
-    margin-top: 20px;
-    border-radius: 10px;
-    background-color: rgba(200,200,200,0.5);
   }
 
   div.download:hover {
-    border-radius: 10px;
-    background-color: rgba(200,200,200, 0.8);
   }
 
   section.awards {
