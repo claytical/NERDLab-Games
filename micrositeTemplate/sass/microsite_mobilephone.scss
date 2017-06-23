@@ -5,18 +5,25 @@
 @media (max-width: 680px) {
   header {
     height: auto;
-    padding-bottom: 100px;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
 
-    h1 {
-      padding-top: 60px;
-      margin-left: 40px;
+    h1.title {
+      font-size: 6em;
+      text-align: center;
+      margin-left: 0;
+      padding-left: 0;
+      padding-top: 250px;
+      padding-bottom: 100px;
     }
 
     p.description {
-      max-width: 50%;
-      font-size: 0.8em;
+      max-width: 100%;
+      font-size: 1.2em;
       line-height: 1.2em;
-      margin-left: 45px;
+      padding: 40px;
+      text-align: center;
     }
 
     p.description:nth-child(3) {
@@ -30,18 +37,31 @@
   }
 
   //Download Button
+
+  div#download-container {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    width: 200px;
+    height: 200px;
+    z-index: 100;
+  }
+
   div.download {
-    margin-left: 45px;
-    margin-top: 30px;
-
-    img.googleplay {
-      width: 150px;
-    }
+    width: 198px;
+    height: 59px;
+    padding: 1px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgba(200,200,200,0.5);
   }
 
-  h1.title {
-    font-size: 4em;
+  div.download:hover {
+    border-radius: 10px;
+    background-color: rgba(200,200,200, 0.8);
   }
+
+
   div.learnMore {
     display: none;
     visibility: hidden;
@@ -65,7 +85,7 @@
     }
 
     p {
-      font-size: 0.8em;
+      font-size: 1em;
       line-height: 1.2em;
       padding-top: 15px;
       margin-left: 0px;
@@ -91,16 +111,26 @@
 
 @media (max-width: 480px) {
   header {
-    h1 {
-      padding-top: 60px;
+    height: auto;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+
+    h1.title {
+      max-width: 98%;
+      margin: auto;
+      font-size: 6em;
+      text-align: center;
+      padding-top: 250px;
+      padding-bottom: 100px;
     }
 
     p.description {
-      max-width: 90%;
-      font-size: 0.8em;
+      max-width: 100%;
+      font-size: 1.2em;
       line-height: 1.2em;
-      margin-left: 45px;
-      margin-right: 40px;
+      padding: 40px;
+      text-align: center;
     }
 
     p.description:nth-child(3) {
