@@ -35,15 +35,20 @@ body {
     font-size: 2em;
 }
 
-img.badge {
+img.ggj {
 	display: block;
-	float: left;
 	width: 20%;
+	margin: 0 auto;
 }
 
 .description br {
 	padding-bottom: 3px;
 }
+
+.U_logo {
+
+	margin-bottom: 25px;
+} 
 
 /*.handcops {
 	height: 320px;

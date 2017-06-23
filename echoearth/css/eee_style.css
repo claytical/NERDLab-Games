@@ -1,0 +1,62 @@
+
+img.ggj {
+	display: block;
+	width: 20%;
+	margin: 0 auto;
+}
+
+.logo_spacing {
+	margin-bottom: 25px;
+} 
+
+section.abouteee {
+	width: 80%;
+}
+
+.description {
+	width: 70%;
+	margin-right: 10%;
+	float: left;
+}
+
+.sideLogos {
+	display: block;
+	float: left;
+	width: 20%;
+}
+
+section.abouteee p {
+	width: 100%;
+}
+
+footer p.footertext {
+	line-height: 1.25 !important;
+}
+
+ .gallery div {
+  	width: 20%;
+ }
+
+
+
+
+ @media only screen and (max-device-width: 480px) {     /* Mobile Device */
+
+
+ 	.abouteee {
+ 		width: 100%;
+ 	}
+
+	.sideLogos {
+		width: 100%;
+		display: block;
+		clear: both;
+	}
+
+	 .gallery div {
+	  	width: 100%;
+	 }
+
+
+
+}
