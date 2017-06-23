@@ -35,7 +35,17 @@ body {
     font-size: 2em;
 }
 
-.handcops {
+img.badge {
+	display: block;
+	float: left;
+	width: 20%;
+}
+
+.description br {
+	padding-bottom: 3px;
+}
+
+/*.handcops {
 	height: 320px;
 	width: 27%;
 	background-image: url("../images/handcops.svg");
@@ -57,6 +67,27 @@ body {
 	overflow: auto;
 
 }
+
+div#uparrow {
+    background: #ccc none repeat scroll 0 0;
+    border: 3px solid #666;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    width: 200px;
+    height: 100px;
+    overflow: auto;
+  }
+  */
+
+article.description {
+  	width: 60%;
+  	float: left;
+  }
+
+ footer p.footertext {
+  	line-height: 1.25 !important;
+  }
 
 .circle {
 	height: 80px;
@@ -414,7 +445,7 @@ a:hover {
 	width: 100%;
 }
 
-.meaningfulGame {
+/*.meaningfulGame {
 	height: 150px;
 	width: 100%;
 	background-image: url("../images/Badge.png");
@@ -424,7 +455,7 @@ a:hover {
 	top: 2%;
 	left: 31%;
 }
-
+*/
 .awardsText {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1em;
