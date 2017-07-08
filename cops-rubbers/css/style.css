@@ -36,6 +36,24 @@ p {
 	margin-left: 20%;
 }
 
+
+.hidden {
+	display: none;
+}
+
+
+.orderButton {
+	width: 350px;
+}
+
+h1 {
+	text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+
 .logo {
 	position: absolute;
 	height: 250px;
@@ -110,6 +128,18 @@ p {
 	margin-top: 200px;
 }
 
+#meaningfulPlay {
+	width: 33%;
+	margin: 50px auto 0;
+
+}
+
+#meaningfulPlay img {
+	width: 100%;
+	margin-top: 20px;
+	max-width: 350px;
+}
+
 .button {
 /*	height: 120px;*/
 	height: 90px;
@@ -118,7 +148,7 @@ p {
 	border-radius: 10px;
 /*	background: #0C0C0C;*/
 /*	background-color: rgba(237,100,24,.25);*/
-	background-color: rgba(255,255,255,.25);
+	background-color: rgba(255,255,255,.5);
 	text-align: center;
 	top: 50%;
 	right: -20px;
@@ -220,7 +250,7 @@ p {
 }
 
 .awards {
-	height: 100vh;
+	height: 90vh;
 	width: 100%;
 }
 
@@ -231,13 +261,14 @@ p {
 
 .meaningfulGame {
 	height: 250px;
-	width: 100%;
+/*	width: 100%;*/
 	background-image: url("../img/Badge.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background position: center;
-	margin-top: 100px;
+/*	margin-top: 100px;*/
 	padding: 0;
+	margin: 0 auto;
 }
 
 .awardsText {
@@ -325,13 +356,27 @@ a:hover {
 	margin-bottom: 55px;
 }
 
-#standardOrder {
+#standardOrder, #standardLanguages {
 	display: block;
 }
 
-#mobileOrder, #mobileLanguageOrder, #gameLanguages {
+#mobileOrder, #mobileLanguages {
 	display: none;
 }
+
+/*
+.resource-links {
+	border-top: 1px black solid;
+    padding-top: 20px;
+}
+*/
+
+.subnote {
+	margin-top: 30px;
+	font-size: 0.75em;
+}
+
+
 
 /***********************************************/
 
@@ -407,7 +452,7 @@ a:hover {
 
 	.resources {
 		width: 100%;
-		height: 100vh;
+		height: 175vh;
 	}
 
 	.contact {
@@ -426,24 +471,94 @@ a:hover {
 		border-bottom: 1px #FFF solid;
 		margin-bottom: 30px;
 	}
-
 }
 
+
+
+
+/***********************************************************************/
+
+@media only screen and (max-width: 991px) and (min-width: 768px) { 
+
+
+	header .titleText {
+		width: 50%;
+	}
+
+	.condoms {
+		position: fixed;
+		top: 10px;
+		right: 10px;
+	}
+
+}
 
 
 /***********************************************************************/
 
 @media only screen and (max-width: 768px) {     /*Mobile Device*/
 
+	.titleText {
+		font-size: 1.75em;
+		margin: 1% 10%;
+		width: 80%;
+	}
 
 	.button {
 		padding-top: 10px;
 	}
 
 
+	.condoms {
+		position: fixed;
+		top: 10px;
+		right: 10px;
+	}
 
+	.textDescription { 
+		font-size: 1.5em;
+	}
+
+	#standardOrder, #mobileLanguages {
+		display: none;
+	}
+
+
+	#mobileOrder, #mobileLanguages {
+	display: block;
+	clear: both;
+	font-size: 2em;
+	text-align: center;
+	/*	margin-top: 60px;*/
+	}
+
+	#mobileOrder .mobileButton, #mobileLanguages .mobileButton {
+		background-color: white;
+		margin: 20px auto;
+
+		width: 96%; 
+		border-radius: 10px;
+	
+		background-color: rgba(255,255,255,.25);
+		text-align: center;
+
+		box-shadow: 10px 10px 15px #000000;
+	
+		font-size: 0.7em; 
+		line-height: 1;
+		/*padding-top: 25px;*/
+		padding: 2%;
+		vertical-align: middle; 
+		text-transform: uppercase;
+	}
+
+	#player {
+		clear: both;
+		width: 100%;
+	}
 
 }
+
 
 
 
@@ -462,14 +577,32 @@ a:hover {
 	    margin-top: 8%; 
 	}
 
+
+
 	.titleText {
 		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 1em;
+		font-size: 1.45em;
 		color: white;
-		text-align: center;
-		padding: 13px;
+/*		text-align: center;*/
+		padding: 25px;
 		top: 50px;
 	}
+
+	.titleText span.gameName {
+		font-weight: bold;
+		font-style: italic;
+
+	}
+
+/*	.textDescription {
+		font-size: 1.25em;
+	}*/
+
+
+	.learnMore {
+		display: none;
+	}
+
 
 	.textCenter {
 	    color: white;
@@ -585,7 +718,7 @@ a:hover {
 		font-family: 'Open Sans Condensed', sans-serif;
 		font-size: 1.25em; /* 1em; */
 		color: white;
-		text-align: center;
+/*		text-align: center;*/
 		top: 50%;
 		transform: translate(0px, 100px);
 		transition: transform 1000ms ease-out;
@@ -598,19 +731,20 @@ a:hover {
 	}
 
 	.textDescriptionBackground {
-		height: 90vh;
+		height: 130vh;
 		width: 100%;
 	}
 
 	.meaningfulGame {
 		height: 150px;
-		width: 100%;
+/*		width: 100%;*/
 		background-image: url("../img/Badge.png");
 		background-repeat: no-repeat;
 		background-size: contain;
 		background position: center;
-		top: 2%;
+/*		top: 2%;
 		left: 31%;
+*/
 	}
 
 	.awardsText {
@@ -666,11 +800,11 @@ a:hover {
 	}
 
 
-	#standardOrder {
+	#standardOrder.learnMore, #standardOrder {
 		display: none;
 	}
 
-	#mobileOrder, #gameLanguages {
+	#mobileOrder, #mobileLanguages {
 		display: block;
 		clear: both;
 		font-size: 2em;
@@ -678,7 +812,7 @@ a:hover {
 	/*	margin-top: 60px;*/
 	}
 
-	#mobileOrder .mobileButton, #gameLanguages .mobileButton {
+	#mobileOrder .mobileButton, #mobileLanguages .mobileButton {
 		background-color: white;
 		margin: 20px auto;
 
@@ -693,15 +827,24 @@ a:hover {
 		font-size: 0.7em; 
 		line-height: 1;
 		/*padding-top: 25px;*/
-		padding: 2%;
+		/*padding: 2%;*/
 		vertical-align: middle; 
 		text-transform: uppercase;
 	}
 
-	.titleText {
-		font-size: 1.75em;
-		line-height: 1.35;
+#mobileOrder .mobileButton {
+	padding: 10% 18%% 8%;
+}
+
+#mobileLanguages .mobileButton {
+	padding: 2%;
+}
+
+
+	#player {
+		height: 50vh;
 	}
+
 
 
 
@@ -739,18 +882,4 @@ body {
 }*/
 
 
-.hidden {
-	display: none;
-}
-
-
-.orderButton {
-	width: 350px;
-}
-
-h1 {
-	text-align: center;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
 
