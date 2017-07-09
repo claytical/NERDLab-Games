@@ -180,25 +180,28 @@ h1 {
 /*	height: 120px;*/
 	height: 90px;
 /*	width: 250px;*/
-	width: 25%; /*320px;*/
+	width: 40%; /*320px;*/
 	border-radius: 10px;
 /*	background: #0C0C0C;*/
 /*	background-color: rgba(237,100,24,.25);*/
 	background-color: rgba(255,255,255,.5);
 	text-align: center;
-	top: 50%;
-	right: -20px;
+/*	top: 50%;*/
+/*	right: -20px;*/
 	box-shadow: 10px 10px 15px #000000;
 /*	position: absolute;*/
-	right: -5px;
-	font-size: 2.25em; /*2.8em;*/
+/*	right: -5px;*/
+	font-size: 1.25em; /*2.8em;*/
 	line-height: 1;
 	padding-top: 25px;
 	text-transform: uppercase;
-
-
+	box-sizing: border-box;
 	float: left;
-	margin: 0 20px;
+	margin: 2% 5% 0;
+}
+
+.button3 span.orange {
+	font-weight: bold;
 }
 
 
@@ -217,19 +220,20 @@ h1 {
 
 }
 
-.button3, .button4 {
+/*.button3, .button4 {
 	width: 250px;
-}
+}*/
 
 #standardLanguages {
-	width: 80%;
+/*	width: 80%;*/
 	margin: 0 auto;
+	font-size: 1em;
 }
 
 
 .buttonRegular {
-	height: 90px;
-	width: 2250px;
+/*	height: 90px;
+	width: 2250px;*/
 	border-radius: 10px;
 /*	background: #0C0C0C;*/
 	background-color: rgba(255,255,255,.25);	
@@ -436,11 +440,11 @@ a:hover {
 }
 
 #standardOrder .button {
-	font-weight: bold;
+	font-weight: 500;
 }
 
 #standardOrder span.orange {
-	font-weight: 500;
+	font-weight: bold;
 }
 
 .resources {
@@ -568,6 +572,11 @@ a:hover {
 
 @media only screen and (max-width: 768px) {     /*Mobile Device*/
 
+
+	.logo {
+		height: 200px;
+	}
+
 	.titleText {
 		font-size: 1.75em;
 		margin: 1% 10%;
@@ -578,6 +587,9 @@ a:hover {
 		padding-top: 10px;
 	}
 
+	.handcops {
+		height: 200px;
+	}
 
 	.condoms {
 		position: fixed;
@@ -596,16 +608,17 @@ a:hover {
 
 
 	#mobileOrder, #mobileLanguages {
-	display: block;
-	clear: both;
-	font-size: 2em;
-	text-align: center;
-	/*	margin-top: 60px;*/
+		display: block;
+		clear: both;
+		font-size: 2em;
+		text-align: center;
+		/*	margin-top: 60px;*/
+		padding-top: 20px;
 	}
 
 	#mobileOrder .mobileButton, #mobileLanguages .mobileButton {
 		background-color: white;
-		margin: 20px auto;
+		margin: 30px auto 0;
 
 		width: 96%; 
 		border-radius: 10px;
@@ -802,7 +815,7 @@ a:hover {
 	}
 
 	.textDescriptionBackground {
-		height: 130vh;
+		height: 125vh;
 		width: 100%;
 /*		font-size: 1.15em;*/
 	}
