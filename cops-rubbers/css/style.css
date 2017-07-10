@@ -454,7 +454,7 @@ a:hover {
 
 /***********************************************/
 
-@media only screen and (max-width: 1500px) {     /* Laptop size */
+@media all and (max-width: 1500px) {     /* Laptop size */
 
 	body {
 		overflow-x: hidden;	
@@ -538,7 +538,7 @@ a:hover {
 
 /***********************************************************************/
 
-@media only screen and (max-width: 991px) { 
+@media all and (max-width: 991px) { 
 
 	.source {
 		padding-bottom: 20px;
@@ -552,7 +552,7 @@ a:hover {
 
 /***********************************************************************/
 
-@media only screen and (max-width: 991px) and (min-width: 768px) { 
+@media all and (max-width: 991px) and (min-width: 768px) { 
 
 
 	header .titleText {
@@ -570,7 +570,7 @@ a:hover {
 
 /***********************************************************************/
 
-@media only screen and (max-width: 768px) {     /*Mobile Device*/
+@media all and (max-width: 768px) {     /*Mobile Device*/
 
 
 	.logo {
@@ -648,7 +648,7 @@ a:hover {
 
 /***********************************************************************/
 
-@media only screen and (max-width: 480px) {     /*Mobile Device*/
+@media all and (max-width: 480px) {     /*Mobile Device*/
 
 	.logo {
 		position: absolute;
@@ -815,7 +815,7 @@ a:hover {
 	}
 
 	.textDescriptionBackground {
-		height: 125vh;
+		height: 200vh;
 		width: 100%;
 /*		font-size: 1.15em;*/
 	}
