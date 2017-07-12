@@ -34,7 +34,7 @@ p {
 	text-align: left;
 	padding: 13px;
 	margin-left: 20%;
-	margin-top: 350px;
+/*	margin-top: 350px;*/
 }
 
 
@@ -56,7 +56,7 @@ h1 {
 
 
 .logo {
-	position: absolute;
+/*	position: absolute;*/
 	height: 250px;
 	width: 100%;
 	background-image: url("../img/C&R_logo_large.png");
@@ -652,7 +652,7 @@ a:hover {
 @media all and (max-width: 480px) {     /*Mobile Device*/
 
 	.logo {
-		position: absolute;
+	/*	position: absolute;*/
 		height: 120px;
 		width: 100%;
 		background-image: url("../img/C&R_logo_large.png");
@@ -670,7 +670,8 @@ a:hover {
 		color: white;
 /*		text-align: center;*/
 		padding: 25px;
-		top: 50px;
+/*		top: 50px;*/
+
 	}
 
 	.titleText span.gameName {
@@ -835,7 +836,7 @@ a:hover {
 
 	.awardsText {
 		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 1em;
+		font-size: 1.25em;
 		text-align: center;
 		margin-top: 10%;
 		padding: 13px;
@@ -941,7 +942,7 @@ a:hover {
 	}
 
 	.resources li {
-		font-size: 1.15em;
+		font-size: 1em;
 	}
 
 
