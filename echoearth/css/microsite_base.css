@@ -301,6 +301,7 @@ section.secondimage {
     width: 100%;
     min-height: 680px;
     padding-left: 60px;
+    background-position: center center;
 
 }
 header h1.title {
