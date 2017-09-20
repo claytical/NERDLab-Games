@@ -95,7 +95,6 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    line-height: normal;
 }
 
 
@@ -168,9 +167,9 @@ body {
 }
 
 .subheading {
-    font-family: 'Oswald', Sans-Serif;
+    font-family: 'Open Sans', Sans-Serif;
     font-weight: 600;
-    font-size: 1.75em;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -203,7 +202,7 @@ section {
     margin-top: 50px;
 }
 
-/*a {
+a {
     color: #0000B0;
     text-decoration: none;
 }
@@ -216,19 +215,7 @@ a:hover {
 a:visited {
     color: #000000;
     text-decoration: none;
-}*/
-
-a, a:link, a:visited, a:hover, a:active {
-    color: rgb(0,176,185)/*#ED6418*/;
-    text-decoration: none;
 }
-
-
-a.button , a:link.button, a:visited.button , a:hover.button , a:active.button {
-    color: #FFF;
-    text-decoration: none;
-}
-
 
 .clear {
     clear: both;
@@ -263,7 +250,7 @@ div.nerdlab-banner p {
 *****************************************************************/
 
 div.subpagelogo {
-    background-color: rgba(0,176,185, 0.85);
+    /*    background-color: #05bfc4;*/
     padding: 10px;
     text-decoration: none;
     position: fixed;
@@ -280,28 +267,17 @@ div.subpagelogo img.logo {
 
 header {
     background-color: grey;
-    background-image: url("../images/eee_terrain.jpg");
+    background-image: url("../images/eee_bglanding.jpg");
     background-size: cover;
     display: block;
     position: relative;
     clear: both;
     width: 100%;
-    min-height: 680px;
+    min-height: 610px;
     /*    height: 90vh;*/
     padding-left: 60px;
 }
 
-section.secondimage {
-    background-color: grey;
-    background-image: url("../images/EEE_frostScience_02.jpg");
-    background-size: cover;
-    display: block;
-    position: relative;
-    clear: both;
-    width: 100%;
-    min-height: 680px;
-    padding-left: 60px;
-}
 header h1.title {
     font-family: 'Open Sans', Sans-serif;
     font-size: 3em;
@@ -408,11 +384,13 @@ iframe#demovimeo {
  About EEE / Section Styles
 *****************************************************************/
 
-section.about {
+section.abouteee {
     color: #000000;
+    overflow: auto;
     padding: 20px;
     padding-bottom: 0px;
     padding-bottom: 0px;
+    min-height: 550px;
 }
 
 section.abouteee div.centered {
@@ -448,7 +426,7 @@ section.abouteee p:nth-child(2) {
 
 footer {
     height: 350px;
-    background-color: darkgreen/*#191970*/; /*#f05A28;*/
+    background-color: #009245;
     text-align: center;
     font-size: 1.1em;
 }
@@ -464,7 +442,7 @@ footer .circle {
     border-radius: 70px;
     width: 140px;
     height: 140px;
-    background-color: darkgreen/*#191970*/; /*#f05A28;*/
+    background-color: #009245;
     line-height: 90px;
 }
 
@@ -495,7 +473,7 @@ footer ul.socialmedia li a {
 
 footer p.footertext {
     width: 90%;
-    max-width: 900px;
+    max-width: 500px;
     margin: auto;
     color: white;
     font-weight: bold;
@@ -633,25 +611,12 @@ section.contact {
     background-color: #FFFFFF;
 }
 
-.button {
+button.btn-primary {
     padding: 5px 15px;
-    background: #0998C6;
+    background: #ccc;
     border: 0 none;
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 2em;
-    float: right;
-    margin: 30px;
-}
-
-a.button, #bottom a {
-/*    color: #ffffff;*/
-}
-
-.button:hover {
-    text-decoration: none;
-    background-color: rgb(0,176,185)/*#5998C6*/;
-    color: #f9b65d;
+    order-radius: 5px;
 }
 
 div.form-group {

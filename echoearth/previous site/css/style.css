@@ -1,5 +1,5 @@
 body {
-	background-color: #fff/*161616*/;
+	background-color: #161616;
 	overflow-x: hidden;
 }
 
@@ -43,14 +43,6 @@ img.ggj {
 
 .description br {
 	padding-bottom: 3px;
-}
-
-.photo-desc {
-	font-weight: bold;
-    padding-top: 35px;
-    color: black;
-    font-size: 1.5em;
-	font-family: 'Oswald', sans-serif;
 }
 
 .U_logo {
@@ -106,14 +98,12 @@ article.description {
 	height: 80px;
 	width: 80px;
 	border-radius: 50%;
-	background-color: darkgreen/*#191970*/;
+	background-color: #0C0C0C;
 	position: absolute;
-/*	left: 5%;*/
+	left: 5%;
 	top: 60%;
-/*	box-shadow: 10px 10px 15px #000000;*/
+	box-shadow: 10px 10px 15px #000000;
 }
-
-p { margin-bottom: 10px; }
 
 .facebook {
 	background-image: url("../images/facebook.svg");
@@ -139,16 +129,15 @@ p { margin-bottom: 10px; }
 }
 
 .button {
-/*	height: 90px;*/
+	height: 90px;
 	width: 250px;
 	border-radius: 10px;
-	background: #888;
-/*	position: absolute;*/
+	background: #0C0C0C;
+	position: absolute;
 	text-align: center;
 	top: 50%;
 	right: -1%;
-/*	box-shadow: 10px 10px 15px #000000;*/
-	font-family: 'Oswald', sans-serif;;
+	box-shadow: 10px 10px 15px #000000;
 }
 
 .button2 {
@@ -294,7 +283,7 @@ a {
 }
 
 a:hover {
-	color: #f9b65d/*#5D5D5D*/;
+	color: #5D5D5D;
 	text-decoration: none;
 	cursor: pointer;
 }
