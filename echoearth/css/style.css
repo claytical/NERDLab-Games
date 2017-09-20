@@ -378,9 +378,9 @@ a:hover {
 	border-radius: 50%;
 	background-color: #0C0C0C;
 	position: absolute;
-	left: 5%;
+/*	left: 5%;*/
 	top: 60%;
-	box-shadow: 10px 10px 15px #000000;
+/*	box-shadow: 10px 10px 15px #000000;*/
 }
 
 .facebook {
@@ -407,13 +407,13 @@ a:hover {
 }
 
 .button {
-	height: 40px;
+/*	height: 40px;
 	width: 200px;
 	border-radius: 10px;
 	background: #0C0C0C;
 	position: absolute;
 	top: 60%;
-	box-shadow: 10px 10px 15px #000000;
+	box-shadow: 10px 10px 15px #000000;*/
 }
 
 .button2 {

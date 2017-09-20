@@ -27,6 +27,20 @@
     width: 100%;
     padding: 20px; }
 
+
+  .subheading {
+    font-size: 1.5em;
+  }
+
+  section.secondimage{ 
+/*    min-height: 725px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;*/
+ }
+
+
   div#download-container {
     position: absolute;
     top: 80px;
