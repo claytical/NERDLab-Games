@@ -167,11 +167,42 @@ body {
     color: #0F0F0F;
 }
 
+h1.section-title {
+    font-family: 'Oswald', Sans-Serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1.75em;
+    text-align: center;
+/*
+    border-top: 2px #888 solid;
+    padding-top: 20px;*/
+}
+
+article.event {
+    border-top: 2px #888 solid;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
 .subheading {
     font-family: 'Oswald', Sans-Serif;
     font-weight: 600;
-    font-size: 1.75em;
     margin-bottom: 10px;
+    font-size: 1.75em;
+}
+
+.event h1.subheading {
+    font-size: 1.25em;
+}
+
+.event h2.subheading {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+#team {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .blue-background {
@@ -724,4 +755,14 @@ input {
         width: 100%;
         margin: auto;
     }
+
+
+
+    /****************
+    Other
+    *****************/
+
+    .photo-desc {
+    color: #000;    
+}
 }

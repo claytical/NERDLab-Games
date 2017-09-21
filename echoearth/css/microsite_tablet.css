@@ -85,6 +85,17 @@
 
   div.contact {
     width: 100%;
-    padding: 80px; } }
+    padding: 80px; } 
+
+  .photo-desc {
+    color: rgb(0,176,185);  
+  }
+  
+  ul#team {
+    padding-left: 25px;
+  }
+
+
+  }
 
 /*# sourceMappingURL=microsite_tablet.css.map */

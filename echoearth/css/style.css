@@ -14,7 +14,6 @@ body {
 	color: #ED6418;
 }
 
-
 .titleBox {
 	position: relative;
 	height: 100vh;
@@ -35,6 +34,17 @@ body {
     font-size: 2em;
 }
 
+.supporting-img {
+	display: block;
+    max-width: 350px;
+    margin: 20px auto;
+}
+
+
+ul#team {
+	list-style-type: circle;
+}
+
 img.ggj {
 	display: block;
 	width: 20%;
@@ -45,18 +55,21 @@ img.ggj {
 	padding-bottom: 3px;
 }
 
-.photo-desc {
+section.secondimage h1 {
 	font-weight: bold;
     padding-top: 35px;
-    color: black;
     font-size: 1.5em;
 	font-family: 'Oswald', sans-serif;
 }
 
-.U_logo {
 
+.U_logo {
 	margin-bottom: 25px;
 } 
+
+strong {
+	font-weight: 900;
+}
 
 /*.handcops {
 	height: 320px;
