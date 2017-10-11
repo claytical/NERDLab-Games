@@ -15,7 +15,11 @@
   <link rel="stylesheet" href="css/microsite_base.css">
   <link rel="stylesheet" href="css/microsite_tablet.css">
   <link rel="stylesheet" href="css/microsite_mobilephone.css">
+  <link rel="stylesheet" href="sss/sss.css">
   <script src="https://use.fontawesome.com/ce0a8a07a0.js"></script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,44 +31,48 @@
         <a href="index.html"><img class="logo" src="images/nerdlab-cube.png" alt="nerdlab logo"/></a>
   </div>
   <header>
-      <div id="download-container">
-        <div class="download"><a href="#" target="_blank" rel="noopener noreferrer"><img class="googleplay" src="images/googleplay.png" alt="available on google play"/></a></div>
-        <div class="download"><a href="#" target="_blank" rel="noopener noreferrer"><img class="googleplay" src="images/appstore.png" alt="available on appstore"/></a></div>
-      </div>
-
+      <h1 class="title">Nuestras Calles</h1>
       <div class="learnMore">
         <img id="downarrow" src="images/arrow.png" alt="more content below" />
       </div>
       <br class="clear" />
   </header>
 
+  <!-- no video right now
   <div class="staticblock">
   <section id="demovideo">
     <span class="video-height"></span>
     <iframe id="demovimeo" src="https://player.vimeo.com/video/210962496" width="640" height="356" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </section>
   </div>
+  -->
 
-  <section class="faq">
-    <h2 class="subheading">FAQ</h2>
-    <ul class="questions">
-      <li>
-        <p class="question">Question</p>
-        <p>Answer</p>
-      </li>
-      <li>
-        <p class="question">Question</p>
-        <p>Answer</p>
-      </li>
-      <li>
-        <p class="question">Question</p>
-        <p>Answer</p>
-      </li>
-    </ul>
-  </section>
+  <div id="scrollhere" class="description">
+    <p>Por Estas Calles is a multi-phase, interdisciplinary research project with the aim to minimize the violation of the rights of children and adolescents in Colombia through the development, implementation, and evaluation of strategic campaigns.</p>
+
+    <p>One component of the project is a role-playing tabletop game called Por Nuestras Calles (PNC; Through Our Streets), a social impact game that focuses on the commercial sexual exploitation of children (CSEC). Through transporting individuals to the role of Colombia child, PNC exposes individuals to the risk scenarios, barriers for change, and opportunities for social and political advocacy through increased reporting. Via the presentation of multiple manifestations of CSEC, the game allows individuals to work through critical decisions (e.g., to report, not to report), all while providing a safe space for dialogue and community building. Within these simulated safe spaces, players are able to discuss and identify solutions for the prevention and reporting of CSEC.</p>
+
+    <p>Funded by the Miami Consortium for Latin American and Caribbean Studies (now the Miami Institute for the Americas), this project brings together a multidisciplinary team comprised of: University of Miami professors Lien Tran (assistant professor in the Department of Cinema and Interactive Media) and Jessica Wendorf (assistant professor in the Department of Public Health Sciences) and Maria Elena Villar (associate professor at Florida International University’s School of Communication, Architecture, and the Arts) in partnership with the Colombian National Police and assistance from the Colombian Ministry of Tourism, Industry, and Commerce. Together, our team developed an experientially-based intervention that targets the increase of empathic response while mitigating the stigmatization of victims, the tolerance of CSEC by community members, and the othering of vulnerable individuals.</p>
+
+    <p>Research was completed by specialists in the area of community-based participatory research and game design and by organizational and community members that possessed local expertise and a willingness to engage in the project. The research process began in September 2013 following a conversation in which Colombian police members identified the need for an interactive, educational tool on the topic of CSEC. From that date to November 2014, extensive research was conducted on previous studies and possible behavioral and attitudinal outcomes. From November 2014 to May 2015 there were four trips to Colombia, each covering the major cities in Colombia (e.g., Bogota, Medellin, Barranquilla), for the purposes of involving affected populations, gathering data on the needs of and for the community members, and narrowing target population for initial intervention. Each trip served to refine the needs of the target population, the goals and objectives of the target population, and the design consideration for interactive components of the intervention.</p>
+  </div>
 
 
-  <div class="fullscreen background parallax" style="background-image:url('./images/building_bg_a.png'); clear:both;" data-img-width="2069" data-img-height="1167" data-diff="100">
+<section>
+  <div class="slider">
+    <img src="images/CoronelDRAWING.png" />
+    <img src="images/DrawingPNC.png" />
+    <img src="images/police-playtest2.jpg" />
+    <div>
+      <img src="images/Police_playtest.jpg" />
+      <span class="caption">This one has a caption</span>
+    </div>
+  </div>
+</section>
+
+
+
+  <div class="fullscreen background parallax" style="background-image:url('./images/board.jpg'); clear:both;" data-img-width="2069" data-img-height="1167" data-diff="100">
   </div>
 
   <footer>
@@ -77,8 +85,21 @@
     <p class="footertext">NERDLab is a student-faculty cooperative driven by research, development, and an enthusiasm for social impact.</p>
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="sss/sss.js"></script>
   <script type="text/javascript" src="javaScript/script.js"></script>
   <script src="javaScript/parallax.js"></script>
+  <script>
+    jQuery(function($) {
+    $('.slider').sss();
+
+    $('.section').click(function(e) {
+    	e.preventDefault();
+
+    	var loc = $(this).attr('href').substring(1);
+    	var lock = $('#' + loc).offset().top;
+    	$('body,html').animate({scrollTop:lock});
+    });
+    });
+  </script>
 </body>
 </html>

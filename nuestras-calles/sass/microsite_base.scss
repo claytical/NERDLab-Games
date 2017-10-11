@@ -140,7 +140,7 @@ div.subpagelogo {
 
 header {
   background-color: grey;
-  background-image: url('../images/sample-1700by800.png');
+  background-image: url('../images/por-nuestras-calles-no-title.png');
   background-size: cover;
   display: block;
   position: relative;
@@ -155,7 +155,7 @@ header {
     font-size: 7em;
     padding-top: 250px;
     padding-bottom: 150px;
-    color: $Text-Color;
+    color: white;
     z-index: 100;
     line-height: 1em;
   }
@@ -165,12 +165,6 @@ header {
     //background-color: grey;
   }
 
-  img.teacontainer {
-    max-width: 40%;
-    position: absolute;
-    right: 150px;
-    bottom: 10%;
-  }
 }
 
 //Download Button
@@ -206,6 +200,7 @@ div.learnMore {
   position: absolute;
   bottom: 20px;
   left: calc(50% - 100px);
+  cursor: pointer;
 
   p {
     padding: 10px;
@@ -214,6 +209,30 @@ div.learnMore {
   img#downarrow {
     max-width: 80px;
   }
+}
+
+/*****************************************************************
+  Description Section Styles
+*****************************************************************/
+
+div.description {
+  width: 80%;
+	height: auto;
+  margin: auto;
+  margin-top: 0px;
+  padding-top: 80px;
+  color: black;
+  font-size: 1.2em;
+  font-weight: normal;
+  line-height: 1.5em;
+  text-align: left;
+	position:  static;
+	display: block;
+	clear: both;
+
+  p {
+  margin-bottom: 40px;
+}
 }
 
 /*****************************************************************
@@ -283,6 +302,7 @@ footer .circle {
 	height: 140px;
 	background-color: #0998C6;
 	line-height: 90px;
+  cursor: pointer;
 }
 
 /* Arrow inside the Circle tab above the footer */
