@@ -51,9 +51,12 @@ table {
 /*****************************************************************
  Variables
 *****************************************************************/
+/*
 @font-face {
-  font-family: BebasNeue;
-  src: url(../fonts/BebasNeue.woff); }
+   font-family: BebasNeue;
+   src: url(../fonts/BebasNeue.woff);
+}
+*/
 html, body {
   height: 100%;
   overflow-x: hidden;
@@ -146,7 +149,7 @@ div.subpagelogo {
 
 header {
   background-color: grey;
-  background-image: url("../images/por-nuestras-calles-no-title.png");
+  background-image: url("../images/por-nuestras-calles-no-title-dark.png");
   background-size: cover;
   display: block;
   position: relative;
@@ -156,13 +159,15 @@ header {
   height: 90vh;
   padding-left: 60px; }
   header h1.title {
-    font-family: BebasNeue, Sans-serif;
-    font-size: 7em;
+    font-family: Paytone One, Sans-serif;
+    font-size: 6em;
     padding-top: 250px;
     padding-bottom: 150px;
-    color: white;
     z-index: 100;
-    line-height: 1em; }
+    line-height: 1em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
 
 div#download-container {
   position: absolute;
@@ -206,6 +211,7 @@ div.description {
   margin: auto;
   margin-top: 0px;
   padding-top: 80px;
+  padding-bottom: 60px;
   color: black;
   font-size: 1.2em;
   font-weight: normal;

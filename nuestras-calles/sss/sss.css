@@ -49,3 +49,7 @@
 .sssprev:hover, .sssnext:hover {
 	cursor: pointer;
 }
+
+.slider {
+	padding-bottom: 40px;
+}
