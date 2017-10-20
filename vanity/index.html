@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+
+  <title>Vanity</title>
+  <meta name="description" content="Por Nuestras Calles">
+  <meta name="author" content="Lien Tran">
+
+  <!-- Add Google Fonts Here -->
+
+  <link href="https://fonts.googleapis.com/css?family=Contrail+One|Roboto" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/microsite_base.css">
+  <link rel="stylesheet" href="css/microsite_tablet.css">
+  <link rel="stylesheet" href="css/microsite_mobilephone.css">
+  <link rel="stylesheet" href="sss/sss.css">
+  <script src="https://use.fontawesome.com/ce0a8a07a0.js"></script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="subpagelogo">
+        <a href="index.html"><img class="logo" src="images/nerdlab-cube.png" alt="nerdlab logo"/></a>
+  </div>
+  <header>
+      <h1 class="title">Vanity</h1>
+      <div class="learnMore">
+        <img id="downarrow" src="images/arrow.png" alt="more content below" />
+      </div>
+      <br class="clear" />
+  </header>
+
+  <!-- no video right now
+  <div class="staticblock">
+  <section id="demovideo">
+    <span class="video-height"></span>
+    <iframe id="demovimeo" src="https://player.vimeo.com/video/210962496" width="640" height="356" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </section>
+  </div>
+  -->
+
+  <div id="scrollhere" class="description">
+    <p><span class="opener">Vanity</span>
+    is a tabletop game designed to promote tanning bed avoidance and to prevent melanoma in adolescents and young adults.  The game centers on a  “Fitness, Tan, Style” theme inspired by the TV show Jersey Shore that popularized indoor tanning among youth.</p>
+
+      <div class="slider">
+        <img src="images/Vanity2_aerial.jpg" />
+        <img src="images/vanity2_01.jpg" />
+        <img src="images/police-playtest2.jpg" />
+        <img src="images/Vanity2_cards.jpg" />
+        <img src="images/Vanity2_group.jpg" />
+        <img src="images/Vanity2_set.jpg" />
+        <img src="images/Vanity_gameSet_optimized.jpg" />
+        <img src="images/Vanity-Game-Shots-compilation_optimized.jpg" />
+      </div>
+
+    <p>Players are aspiring actors ready for fame and fortune as TV and movie stars. Refine your style, improve your fitness and maximize your all-important sun tan to land the best roles in Tinseltown. But of course too much time in the Californian sun could pose a risk to your health and jeopardize your quest for screen success.</p>
+
+    <p>The first version of Vanity was created by Sophia Colantonio, Clay Ewing, and Lien Tran in Summer 2012 and funded by the Division of Dermatology at the Ottawa Hospital and the University of Ottawa. An updated version of Vanity was created in November 2013 with support from Canadian Dermatology Association (CDA). The CDA will pilot Vanity as school health education resource in 2014. Special thanks to Dr. Jennifer Beecker for her medical expertise and for making this collaboration possible.</p>
+  </div>
+
+  <div class="fullscreen background parallax" style="background-image:url('./images/building_bg_a.png'); clear:both;" data-img-width="2069" data-img-height="1167" data-diff="100">
+  </div>
+
+  <footer>
+    <div id="uparrow" class="circle"><img class="arrow" src="images/arrow.png" alt="click to return to top"/></div>
+    <ul class="socialmedia">
+      <li class="vimeo"><a href="#" title="email us"><i class="fa fa-vimeo fa-lg" aria-hidden="true"></a></i></li>
+      <li class="twitter"><a href="#" title="email us"><i class="fa fa-twitter fa-lg" aria-hidden="true"></a></i></li>
+      <li class="email"><a href="#" title="email us"><i class="fa fa-at fa-lg" aria-hidden="true"></a></i></li>
+    </ul>
+    <p class="footertext">NERDLab is a student-faculty cooperative driven by research, development, and an enthusiasm for social impact.</p>
+  </footer>
+
+  <script src="sss/sss.js"></script>
+  <script type="text/javascript" src="javaScript/script.js"></script>
+  <script src="javaScript/parallax.js"></script>
+  <script>
+    jQuery(function($) {
+    $('.slider').sss();
+
+    $('.section').click(function(e) {
+    	e.preventDefault();
+
+    	var loc = $(this).attr('href').substring(1);
+    	var lock = $('#' + loc).offset().top;
+    	$('body,html').animate({scrollTop:lock});
+    });
+    });
+  </script>
+</body>
+</html>
