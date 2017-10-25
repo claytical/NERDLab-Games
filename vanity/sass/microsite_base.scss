@@ -3,6 +3,7 @@
    Created by Laura Kurtzberg */
 
 @import 'reset';
+@import 'mixins';
 
 /*****************************************************************
  Variables
@@ -152,21 +153,10 @@ header {
   height: 90vh;
   padding-left: 60px;
 
-  h1.title {
-    font-family: $title;
-    font-size: 6em;
-    padding-top: 250px;
-    padding-bottom: 150px;
-    z-index: 100;
-    line-height: 1em;
-    text-align: center;
-    color: #1e1e1e;
-    text-shadow: 0px -2px 0px #333, 0px 2px 3px #666
-  }
-
-  //set a background color for just the section behind the title
-  div.titlediv {
-    //background-color: grey;
+  div#title {
+    width: 500px;
+    margin: auto;
+    padding-top: 150px;
   }
 
 }
@@ -182,18 +172,40 @@ div#download-container {
   z-index: 100;
 }
 
-div.download {
+.download {
+  @include background(#2CA0CA, #3EB8E5);
   width: 198px;
-  height: 59px;
+  height: auto;
+  min-height: 59px;
   padding: 1px;
   margin-top: 20px;
   border-radius: 10px;
-  background-color: rgba(200,200,200,0.5);
+	background-color: #2CA0CA;
+	padding: 10px;
+	position: relative;
+	font-size: 12px;
+	text-decoration: none;
+	color: #fff;
+	box-shadow: inset 0px 1px 0px #7fd2f1, 0px 6px 0px #156785;
+	border-radius: 5px;
+
+  p {
+    line-height: 59px;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
 }
 
-div.download:hover {
-  border-radius: 10px;
-  background-color: rgba(200,200,200, 0.8);
+.download:active {
+	@include background(#2CA0CA, #3EB8E5);
+  top:7px;
+	box-shadow: inset 0px 1px 0px #7fd2f1, inset 0px -1px 0px #156785;
+	color: #156785;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+	//background-color: #2CA0CA;
 }
 
 //Learn More Indicator

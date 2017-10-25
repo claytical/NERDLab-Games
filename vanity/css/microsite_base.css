@@ -158,16 +158,10 @@ header {
   min-height: 600px;
   height: 90vh;
   padding-left: 60px; }
-  header h1.title {
-    font-family: Contrail One, Sans-serif;
-    font-size: 6em;
-    padding-top: 250px;
-    padding-bottom: 150px;
-    z-index: 100;
-    line-height: 1em;
-    text-align: center;
-    color: #1e1e1e;
-    text-shadow: 0px -2px 0px #333, 0px 2px 3px #666; }
+  header div#title {
+    width: 500px;
+    margin: auto;
+    padding-top: 150px; }
 
 div#download-container {
   position: absolute;
@@ -177,17 +171,50 @@ div#download-container {
   height: 200px;
   z-index: 100; }
 
-div.download {
+.download {
+  background: #2CA0CA;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(bottom, #2CA0CA 0%, #3EB8E5 100%);
+  /* For Safari 5.1 to 6.0 */
+  background: -moz-linear-gradient(bottom, #2CA0CA 0%, #3EB8E5 100%);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(bottom, #2CA0CA 0%, #3EB8E5 100%);
+  /* Standard syntax */
   width: 198px;
-  height: 59px;
+  height: auto;
+  min-height: 59px;
   padding: 1px;
   margin-top: 20px;
   border-radius: 10px;
-  background-color: rgba(200, 200, 200, 0.5); }
+  background-color: #2CA0CA;
+  padding: 10px;
+  position: relative;
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: inset 0px 1px 0px #7fd2f1, 0px 6px 0px #156785;
+  border-radius: 5px; }
+  .download p {
+    line-height: 59px;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold; }
 
-div.download:hover {
-  border-radius: 10px;
-  background-color: rgba(200, 200, 200, 0.8); }
+.download:active {
+  background: #2CA0CA;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(bottom, #2CA0CA 0%, #3EB8E5 100%);
+  /* For Safari 5.1 to 6.0 */
+  background: -moz-linear-gradient(bottom, #2CA0CA 0%, #3EB8E5 100%);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(bottom, #2CA0CA 0%, #3EB8E5 100%);
+  /* Standard syntax */
+  top: 7px;
+  box-shadow: inset 0px 1px 0px #7fd2f1, inset 0px -1px 0px #156785;
+  color: #156785;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3); }
 
 div.learnMore {
   width: 150px;
