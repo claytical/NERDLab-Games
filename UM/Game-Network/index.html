@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Games at UM</title>
+  <meta name="description" content="Game Network at University of Miami">
+  <meta name="author" content="Laura Kurtzberg for Nerdlab">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+     <!-- link p5.js and its addons like p5.dom.js or p5.sound.js
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.min.js" type="text/javascript"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/addons/p5.dom.min.js" type="text/javascript"></script>
+
+     link p5.play.js
+     <script src="js/p5.play.js" type="text/javascript"></script>-->
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|VT323" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/basestyle.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
+</head>
+
+<body>
+  <header>
+  <h1>Game Network</h1>
+  <h2 class="subtitle">University of Miami</h2>
+
+  <!--<div id="sketch-holder"></div>-->
+
+  </header>
+
+  <section id="gameUniverse">
+    <div class="background-colors"></div>
+
+    <div id="selection-section">
+        <div class="instructions"><p>Use the left and right arrow keys to move</p></div>
+        <nav>
+          <p class="pick">Which are you interested in?</p>
+          <ul>
+            <li class="special-button" id="play-button"><p>Playing<br> Games</p></li>
+            <li class="special-button" id="design-button"><p>Designing Games</p></li>
+          </ul>
+        </nav>
+    </div>
+
+    <div id="window-1" class="info-window"></div>
+    <div id="window-2" class="info-window"></div>
+    <div id="window-3" class="info-window"></div>
+    <div id="window-4" class="info-window"></div>
+
+    <div class="sprite right"></div>
+    <div id="shadowOverlay"></div>
+    <div id="fadeOverlay"></div>
+
+    <div class="floor"></div>
+  </section>
+
+
+  <div id="content">
+
+  <section id="events">
+    <h2>Events</h2>
+
+    <div class="invisible game-path-element speech" id="game-path-1"><p>"Check out International Games Week, a games and gaming celebration!"</p></div>
+    <p>November</p>
+    <h3 class="event" id="international"><a href="http://umgamesweek.weebly.com/">International Games Week >></a></h3>
+
+    <div class="invisible game-path-element speech" id="design-path-1"><p>"Make a game in 48 hours!"</p></div>
+    <p>January</p>
+    <h3 class="event" id="gamejam"><a href="https://globalgamejam.org/">Global Game Jam >></a></h3>
+
+    <div class="invisible game-path-element speech" id="game-path-2"><p>"Filmgate is a great opportunity not only for films, but for virtual reality and interactive gaming experiences!"</p></div>
+    <p>February</p>
+    <h3 class="event" id="filmgate"><a href="http://www.filmgate.miami/">Filmgate Interactive >></a></h3>
+  </section>
+
+  <section id="organizations">
+      <h2>Organizations</h2>
+      <div class="invisible game-path-element speech" id="game-path-3"><p>"Check out the video games club and have fun!"</p></div>
+      <h3>Video Games Club</h3>
+      <p>The purpose of Video Games Club is to gather people who are interested in video and tabletop games. Members will gather in order to socialize and discuss their interests with others who share their interest in video and tabletop games. They can also practice and compete with one another through the club. We want to spread the knowledge and skills of video and tabletop games to new and veteran players alike. We shall strive to represent the University of Miami while making efforts to impact and expand the South Florida gaming community.</p>
+      <p class="fb-link"><a href="https://www.facebook.com/groups/umvgc">facebook.com/groups/umvgc</a></p>
+      <p class="contact">Contact: <a href="mailto:n.delahaye@umiami.edu">Nikhil Delahaye</a></p>
+
+      <div class="invisible game-path-element speech" id="design-path-2"><p>"Join the IGDA and make some great connections."</p></div>
+      <h3>International Game Developers Association<br> UM Academic Chapter</h3>
+      <p>The International Game Developers Association (IGDA) exists as a global network of collaborative projects and communities comprised of individuals from all fields of game development – from programmers and producers to writers, artists, QA and localization. They bring together developers at key industry conferences, in over 90 Chapters and in Special Interest Groups (SIGs). IGDA University of Miami Academic Chapter connects game developers, promotes professional development, and advocates on issues that affect the developer community.</p>
+      <p class="fb-link"><a href="https://www.facebook.com/igdaum/">facebook.com/igdaum</a></p>
+      <p class="contact">Contact: <a href="mailto:ljk57@miami.edu">Laura Kurtzberg</a></p>
+  </section>
+
+  <section id="resources">
+      <h2>Resources</h2>
+      <div>
+        <div class="invisible game-path-element speech" id="game-path-4"><p>"The library has tons of games to play!"</p></div>
+
+        <h3 class="library-link"><a href="http://sp.library.miami.edu/subjects/im#tab-1">Library Games Overview >></a></h3>
+        <p>Information about the Digital Media Lab's video game and video game console collection can be found here: <br \><a href="http://library.miami.edu/medialab/games/">Richter Digital Media Lab Games Collection</a></p>
+        <p class="contacts">Library Contacts:</p>
+        <p>DML Manager - <a href="mailto:vrodrigu@miami.edu">Vanessa Rodriguez</a> <br \> Games Curator - Bobby Green</p>
+      </div>
+  </section>
+
+  <section id="academics">
+      <h2>Academics</h2>
+
+      <div class="invisible game-path-element speech" id="design-path-3"><p>"Hone your skills and prepare yourself for a professional game design career."</p></div>
+      <div id="academic-boxes">
+
+        <div class="college">
+          <p class="college-name">College of Arts and Sciences</p>
+            <div class="department">
+              <p class="department-name">Department of Computer Science</p>
+              <div class="program">
+                <p class="program-name"><a href="http://www.as.miami.edu/media/college-of-arts-and-sciences/computer-science/images/programs/GraphicsGames.gif">Graphics and Games Track >></a></p>
+              </div>
+            </div>
+        </div>
+
+        <div class="college">
+          <p class="college-name">School of Communication</p>
+            <div class="department">
+              <p class="department-name">Cinema &amp; Interactive Media</p>
+
+              <div class="program">
+                <p class="program-name"><a href="http://bulletin.miami.edu/undergraduate-academic-programs/communication/cinema-interactive-media/game-design-minor/">Minor in Game Design >></a></p>
+              </div>
+
+              <div class="program">
+                <p class="program-name"><a href="http://interactive.miami.edu">MFA in Interactive Media >></a></p>
+              </div>
+            </div>
+        </div>
+        <br class="clear" />
+        <p class="program-contact">For more info about games at the School of Communication, contact: <a href="mailto:c.ewing@miami.edu">Clay Ewing</a></p>
+
+      </div>
+
+      <div id="classes">
+        <h3>Classes</h3>
+        <div class="class-block">
+        <div class="class-category"><h4>Design</h4></div>
+          <div class="class">CIM310 - Intro to Game Design</div>
+          <div class="class-description">Explore game design through non-digital games.</div>
+
+        <div class="class-category"><h4>Level Design</h4></div>
+          <div class="class">CIM471 - Social Impact Games</div>
+          <div class="class-description">Explore the use of games as a communication tool for social good and create game-based interventions.</div>
+
+        <div class="class-category"><h4>Critical Studies</h4></div>
+          <div class="class">CIM394 - Game Studies</div>
+          <div class="class-description">A study of games, the act of playing them, and the players and cultures surrounding them.</div>
+        </div> <!-- end class block 1-->
+
+        <div class="class-block">
+        <div class="class-category"><h4>Programming</h4></div>
+          <div class="class">CSC329 - Intro to Game Programming</div>
+          <div class="class-description">Learn fundamental programming issues in game design and develop a functional game.</div>
+
+        <div class="class-category"><h4>Art</h4></div>
+          <div class="class">CIM394 - 2D Character Design</div>
+          <div class="class-description">Create your own 2D characters from concept to usable assets for games and animation</div>
+
+          <div class="class">CIM550 - 3D Character Design</div>
+          <div class="class-description">Theory and practice of 3D character design, modeling, texturing, rigging and animation.</div>
+
+        <div class="class-category"><h4>Team Based Projects</h4></div>
+          <div class="class">CIM594/721 - Game Development Studio</div>
+          <div class="class-description">Work in teams to create your own game.</div>
+        </div> <!-- end class block 2-->
+
+        </div>
+    </section>
+
+  </div> <!-- end div content -->
+    <footer></footer>
+
+
+
+<!--<script src="js/sketch.js"></script>-->
+<script src="js/page-effects.js"></script>
+</body>
+</html>
