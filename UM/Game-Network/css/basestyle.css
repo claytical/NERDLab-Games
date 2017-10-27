@@ -1,0 +1,483 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Mixins */
+/* This mixin didn't work
+@mixin animation($name, $time, $steps, $duration) {
+    -webkit-animation: $name $time $steps $duration;
+    -moz-animation-delay: $name $time $steps $duration;
+    -ms-animation-delay: $name $time $steps $duration;
+    animation: $name $time $steps $duration;
+}*/
+body {
+  background-color: #fafafa; }
+
+p.pick {
+  font-weight: bold; }
+
+body a {
+  text-decoration: none;
+  color: #009abe; }
+
+body p {
+  line-height: 1.3em; }
+
+#content {
+  background-color: white;
+  width: calc(100% - 120px);
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 0px;
+  padding: 60px; }
+
+div#sketch-holder {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -1; }
+
+h1, h2, h3, h4 {
+  font-family: "VT323", monospace;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 7em;
+  color: #e95539; }
+
+h2 {
+  font-size: 4em;
+  margin-bottom: 20px; }
+
+h2.subtitle {
+  font-size: 3em;
+  text-transform: uppercase;
+  color: #333333; }
+
+h3.librarylink {
+  font-size: 3em; }
+
+h3 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #007bb8; }
+
+header {
+  height: 200px;
+  text-align: center;
+  padding: 15px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  background-color: #c8c8c8; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; }
+
+section {
+  padding: 30px;
+  margin-bottom: 20px; }
+
+/************ buttons bobbing animation ****************************************/
+@keyframes bobbing {
+  0% {
+    transform: rotate(0) translateY(0); }
+  100% {
+    transform: rotate(0.1deg) translateY(5px); } }
+.special-button {
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 10px;
+  width: 130px;
+  height: 130px;
+  margin: 10px;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+  background: -o-linear-gradient(bottom, #f9c70a 0%, #e95539 100%);
+  background: -moz-linear-gradient(bottom, #f9c70a 0%, #e95539 100%);
+  background: -webkit-linear-gradient(bottom, #f9c70a 0%, #e95539 100%);
+  background: linear-gradient(bottom, #f9c70a 0%, #e95539 100%);
+  background-color: #00b5b4;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: inset 0px 1px 0px #f9c70a, 0px 6px 0px #e95539;
+  border-radius: 90px;
+  transform-origin: right center;
+  animation: bobbing 1s infinite ease-in-out forwards alternate; }
+  .special-button p {
+    margin-top: 45px; }
+
+#selection-section {
+  margin: auto;
+  padding-bottom: 20px;
+  text-align: center;
+  position: relative; }
+  #selection-section p {
+    margin-bottom: 20px; }
+  #selection-section .special-button#play-button {
+    float: left;
+    position: relative; }
+  #selection-section .special-button#design-button {
+    float: right;
+    position: relative; }
+
+div.border-wrapper {
+  width: 100%;
+  border-bottom: dashed #c8c8c8 4px;
+  margin-bottom: 0px; }
+
+section#events h3 {
+  font-size: 4em;
+  border-radius: 10px;
+  display: block;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  color: white;
+  line-height: 0.8em;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  section#events h3 a {
+    color: white; }
+
+section#events p {
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 3px;
+  font-size: 1.2em; }
+
+h3#international {
+  background-color: #007bb8; }
+
+h3#gamejam {
+  background-color: #009abe; }
+
+h3#filmgate {
+  background-color: #00b5b4; }
+
+section#academics {
+  margin: auto;
+  clear: both; }
+
+div#academic-boxes {
+  margin-bottom: 50px; }
+
+div.class {
+  margin-top: 30px; }
+
+div.class-description {
+  margin-top: 6px; }
+
+div.college {
+  background-color: rgba(0, 154, 190, 0.5);
+  padding: 12px;
+  height: auto;
+  min-height: 230px;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+  div.college p {
+    padding: 10px;
+    font-family: "VT323", monospace; }
+  div.college p.college-name {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    padding-top: 0px; }
+  div.college p.department-name {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding-top: 4px; }
+  div.college p.program-name a {
+    font-family: "Roboto", sans-serif;
+    color: black; }
+
+div.department {
+  background-color: rgba(0, 154, 190, 0.5);
+  padding: 12px;
+  height: auto;
+  min-height: 150px;
+  width: calc(100% - 24px);
+  max-width: 350px;
+  margin: auto;
+  text-align: center; }
+
+div.program {
+  background-color: #b0e1aa;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+  width: calc(100% - 15px);
+  max-width: 270px;
+  font-weight: bold; }
+
+div#design-classes {
+  text-align: left; }
+
+div.class-category {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  color: #e95539; }
+
+div.class-block {
+  width: 100%;
+  max-width: 700px;
+  margin-right: 40px;
+  margin-top: 0px; }
+
+section#organizations {
+  max-width: 800px;
+  margin-right: 50px; }
+  section#organizations h3 {
+    margin-top: 30px;
+    line-height: 0.9em; }
+  section#organizations p.fb-link {
+    margin-top: 15px; }
+  section#organizations p.contact {
+    margin-top: 15px; }
+
+section#resources {
+  max-width: 800px; }
+
+p.contacts {
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px; }
+
+footer {
+  height: 200px;
+  clear: both; }
+
+.clear {
+  clear: both;
+  line-height: 0; }
+
+.invisible {
+  display: none; }
+
+.show {
+  display: block; }
+
+div.character {
+  position: fixed;
+  margin-left: 20px;
+  padding-top: 40px;
+  top: 0; }
+
+span#next-button {
+  background-color: #c8c8c8;
+  border-radius: 40px;
+  padding: 10px;
+  margin-left: 10px;
+  font-family: "VT323", monospace;
+  font-size: 5em;
+  height: 40px;
+  width: 40px;
+  font-weight: bold; }
+
+img {
+  width: 80px; }
+
+.game-path-element {
+  padding-top: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1em; }
+
+.speech {
+  position: relative;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: #fff;
+  border: 8px solid #666;
+  border-radius: 30px;
+  box-shadow: 2px 2px 4px #888; }
+
+.speech:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  top: 150px;
+  border: 25px solid;
+  border-color: #666 transparent transparent #666; }
+
+.speech:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 38px;
+  top: 100px;
+  border: 15px solid;
+  border-color: #fff transparent transparent #fff; }
+
+.sprite {
+  width: 102px;
+  height: 148px;
+  margin: auto;
+  margin-top: 72px;
+  z-index: 1000; }
+
+.right {
+  background-image: url("../assets/standing-right.png"); }
+
+.left {
+  background-image: url("../assets/standing-left.png"); }
+
+.walk-right {
+  background-image: url("../assets/walk-right.png");
+  -webkit-animation: walk 0.9s steps(6) infinite;
+  -moz-animation: walk 0.9s steps(6) infinite;
+  -ms-animation: walk 0.9s steps(6) infinite;
+  animation: walk 0.9s steps(6) infinite; }
+
+.walk-left {
+  background-image: url("../assets/walk-left.png");
+  -webkit-animation: walk 0.9s steps(6) infinite;
+  -moz-animation: walk 0.9s steps(6) infinite;
+  -ms-animation: walk 0.9s steps(6) infinite;
+  animation: walk 0.9s steps(6) infinite; }
+
+@-webkit-keyframes walk {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -612px; } }
+@-moz-keyframes walk {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -612px; } }
+@keyframes walk {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -612px; } }
+section#gameUniverse {
+  position: relative;
+  background-color: #c8c8c8;
+  height: 408px;
+  padding: 0;
+  padding-top: 100px;
+  margin: 0;
+  position: relative;
+  z-index: -1000; }
+  section#gameUniverse .floor {
+    background-image: url("../assets/orange.png");
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
+  section#gameUniverse .background-colors {
+    background-image: url("../assets/pixelart.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 408px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+
+div#shadowOverlay {
+  z-index: 1000;
+  width: 100%;
+  height: 508px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: inset 65px 0px 65px -45px rgba(255, 255, 255, 0.85), inset -65px 0px 65px -45px rgba(255, 255, 255, 0.85); }
+
+div#fadeOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  z-index: 1000;
+  display: none; }
+
+/** Game information winodws ***********************************/
+.info-window {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 200px;
+  width: 200px;
+  display: none;
+  z-index: 1000; }
+
+#window-1 {
+  background-color: blue; }
+
+#window-2 {
+  background-color: red; }
+
+#window-3 {
+  background-color: orange; }
+
+#window-4 {
+  background-color: green; }
+
+/*# sourceMappingURL=basestyle.css.map */

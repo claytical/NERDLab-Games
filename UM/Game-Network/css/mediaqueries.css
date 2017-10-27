@@ -1,0 +1,28 @@
+@media only screen and (max-width: 450px) {
+  #selection-section {
+    max-width: calc(100% - 44px); } }
+@media only screen and (max-width: 600px) {
+  h3.event {
+    font-size: 20px; }
+
+  #content {
+    width: 100%;
+    padding: 0px;
+    margin: 0px; }
+
+  header {
+    height: auto; }
+
+  .special-button#play-button {
+    margin-left: 0px; }
+
+  .special-button#design-button {
+    margin-right: 0px; } }
+@media only screen and (min-width: 700px) {
+  .special-button#play-button {
+    margin-left: 15%; }
+
+  .special-button#design-button {
+    margin-right: 15%; } }
+
+/*# sourceMappingURL=mediaqueries.css.map */
