@@ -63,11 +63,13 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 7em;
   color: $bright-orange;
+  line-height: 0.8em;
+  margin-bottom: 15px;
 }
 
 h2 {
   font-size: 4em;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 h2.subtitle {
@@ -87,13 +89,12 @@ h3 {
 }
 
 header {
-  height: 200px;
+  height: 240px;
   text-align: center;
   padding: 15px;
   padding-top: 60px;
   padding-bottom: 40px;
   margin-bottom: 20px;
-  background-color: $light-grey;
 }
 
 body {
@@ -152,6 +153,7 @@ section {
   padding-bottom: 20px;
   text-align: center;
   position: relative;
+  color: white;
 
   p {
     margin-bottom: 20px;
@@ -185,7 +187,7 @@ section#events{
 }
 
 section#events h3 {
-  font-size: 4em;
+  font-size: 3.2em;
   border-radius: 10px;
   display: block;
   padding-left: 15px;
@@ -434,8 +436,9 @@ img {
 .sprite {
 	width: 102px;
   height: 148px;
-  margin: auto;
-  margin-top: 72px;
+  position: absolute;
+  bottom: 70px;
+  left: calc(50% - 60px);
   z-index: 1000;
 }
 
@@ -509,6 +512,23 @@ section#gameUniverse {
     left: 0;
     z-index: -1;
   }
+
+  #back {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    left: 0;
+    z-index: 100;
+    display: none;
+  }
+  #next {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    right: 0;
+    z-index: 100;
+    display: none;
+  }
 }
 
 div#shadowOverlay {
@@ -518,33 +538,162 @@ div#shadowOverlay {
   position: absolute;
   top: 0px;
   left: 0px;
-  box-shadow: inset 65px 0px 65px -45px rgba(255,255,255, 0.85), inset -65px 0px 65px -45px rgba(255,255,255,0.85);
+  box-shadow: inset 50px 0px 65px -45px rgba(255,255,255, 0.85), inset -50px 0px 65px -45px rgba(255,255,255,0.85);
 }
 
-div#fadeOverlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: black;
-  z-index: 1000;
-  display: none;
-}
-
-/** Game information winodws ***********************************/
+/** Game information windows ***********************************/
 
 .info-window {
   position: absolute;
-  top: 50px;
-  left: 50px;
-  height: 200px;
-  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-color: $darker-blue;
+  border-radius: 10px;
+  margin-top: 100px;
+  width: calc(100%-40px);
+  max-width: 600px;
   display: none;
-  z-index: 1000;
+  padding: 20px;
+
+  h3 {
+    border-radius: 10px;
+    display: block;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    color: white;
+    line-height: 0.8em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+  }
 }
 
-#window-1 {background-color: blue;}
-#window-2 {background-color: red;}
-#window-3 {background-color: orange;}
-#window-4 {background-color: green;}
+h3#international2 {
+  border-radius: 10px;
+  display: block;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  color: white;
+  line-height: 0.8em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+p.before-text {
+  font-weight: normal;
+  color: white;
+  font-size: 1.1em;
+  padding-left: 16px;
+}
+
+p.after-text {
+  font-weight: normal;
+  color: white;
+  font-size: 1.1em;
+  padding-left: 16px;
+}
+
+#window-1 {}
+
+.speech-bubble {
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 50px;
+    max-width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    padding-top: 10px;
+    font-family: $title-font;
+    font-size: 1.2em;
+    color: white;
+    line-height: 1.5em;
+}
+
+.css-typing
+{
+    width: 30em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+
+/*****************************************************************
+  Footer Styles
+*****************************************************************/
+footer {
+	height: 350px;
+  width: 100%;
+	background-color: $medium-blue;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+/* Circle tab above the footer */
+footer .circle {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	top: -50px;
+	border-radius: 70px;
+	width: 140px;
+	height: 140px;
+  margin-bottom: -70px;
+	background-color: $medium-blue;
+	line-height: 90px;
+  cursor: pointer;
+}
+
+/* Arrow inside the Circle tab above the footer */
+footer .circle img.arrow {
+	width: 50px;
+	transform: rotateX(180deg);
+}
+
+footer ul.socialmedia {
+	text-align: center;
+  width: 90%;
+	max-width: 500px;
+	margin: auto;
+}
+
+footer ul.socialmedia li {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+footer ul.socialmedia li a {
+	color: white;
+}
+
+footer p.footertext {
+  width: 90%;
+	max-width: 500px;
+	margin: auto;
+	color: white;
+	font-weight: bold;
+}
+
+img.logo {
+  margin: 20px;
+}
+
+/*****************************************************************/

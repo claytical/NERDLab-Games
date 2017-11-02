@@ -9,12 +9,13 @@
 
 .ssslide {
 	width: 100%;
+	max-height: 900px;
 	margin: 0;
 	padding: 0;
 	position: absolute;
 	top: 0;
 	left: 0;
-	display: none;
+	display: block;
 	overflow: hidden;
 }
 

@@ -150,11 +150,13 @@ header {
   width: 100%;
   min-height: 600px;
   height: 90vh;
-  padding-left: 60px;
 
   h1.title {
     font-family: $title;
-    font-size: 6em;
+    font-size: 5.5em;
+    padding: 40px;
+    width: 70%;
+    margin: auto;
     padding-top: 250px;
     padding-bottom: 150px;
     z-index: 100;

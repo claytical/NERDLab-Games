@@ -27,12 +27,57 @@
 
 <body>
   <header>
-  <h1>Game Network</h1>
-  <h2 class="subtitle">University of Miami</h2>
-
-  <!--<div id="sketch-holder"></div>-->
-
+    <h1>Game Network</h1>
+    <h2 class="subtitle">University of Miami</h2>
+    <img src="assets/um.png" alt="the U logo"/>
   </header>
+
+  <a href="https://globalgamejam.org/" target="_blank">
+  <div id="window-1" class="info-window">
+      <p class="before-text">January Event:</p>
+      <h3 id="globalgamejam2">Global Game Jam >></h3>
+  </div>
+  </a>
+
+  <a href="http://www.filmgate.miami/" target="_blank">
+  <div id="window-2" class="info-window">
+      <p class="before-text">February Event:</p>
+      <h3 id="filmgate2">Filmgate Interactive >></h3>
+  </div>
+  </a>
+
+  <div id="window-3" class="info-window">
+      <h3 id="gamesclub2">Video Games Club >></h3>
+      <p class="after-text"><a href="http://facebook.com/groups/umvgc" target="_blank">facebook.com/groups/umvgc</a></p>
+  </div>
+
+  <div id="window-4" class="info-window">
+      <p class="before-text">Department of Computer Science</p>
+      <h3 id="graphicstrack2">Games and Graphics Track >></h3>
+
+      <p class="before-text">Cinema &amp; Interactive Media</p>
+      <h3 id="minor2">Minor in Game Design >></h3>
+      <h3 id="MFA2">MFA in Interactive Media >></h3>
+  </div>
+
+  <a href="http://umgamesweek.weebly.com/" target="_blank">
+  <div id="window-6" class="info-window">
+      <p class="before-text">November Event:</p>
+      <h3 id="international2">International Games Week >></h3>
+  </div>
+  </a>
+
+  <a href="http://www.filmgate.miami/" target="_blank">
+  <div id="window-7" class="info-window">
+      <p class="before-text">February Event:</p>
+      <h3 id="filmgate3">Filmgate Interactive >></h3>
+  </div>
+  </a>
+
+  <div id="window-8" class="info-window">
+      <h3 id="gamesclub2">Library Games Page >></h3>
+      <p class="after-text"><a href="http://library.miami.edu/medialab/games/" target="_blank">Richter Digital Media Lab Games Collection</a></p>
+  </div>
 
   <section id="gameUniverse">
     <div class="background-colors"></div>
@@ -48,16 +93,19 @@
         </nav>
     </div>
 
-    <div id="window-1" class="info-window"></div>
     <div id="window-2" class="info-window"></div>
     <div id="window-3" class="info-window"></div>
     <div id="window-4" class="info-window"></div>
 
     <div class="sprite right"></div>
     <div id="shadowOverlay"></div>
-    <div id="fadeOverlay"></div>
 
     <div class="floor"></div>
+    <div id="back"><img src="assets/arrow-back.png" /></div>
+    <div id="next"><img src="assets/arrow-next.png" /></div>
+    <div class="speech-bubble">
+      <p class="hi" id="message"></p>
+    </div>
   </section>
 
 
@@ -66,41 +114,35 @@
   <section id="events">
     <h2>Events</h2>
 
-    <div class="invisible game-path-element speech" id="game-path-1"><p>"Check out International Games Week, a games and gaming celebration!"</p></div>
     <p>November</p>
-    <h3 class="event" id="international"><a href="http://umgamesweek.weebly.com/">International Games Week >></a></h3>
+    <h3 class="event" id="international"><a href="http://umgamesweek.weebly.com/" target="_blank">International Games Week >></a></h3>
 
-    <div class="invisible game-path-element speech" id="design-path-1"><p>"Make a game in 48 hours!"</p></div>
     <p>January</p>
-    <h3 class="event" id="gamejam"><a href="https://globalgamejam.org/">Global Game Jam >></a></h3>
+    <h3 class="event" id="gamejam"><a href="https://globalgamejam.org/" target="_blank">Global Game Jam >></a></h3>
 
-    <div class="invisible game-path-element speech" id="game-path-2"><p>"Filmgate is a great opportunity not only for films, but for virtual reality and interactive gaming experiences!"</p></div>
     <p>February</p>
-    <h3 class="event" id="filmgate"><a href="http://www.filmgate.miami/">Filmgate Interactive >></a></h3>
+    <h3 class="event" id="filmgate"><a href="http://www.filmgate.miami/" target="_blank">Filmgate Interactive >></a></h3>
   </section>
 
   <section id="organizations">
       <h2>Organizations</h2>
-      <div class="invisible game-path-element speech" id="game-path-3"><p>"Check out the video games club and have fun!"</p></div>
       <h3>Video Games Club</h3>
       <p>The purpose of Video Games Club is to gather people who are interested in video and tabletop games. Members will gather in order to socialize and discuss their interests with others who share their interest in video and tabletop games. They can also practice and compete with one another through the club. We want to spread the knowledge and skills of video and tabletop games to new and veteran players alike. We shall strive to represent the University of Miami while making efforts to impact and expand the South Florida gaming community.</p>
-      <p class="fb-link"><a href="https://www.facebook.com/groups/umvgc">facebook.com/groups/umvgc</a></p>
+      <p class="fb-link"><a href="https://www.facebook.com/groups/umvgc" target="_blank">facebook.com/groups/umvgc</a></p>
       <p class="contact">Contact: <a href="mailto:n.delahaye@umiami.edu">Nikhil Delahaye</a></p>
 
-      <div class="invisible game-path-element speech" id="design-path-2"><p>"Join the IGDA and make some great connections."</p></div>
       <h3>International Game Developers Association<br> UM Academic Chapter</h3>
       <p>The International Game Developers Association (IGDA) exists as a global network of collaborative projects and communities comprised of individuals from all fields of game development – from programmers and producers to writers, artists, QA and localization. They bring together developers at key industry conferences, in over 90 Chapters and in Special Interest Groups (SIGs). IGDA University of Miami Academic Chapter connects game developers, promotes professional development, and advocates on issues that affect the developer community.</p>
-      <p class="fb-link"><a href="https://www.facebook.com/igdaum/">facebook.com/igdaum</a></p>
+      <p class="fb-link"><a href="https://www.facebook.com/igdaum/" target="_blank">facebook.com/igdaum</a></p>
       <p class="contact">Contact: <a href="mailto:ljk57@miami.edu">Laura Kurtzberg</a></p>
   </section>
 
   <section id="resources">
       <h2>Resources</h2>
       <div>
-        <div class="invisible game-path-element speech" id="game-path-4"><p>"The library has tons of games to play!"</p></div>
 
-        <h3 class="library-link"><a href="http://sp.library.miami.edu/subjects/im#tab-1">Library Games Overview >></a></h3>
-        <p>Information about the Digital Media Lab's video game and video game console collection can be found here: <br \><a href="http://library.miami.edu/medialab/games/">Richter Digital Media Lab Games Collection</a></p>
+        <h3 class="library-link"><a href="http://sp.library.miami.edu/subjects/im#tab-1" target="_blank">Library Games Overview >></a></h3>
+        <p>Information about the Digital Media Lab's video game and video game console collection can be found here: <br \><a href="http://library.miami.edu/medialab/games/" target="_blank">Richter Digital Media Lab Games Collection</a></p>
         <p class="contacts">Library Contacts:</p>
         <p>DML Manager - <a href="mailto:vrodrigu@miami.edu">Vanessa Rodriguez</a> <br \> Games Curator - Bobby Green</p>
       </div>
@@ -109,7 +151,6 @@
   <section id="academics">
       <h2>Academics</h2>
 
-      <div class="invisible game-path-element speech" id="design-path-3"><p>"Hone your skills and prepare yourself for a professional game design career."</p></div>
       <div id="academic-boxes">
 
         <div class="college">
@@ -117,7 +158,7 @@
             <div class="department">
               <p class="department-name">Department of Computer Science</p>
               <div class="program">
-                <p class="program-name"><a href="http://www.as.miami.edu/media/college-of-arts-and-sciences/computer-science/images/programs/GraphicsGames.gif">Graphics and Games Track >></a></p>
+                <p class="program-name"><a href="http://www.as.miami.edu/media/college-of-arts-and-sciences/computer-science/images/programs/GraphicsGames.gif" target="_blank">Graphics and Games Track >></a></p>
               </div>
             </div>
         </div>
@@ -128,11 +169,11 @@
               <p class="department-name">Cinema &amp; Interactive Media</p>
 
               <div class="program">
-                <p class="program-name"><a href="http://bulletin.miami.edu/undergraduate-academic-programs/communication/cinema-interactive-media/game-design-minor/">Minor in Game Design >></a></p>
+                <p class="program-name"><a href="http://bulletin.miami.edu/undergraduate-academic-programs/communication/cinema-interactive-media/game-design-minor/" target="_blank">Minor in Game Design >></a></p>
               </div>
 
               <div class="program">
-                <p class="program-name"><a href="http://interactive.miami.edu">MFA in Interactive Media >></a></p>
+                <p class="program-name"><a href="http://interactive.miami.edu" target="_blank">MFA in Interactive Media >></a></p>
               </div>
             </div>
         </div>
@@ -170,16 +211,20 @@
           <div class="class-description">Theory and practice of 3D character design, modeling, texturing, rigging and animation.</div>
 
         <div class="class-category"><h4>Team Based Projects</h4></div>
+      </div> <!-- end class block 2-->
           <div class="class">CIM594/721 - Game Development Studio</div>
           <div class="class-description">Work in teams to create your own game.</div>
-        </div> <!-- end class block 2-->
 
         </div>
     </section>
 
   </div> <!-- end div content -->
-    <footer></footer>
 
+  <footer>
+    <div id="uparrow" class="circle"><img class="arrow" src="assets/arrow.png" alt="click to return to top"/></div>
+    <div><img class="logo" src="assets/nerdlab-logo.png" alt="NERDLab Logo"/></div>
+    <p class="footertext">Website created in collaboration with NERDLab, a student-faculty cooperative driven by research, development, and an enthusiasm for social impact.</p>
+  </footer>
 
 
 <!--<script src="js/sketch.js"></script>-->

@@ -4,18 +4,13 @@
 
 @media (max-width: 680px) {
   header {
-    height: auto;
+    min-height: 400px;
     padding-left: 0;
     margin-left: 0;
     text-align: center;
 
-    h1.title {
-      font-size: 6em;
-      text-align: center;
-      margin-left: 0;
-      padding-left: 0;
-      padding-top: 250px;
-      padding-bottom: 100px;
+    div#title {
+      padding-top: 100px;
     }
 
     p.description {
@@ -40,18 +35,21 @@
 
   div#download-container {
     position: absolute;
-    top: 80px;
-    right: 80px;
+    top: 410px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 200px;
-    height: 200px;
+    height: 60px;
     z-index: 100;
   }
 
   div.download {
     width: 198px;
-    height: 59px;
+    height: 58px;
     padding: 1px;
-    margin-top: 20px;
+    margin: 0px;
     border-radius: 10px;
     background-color: rgba(200,200,200,0.5);
   }
@@ -110,21 +108,6 @@
 }
 
 @media (max-width: 480px) {
-  header {
-    height: auto;
-    padding-left: 0;
-    margin-left: 0;
-    text-align: center;
-
-    h1.title {
-      max-width: 98%;
-      margin: auto;
-      font-size: 6em;
-      text-align: center;
-      padding-top: 250px;
-      padding-bottom: 100px;
-    }
-
     p.description {
       max-width: 100%;
       font-size: 1.2em;
@@ -136,7 +119,7 @@
     p.description:nth-child(3) {
       display: none;
     }
-  }
+  
 
   section {
     width: 100%;

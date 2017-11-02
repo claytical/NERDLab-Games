@@ -154,9 +154,15 @@ header {
   padding-left: 60px;
 
   div#title {
-    width: 500px;
-    margin: auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 600px;
+    left: 0;
+    right: 0;
     padding-top: 150px;
+
   }
 
 }
@@ -175,13 +181,11 @@ div#download-container {
 .download {
   @include background(#2CA0CA, #3EB8E5);
   width: 198px;
-  height: auto;
-  min-height: 59px;
+  height: 59px;
   padding: 1px;
   margin-top: 20px;
   border-radius: 10px;
 	background-color: #2CA0CA;
-	padding: 10px;
 	position: relative;
 	font-size: 12px;
 	text-decoration: none;
@@ -297,6 +301,8 @@ section.awardblock img {
   display: inline-block;
   padding: 20px;
 }
+/*****************************************************************/
+
 
 /*****************************************************************
   Footer Styles
@@ -417,6 +423,7 @@ section.faq {
   }
 
 }
+/*****************************************************************/
 
 
 /*************************************************************
@@ -461,3 +468,4 @@ input {
   margin-bottom: 20px;
   height: 50px;
 }
+/*****************************************************************/

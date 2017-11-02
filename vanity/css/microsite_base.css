@@ -159,8 +159,13 @@ header {
   height: 90vh;
   padding-left: 60px; }
   header div#title {
-    width: 500px;
-    margin: auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 600px;
+    left: 0;
+    right: 0;
     padding-top: 150px; }
 
 div#download-container {
@@ -181,13 +186,11 @@ div#download-container {
   background: linear-gradient(bottom, #2CA0CA 0%, #3EB8E5 100%);
   /* Standard syntax */
   width: 198px;
-  height: auto;
-  min-height: 59px;
+  height: 59px;
   padding: 1px;
   margin-top: 20px;
   border-radius: 10px;
   background-color: #2CA0CA;
-  padding: 10px;
   position: relative;
   font-size: 12px;
   text-decoration: none;
@@ -289,6 +292,7 @@ section.awardblock img {
   display: inline-block;
   padding: 20px; }
 
+/*****************************************************************/
 /*****************************************************************
   Footer Styles
 *****************************************************************/
@@ -390,6 +394,7 @@ section.faq {
     font-weight: bold;
     line-height: 1.5em; }
 
+/*****************************************************************/
 /*************************************************************
  Contact Section
  *************************************************************/
@@ -424,5 +429,7 @@ input {
   margin-top: 20px;
   margin-bottom: 20px;
   height: 50px; }
+
+/*****************************************************************/
 
 /*# sourceMappingURL=microsite_base.css.map */

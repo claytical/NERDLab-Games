@@ -29,10 +29,6 @@
     border-radius: 10px;
     background-color: rgba(200, 200, 200, 0.5); }
 
-  div.download:hover {
-    border-radius: 10px;
-    background-color: rgba(200, 200, 200, 0.8); }
-
   section.awards {
     height: 450px;
     margin-left: 0px;

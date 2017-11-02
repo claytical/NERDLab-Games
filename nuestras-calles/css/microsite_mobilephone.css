@@ -4,15 +4,16 @@
 @media (max-width: 680px) {
   header {
     height: auto;
+    min-height: 120px;
+    max-height: 400px;
     padding-left: 0;
     margin-left: 0;
     text-align: center; }
     header h1.title {
-      font-size: 6em;
+      font-size: 3em;
+      line-height: 1.1em;
       text-align: center;
-      margin-left: 0;
-      padding-left: 0;
-      padding-top: 250px;
+      padding-top: 160px;
       padding-bottom: 100px; }
     header p.description {
       max-width: 100%;
@@ -80,26 +81,15 @@
   footer {
     width: 100%; } }
 @media (max-width: 480px) {
-  header {
-    height: auto;
-    padding-left: 0;
-    margin-left: 0;
+  p.description {
+    max-width: 100%;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    padding: 40px;
     text-align: center; }
-    header h1.title {
-      max-width: 98%;
-      margin: auto;
-      font-size: 6em;
-      text-align: center;
-      padding-top: 250px;
-      padding-bottom: 100px; }
-    header p.description {
-      max-width: 100%;
-      font-size: 1.2em;
-      line-height: 1.2em;
-      padding: 40px;
-      text-align: center; }
-    header p.description:nth-child(3) {
-      display: none; }
+
+  p.description:nth-child(3) {
+    display: none; }
 
   section {
     width: 100%;
