@@ -472,7 +472,6 @@ div#shadowOverlay {
   margin-right: auto;
   left: 0;
   right: 0;
-  background-color: #007bb8;
   border-radius: 10px;
   margin-top: 100px;
   width: calc(100%-40px);
@@ -512,6 +511,27 @@ p.after-text {
   color: white;
   font-size: 1.1em;
   padding-left: 16px; }
+
+#window-1 {
+  background-color: #007bb8; }
+
+#window-2 {
+  background-color: #009abe; }
+
+#window-3 {
+  background-color: #009abe; }
+
+#window-4 {
+  background-color: #03a5a5; }
+
+#window-6 {
+  background-color: #007bb8; }
+
+#window-7 {
+  background-color: #03a5a5; }
+
+#window-8 {
+  background-color: #009abe; }
 
 .speech-bubble {
   display: none;
