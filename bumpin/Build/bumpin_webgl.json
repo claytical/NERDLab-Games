@@ -1,0 +1,11 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "bumpin_webgl.data.unityweb",
+"asmCodeUrl": "bumpin_webgl.asm.code.unityweb",
+"asmMemoryUrl": "bumpin_webgl.asm.memory.unityweb",
+"asmFrameworkUrl": "bumpin_webgl.asm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
