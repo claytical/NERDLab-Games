@@ -7,7 +7,7 @@ img.ggj {
 
 .logo_spacing {
 	margin-bottom: 25px;
-} 
+}
 
 section.abouteee {
 	width: 80%;
@@ -37,7 +37,13 @@ footer p.footertext {
   	width: 20%;
  }
 
-
+article#tech-logos .supporting-img {
+		display: block;
+		box-sizing: border-box;
+		float: left;
+		margin: 20px 25px;
+		width: 50%;
+}
 
 
  @media only screen and (max-device-width: 480px) {     /* Mobile Device */

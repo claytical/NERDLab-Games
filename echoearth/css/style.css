@@ -55,17 +55,20 @@ img.ggj {
 	padding-bottom: 3px;
 }
 
-section.secondimage h1 {
+section.secondimage h1, section.thirdimage h1 {
 	font-weight: bold;
     padding-top: 35px;
     font-size: 1.5em;
 	font-family: 'Oswald', sans-serif;
 }
 
+section.thirdimage h1, section.thirdimage p {
+		color: #FFF;	
+}
 
 .U_logo {
 	margin-bottom: 25px;
-} 
+}
 
 strong {
 	font-weight: 900;
