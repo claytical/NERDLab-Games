@@ -40,6 +40,10 @@ body {
     margin: 20px auto;
 }
 
+.event-logo {
+		margin: 20px 0 15px 50px;
+    float: right;
+}
 
 ul#team {
 	list-style-type: circle;
@@ -63,7 +67,7 @@ section.secondimage h1, section.thirdimage h1 {
 }
 
 section.thirdimage h1, section.thirdimage p {
-		color: #FFF;	
+		color: #FFF;
 }
 
 .U_logo {
@@ -72,6 +76,14 @@ section.thirdimage h1, section.thirdimage p {
 
 strong {
 	font-weight: 900;
+}
+
+.twocol {
+	display: block;
+	float: left;
+	margin: 20px auto;
+	box-sizing: border-box;
+	width: 50%;
 }
 
 /*.handcops {
@@ -358,6 +370,7 @@ a:hover {
 
 @media only screen and (max-device-width: 480px) {     /*Mobile Device*/
 
+
 .titleText {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1em;
@@ -527,7 +540,22 @@ a:hover {
 	margin-left: 260px;
 }
 
+
+.event-logo {
+	display: block;
+	float: none;
 }
+
+.supporting-img {
+	width: 100%;
+}
+
+.event-logo {
+	margin: 20px 0 0;
+}
+
+}
+
 
 
 @media only screen and (max-width: 1500px) {     /* Laptop size */
