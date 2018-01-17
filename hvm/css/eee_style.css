@@ -1,0 +1,187 @@
+
+img.ggj {
+	display: block;
+	width: 20%;
+	margin: 0 auto;
+}
+
+.logo_spacing {
+	margin-bottom: 25px;
+}
+
+section.abouteee {
+	width: 80%;
+}
+
+.description {
+	width: 70%;
+	margin-right: 10%;
+	float: left;
+}
+
+.sideLogos {
+	display: block;
+	float: left;
+	width: 20%;
+}
+
+section.abouteee p {
+	width: 100%;
+}
+
+footer p.footertext {
+	line-height: 1.25 !important;
+}
+
+ .gallery div {
+  	width: 20%;
+ }
+
+article#tech-logos .supporting-img {
+		display: block;
+		box-sizing: border-box;
+		float: left;
+		margin: 20px 25px;
+		width: 50%;
+}
+
+.team-list {
+	padding-left: 50px;
+}
+
+/*#um-brand {
+	background-color: #000;
+}*/
+
+
+
+
+
+/******* Featherlight CSS *******/
+
+@media all {
+			.lightbox { display: none; }
+			.fl-page h1,
+			.fl-page h3,
+			.fl-page h4 {
+				font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+				font-weight: 100;
+				letter-spacing: 1px;
+			}
+			.fl-page h1 { font-size: 110px; margin-bottom: 0.5em; }
+			.fl-page h1 i { font-style: normal; color: #ddd; }
+			.fl-page h1 span { font-size: 30px; color: #333;}
+			.fl-page h3 { text-align: right; }
+			.fl-page h3 { font-size: 15px; }
+			.fl-page h4 { font-size: 2em; }
+			.fl-page .jumbotron { margin-top: 2em; }
+			.fl-page .btn-download { float: right; margin-top: -40px; }
+			.fl-page .btn-default { vertical-align: bottom; }
+
+			.fl-page .row { margin-top: 2em;}
+
+			.fl-page .btn-lg span { font-size: 0.7em; }
+			.fl-page .footer { margin-top: 3em; color: #aaa; font-size: 0.9em;}
+			.fl-page .footer a { color: #999; text-decoration: none; margin-right: 0.75em;}
+			.fl-page .github { margin: 2em 0; }
+			.fl-page .github a { vertical-align: top; }
+
+			/* customized gallery */
+
+			.featherlight-gallery2 {
+				background: rgba(100,100,100,0.5);
+			}
+			.featherlight-gallery2 .featherlight-content {
+				background: #000;
+			}
+			.featherlight-gallery2 .featherlight-next:hover,
+			.featherlight-gallery2 .featherlight-previous:hover {
+				background: rgba(0,0,0,0.5);
+			}
+			.featherlight-gallery2 .featherlight-next:hover span,
+			.featherlight-gallery2 .featherlight-previous:hover span {
+				font-size: 25px;
+				line-height: 25px;
+				margin-top: -12.5px;
+				color: #fff;
+			}
+			.featherlight-gallery2  .featherlight-close {
+				background: transparent;
+				color: #fff;
+				font-size: 1.2em;
+			}
+			.featherlight-gallery2.featherlight-last-slide .featherlight-next,
+			.featherlight-gallery2.featherlight-first-slide .featherlight-previous {
+				display: none;
+			}
+
+			/* text slide */
+			.thumbnail a { text-decoration: none; }
+			.blurb {
+				display: inline-block;
+				width: 150px;
+				height: 150px;
+			}
+			.blurb h2 { text-align: center;}
+			.blurb .detail { display: none;}
+			.blurb .teaser {
+				font-style: italic;
+				text-align: center;
+			}
+			.featherlight .blurb {
+				display: inline-block;
+				width: 500px;
+				height: 300px;
+				color: #99f;
+			}
+			.featherlight .blurb .detail {
+				color: #ddf;
+				font-size: large;
+				display: inherit;
+			}
+			.featherlight .blurb .teaser { display: none;}
+
+		}
+		@media(max-width: 768px){
+			.fl-page h1 span { display: block; }
+			.fl-page .btn-download { float: none; margin-bottom: 1em; }
+		}
+}
+			/****** END Featherlight CSS *********/
+
+
+
+
+
+ @media only screen and (max-device-width: 480px) {     /* Mobile Device */
+
+
+ 	.abouteee {
+ 		width: 100%;
+ 	}
+
+	.sideLogos {
+		width: 100%;
+		display: block;
+		clear: both;
+	}
+
+	 .gallery div {
+	  	width: 100%;
+	 }
+
+
+	 .twocol {
+	 		width: 100%;
+	 		display: block;
+	 		float: none;
+	 	}
+
+	 .team-list {
+	 		padding-left: 0;
+	 	}
+
+
+
+
+}
