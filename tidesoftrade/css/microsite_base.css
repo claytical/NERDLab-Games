@@ -169,15 +169,17 @@ header div#title-logo {
   margin: auto;
 }
 header div#title-logo img {
-  width: 90%;
+  width: 80%;
   max-width: 800px;
-  margin-top: 10vh;
+  margin-top: 15vh;
 }
 
 div.coming-soon {
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 15px;
+  width: 90%;
+  max-width: 500px;
 }
 div#download-container {
   position: absolute;
@@ -212,8 +214,50 @@ div.learnMore {
     max-width: 80px; }
 
 /*****************************************************************
- Demo Video Section Styles
+ Description and Demo Video Section Styles
 *****************************************************************/
+
+div.main-description section {
+  width: 60%;
+  max-width: 919px;
+}
+
+div.main-description p {
+  text-align: justify;
+  line-height: 2;
+  font-size: 1.2em;
+  margin-bottom: 80px;
+  letter-spacing: 0.1em;
+}
+
+p.name {
+  font-weight: bold;
+}
+
+div.exhibit {
+  width: auto;
+  margin: auto;
+  max-width: 919px;
+}
+
+div.exhibit img {
+  margin-bottom: 40px;
+}
+
+div.game-creator {
+  background-color: grey;
+  margin-bottom: 80px;
+}
+
+div.game-creator p.name{
+  float: none;
+  background-color: white;
+}
+
+div.game-creator img {
+  float: none;
+}
+
 div.staticblock {
   position: static;
   display: block;
