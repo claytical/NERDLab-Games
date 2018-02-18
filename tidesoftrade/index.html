@@ -12,11 +12,16 @@
   <!-- Add Google Fonts Here -->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/microsite_base.css">
   <link rel="stylesheet" href="css/microsite_tablet.css">
   <link rel="stylesheet" href="css/microsite_mobilephone.css">
   <script src="https://use.fontawesome.com/ce0a8a07a0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script type="text/javascript" src="javaScript/jmpress.min.js"></script>
+	<!-- jmslideshow plugin : extends the jmpress plugin -->
+	<script type="text/javascript" src="javaScript/jquery.jmslideshow.js"></script>
+	<script type="text/javascript" src="javaScript/modernizr.custom.48780.js"></script>
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -28,6 +33,7 @@
         <a href="http://nerdlab.miami"><img class="logo" src="images/nerdlab-cube.png" alt="nerdlab logo"/></a>
   </div>
   <header>
+      <div id="gradient"></div>
       <div id="title-logo"><img src="images/tides-of-trade-logo.png" alt="tides of trade logo" /></div>
       <!--
       <div id="download-container">
@@ -41,10 +47,23 @@
         <img id="downarrow" src="images/arrow.png" alt="more content below" />
       </div>
       -->
-      <div id="gradient"></div>
       <br class="clear" />
   </header>
-
+  <div class="container">
+  <section id="jms-slideshow" class="jms-slideshow">
+				<div class="step" data-color="color-1" data-x="2000" data-y="1000" data-z="3000" data-rotate="-20">
+				</div>
+				<div class="step" data-color="color-2" data-x="1000" data-z="2000" data-rotate="20">
+				</div>
+				<div class="step" data-color="color-3" data-x="2000" data-y="1500" data-z="1000" data-rotate="20">
+				</div>
+				<div class="step" data-color="color-4" data-x="3000" data-y="2000">
+				</div>
+				<div class="step" data-color="color-5" data-x="4000" data-y="1500" data-z="1000" data-rotate="-20">
+				</div>
+			</section>
+  </div>
+  
   <div class="main-description">
     <section>
       <p>
@@ -72,11 +91,12 @@
       </div>
     </section>
   </div>
+
   <footer>
 
     <div id="uparrow" class="circle"><img class="arrow" src="images/arrow.png" alt="click to return to top"/></div>
     <div class="footer-content">
-    <p><a href="http://nerdlab.miami"><img class="logo" src="images/nerdlab-cube.png" alt="nerdlab logo"/></a></p>
+    <p id="footerlogo"><a ref="http://nerdlab.miami"><img class="logo" src="images/nerdlab-cube.png" alt="nerdlab logo"/></a></p>
 
     <ul class="socialmedia">
       <li class="vimeo"><a href="#" title="email us"><i class="fa fa-vimeo fa-lg" aria-hidden="true"></a></i></li>
@@ -87,8 +107,14 @@
     </div>
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript" src="javaScript/script.js"></script>
-  <script src="javaScript/parallax.js"></script>
+
+<script type="text/javascript">
+  $(function() {
+
+  $( '#jms-slideshow' ).jmslideshow();
+
+  });
+</script>
 </body>
 </html>
