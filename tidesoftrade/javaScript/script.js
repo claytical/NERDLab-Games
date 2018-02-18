@@ -1,3 +1,42 @@
+//load all images in the Gallery
+var bCheckEnabled = true;
+var bFinishCheck = false;
+
+var img;
+var imgArray = new Array();
+var i = 1;
+
+var myInterval = setInterval(loadImage, 1);
+
+function loadImage() {
+
+    if (bFinishCheck) {
+        clearInterval(myInterval);
+        return;
+    }
+
+    if (bCheckEnabled) {
+
+        bCheckEnabled = false;
+
+        img = new Image();
+        img.onload = fExists;
+        img.onerror = fDoesntExist;
+        img.src = 'images/GalleryImages/exhibit-pic' + i + '.jpg';
+
+    }
+
+}
+
+function fExists() {
+    imgArray.push(img);
+    i++;
+    bCheckEnabled = true;
+}
+
+function fDoesntExist() {
+    bFinishCheck = true;
+}
 
 function myScrollFunction() {
         var element_to_scroll_to = document.getElementById('demovideo');

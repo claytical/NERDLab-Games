@@ -198,7 +198,7 @@ div.game-creator {
   width: 100%;
   position: relative;
   margin: auto;
-  background-color: #fff;
+  background-color: #a5d4ba;
   box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
@@ -219,8 +219,7 @@ div.bio {
   width: auto;
   margin: auto;
   max-width: 650px;
-  background-color: #545454;
-  color: white;
+
 }
 
 div.bio p.name{
@@ -357,115 +356,94 @@ JMpress (Image Gallery) Section
 	border: 10px solid #fff;
 	border: 10px solid rgba(255, 255, 255, 0.9);
 	outline: none;
-	-webkit-transition: background-color 1s linear;
-	-moz-transition: background-color 1s linear;
-	-o-transition: background-color 1s linear;
-	-ms-transition: background-color 1s linear;
-	transition: background-color 1s linear;
+	-webkit-transition: background-image 1s linear;
+	-moz-transition: background-image 1s linear;
+	-o-transition: background-image 1s linear;
+	-ms-transition: background-image 1s linear;
+	transition: background-image 1s linear;
 }
 
 .color-1 {
-	background-color: #E3D8FF;
-  background-color: rgba(227, 216, 268, 1);
-  background-image: url("../images/exhibit-pic1.jpg");
+	background-color: #a5d4ba;
+  background-image: url("../images/GalleryImages/exhibit-pic1.jpg");
   background-size: cover;
   background-position: top center;
 }
 .color-2 {
-	background-color: #EBBBBC;
-  background-color: rgba(235, 187, 188, 1);
-  background-image: url("../images/exhibit-pic2.jpg");
+	background-color: #a5d4ba;
+  background-image: url("../images/GalleryImages/exhibit-pic2.jpg");
   background-size: cover;
   background-position: top center;
 }
 .color-3 {
-	background-color: #EED9C0;
-  background-color: rgba(238, 217, 192, 1);
-  background-image: url("../images/exhibit-pic3.jpg");
+	background-color: #a5d4ba;
+  background-image: url("../images/GalleryImages/exhibit-pic3.jpg");
   background-size: cover;
   background-position: top center;
 }
 .color-4 {
-	background-color: #DFEBB1;
-	background-color: rgba(223, 235, 177, 1);
-  background-image: url("../images/exhibit-pic4.jpg");
+	background-color: #a5d4ba;
+  background-image: url("../images/GalleryImages/exhibit-pic4.jpg");
   background-size: cover;
   background-position: top center;
 }
 .color-5 {
-	background-color: #C1E6E5;
-	background-color: rgba(193, 230, 229, 1);
-  background-image: url("../images/exhibit-pic5.jpg");
+	background-color: #a5d4ba;
+  background-image: url("../images/GalleryImages/exhibit-pic5.jpg");
   background-size: cover;
   background-position: top center;
 }
 .color-6 {
-  background-color: #E3D8FF;
-  background-color: rgba(227, 216, 268, 1);
-  background-image: url("../images/exhibit-pic6.jpg");
+  background-color: #a5d4ba;
+  background-image: url("../images/GalleryImages/exhibit-pic6.jpg");
   background-size: cover;
   background-position: top center;
 }
 .color-7 {
-  background-color: #EBBBBC;
-  background-color: rgba(235, 187, 188, 1);
-  background-image: url("../images/exhibit-pic7.jpg");
+  background-color: #a5d4ba;
+  background-image: url("../images/GalleryImages/exhibit-pic7.jpg");
   background-size: cover;
   background-position: top center;
 }
 .color-8 {
-  background-color: #EED9C0;
-  background-color: rgba(238, 217, 192, 1);
-  background-image: url("../images/exhibit-pic8.jpg");
+  background-color: #a5d4ba;
+  background-image: url("../images/GalleryImages/exhibit-pic8.jpg");
   background-size: cover;
   background-position: top center;
 }
 .color-9 {
-  background-color: #DFEBB1;
-	background-color: rgba(223, 235, 177, 1);
-  background-image: url("../images/exhibit-pic9.jpg");
+  background-color: #a5d4ba;
+  background-image: url("../images/GalleryImages/exhibit-pic9.jpg");
   background-size: cover;
   background-position: top center;
 }
 .color-10 {
-	background-color: #C1E6E5;
-	background-color: rgba(193, 230, 229, 1);
-  background-image: url("../images/exhibit-pic10.jpg");
+	background-color: #a5d4ba;
+  background-image: url("../images/GalleryImages/exhibit-pic10.jpg");
   background-size: cover;
   background-position: top center;
 }
 .color-11 {
-  background-color: #E3D8FF;
-  background-color: rgba(227, 216, 268, 1);
-  background-image: url("../images/exhibit-pic11.jpg");
+  background-color: #a5d4ba;
+  background-image: url("../images/GalleryImages/exhibit-pic11.jpg");
   background-size: cover;
   background-position: top center;
 }
 .color-12 {
-  background-color: #EBBBBC;
-  background-color: rgba(235, 187, 188, 1);
-  background-image: url("../images/exhibit-pic12.jpg");
+  background-color: #a5d4ba;
+  background-image: url("../images/GalleryImages/exhibit-pic12.jpg");
   background-size: cover;
   background-position: top center;
 }
 .color-13 {
-  background-color: #EED9C0;
-  background-color: rgba(238, 217, 192, 1);
-  background-image: url("../images/exhibit-pic13.jpeg");
-  background-size: cover;
-  background-position: top center;
-}
-.color-14 {
-  background-color: #DFEBB1;
-	background-color: rgba(223, 235, 177, 1);
-  background-image: url("../images/exhibit-pic14.jpg");
+  background-color: #a5d4ba;
+  background-image: url("../images/GalleryImages/exhibit-pic13.jpg");
   background-size: cover;
   background-position: bottom center;
 }
-.color-15 {
-	background-color: #C1E6E5;
-	background-color: rgba(193, 230, 229, 1);
-  background-image: url("../images/exhibit-pic15.jpeg");
+.color-14 {
+  background-color: #a5d4ba;
+  background-image: url("../images/GalleryImages/exhibit-pic14.jpg");
   background-size: cover;
   background-position: bottom center;
 }

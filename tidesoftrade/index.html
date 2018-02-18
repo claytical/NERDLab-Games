@@ -18,7 +18,7 @@
   <script src="https://use.fontawesome.com/ce0a8a07a0.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-  <script type="text/javascript" src="javaScript/jmpress.min.js"></script>
+  <script type="text/javascript" src="javaScript/jmpress.js"></script>
 	<!-- jmslideshow plugin : extends the jmpress plugin -->
 	<script type="text/javascript" src="javaScript/jquery.jmslideshow.js"></script>
 	<script type="text/javascript" src="javaScript/modernizr.custom.48780.js"></script>
@@ -73,11 +73,11 @@
         </div>
         <div class="step" data-color="color-11" data-x="10000">
         </div>
-        <div class="step" data-color="color-13" data-x="11000">
+        <div class="step" data-color="color-12" data-x="11000">
         </div>
-        <div class="step" data-color="color-14" data-x="12000">
+        <div class="step" data-color="color-13" data-x="12000">
         </div>
-        <div class="step" data-color="color-15" data-x="13000">
+        <div class="step" data-color="color-14" data-x="13000">
         </div>
 			</section>
   </div>
@@ -134,11 +134,18 @@
   <script type="text/javascript" src="javaScript/script.js"></script>
 
 <script type="text/javascript">
-  $(function() {
+$(function() {
 
-  $( '#jms-slideshow' ).jmslideshow();
+  var jmpressOpts	= {
+    animation		: { transitionDuration : '0.8s' }
+  };
 
-  });
+  $( '#jms-slideshow' ).jmslideshow( $.extend( true, { jmpressOpts : jmpressOpts }, {
+    autoplay	: true,
+    bgColorSpeed: '0.8s'
+  }));
+
+});
 </script>
 </body>
 </html>
