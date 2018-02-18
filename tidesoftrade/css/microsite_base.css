@@ -429,9 +429,8 @@ JMpress (Image Gallery) Section
 	position: relative;
 	width: 80%;
 	max-width: 1400px;
-	min-width: 640px;
 	margin: 20px auto;
-	height: 460px;
+	height: 640px;
 }
 .jms-wrapper {
 	width: auto;
@@ -453,24 +452,95 @@ JMpress (Image Gallery) Section
 }
 .color-1 {
 	background-color: #E3D8FF;
-	background-color: rgba(227, 216, 268, 1);
+  background-color: rgba(227, 216, 268, 1);
+  background-image: url("../images/exhibit-pic1.jpg");
+  background-size: cover;
 }
 .color-2 {
 	background-color: #EBBBBC;
-	background-color: rgba(235, 187, 188, 1);
+  background-color: rgba(235, 187, 188, 1);
+  background-image: url("../images/exhibit-pic2.jpg");
+  background-size: cover;
 }
 .color-3 {
 	background-color: #EED9C0;
-	background-color: rgba(238, 217, 192, 1);
+  background-color: rgba(238, 217, 192, 1);
+  background-image: url("../images/exhibit-pic3.jpg");
+  background-size: cover;
 }
 .color-4 {
 	background-color: #DFEBB1;
 	background-color: rgba(223, 235, 177, 1);
+  background-image: url("../images/exhibit-pic4.jpg");
+  background-size: cover;
 }
 .color-5{
 	background-color: #C1E6E5;
 	background-color: rgba(193, 230, 229, 1);
+  background-image: url("../images/exhibit-pic5.jpg");
+  background-size: cover;
 }
+.color-6{
+  background-color: #E3D8FF;
+  background-color: rgba(227, 216, 268, 1);
+  background-image: url("../images/exhibit-pic6.jpg");
+  background-size: cover;
+}
+.color-7{
+  background-color: #EBBBBC;
+  background-color: rgba(235, 187, 188, 1);
+  background-image: url("../images/exhibit-pic7.jpg");
+  background-size: cover;
+}
+.color-8{
+  background-color: #EED9C0;
+  background-color: rgba(238, 217, 192, 1);
+  background-image: url("../images/exhibit-pic8.jpg");
+  background-size: cover;
+}
+.color-9{
+  background-color: #DFEBB1;
+	background-color: rgba(223, 235, 177, 1);
+  background-image: url("../images/exhibit-pic9.jpg");
+  background-size: cover;
+}
+.color-10{
+	background-color: #C1E6E5;
+	background-color: rgba(193, 230, 229, 1);
+  background-image: url("../images/exhibit-pic10.jpg");
+  background-size: cover;
+}
+.color-11{
+  background-color: #E3D8FF;
+  background-color: rgba(227, 216, 268, 1);
+  background-image: url("../images/exhibit-pic11.jpg");
+  background-size: cover;
+}
+.color-12{
+  background-color: #EBBBBC;
+  background-color: rgba(235, 187, 188, 1);
+  background-image: url("../images/exhibit-pic12.jpg");
+  background-size: cover;
+}
+.color-13{
+  background-color: #EED9C0;
+  background-color: rgba(238, 217, 192, 1);
+  background-image: url("../images/exhibit-pic13.jpeg");
+  background-size: cover;
+}
+.color-14{
+  background-color: #DFEBB1;
+	background-color: rgba(223, 235, 177, 1);
+  background-image: url("../images/exhibit-pic14.jpg");
+  background-size: cover;
+}
+.color-15{
+	background-color: #C1E6E5;
+	background-color: rgba(193, 230, 229, 1);
+  background-image: url("../images/exhibit-pic15.jpeg");
+  background-size: cover;
+}
+
 .step {
 	width: 900px;
     height: 420px;
@@ -570,7 +640,7 @@ JMpress (Image Gallery) Section
 .jms-arrows span{
 	position: absolute;
 	top: 50%;
-	margin-top: -40px;
+	margin-top: -10px;
 	height: 80px;
 	width: 30px;
 	cursor: pointer;
