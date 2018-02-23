@@ -67,9 +67,6 @@ $(window).scroll(function() {
 	}
 
 
-
-
-
 	console.log(windowScroll);
 	console.log("windowWidth", windowWidth);
 
