@@ -21,6 +21,9 @@
   footer {
     width: 100%;
   }
+  div.game-creator {
+    width: calc(100% - 20px);
+  }
 }
 
 @media (max-width: 480px) {
@@ -42,5 +45,8 @@
 
   footer {
     width: 100%;
+  }
+  div.game-creator {
+    width: calc(100% - 20px);
   }
  }

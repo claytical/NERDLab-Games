@@ -34,6 +34,14 @@ body {
   padding: 0;
 }
 
+h1, h2, h3 {
+  font-family: 'Bree Serif', Serif;
+}
+
+h2 {
+  font-size: 2em;
+}
+
 .subheading {
   font-family: Roboto, Sans-Serif;
   font-weight: 600;
@@ -61,9 +69,9 @@ section {
   clear: both;
   height: auto;
   width: 80%;
+  max-width: 1400px;
   margin-top: 0;
   margin: auto;
-  padding-top: 50px;
 }
 
 a {
@@ -96,9 +104,6 @@ p {
 
 div.text-container {
   width: 60%;
-  max-width: 940px;
-  padding: 40px;
-  padding-top: 0px;
   margin: auto;
 }
 /*************************************************************/
@@ -178,13 +183,16 @@ div.coming-soon {
  Description and Game Designer Bio Section Styles
 *************************************************************/
 div.main-description {
-  padding-bottom: 0px;
+  width: auto;
+  margin: auto;
+  max-width: 919px;
 }
 
 div.exhibit {
   width: auto;
   margin: auto;
   max-width: 919px;
+  margin-top: 60px;
 }
 
 div.exhibit p {
@@ -192,9 +200,12 @@ div.exhibit p {
 }
 
 div.game-creator {
-  width: 100%;
+  width: calc(50% - 20px);
+  max-width: 750px;
   position: relative;
   margin: auto;
+  margin-top: 240px;
+  padding: 0;
   background-color: #a5d4ba;
   box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
   -webkit-background-clip: padding;
@@ -206,10 +217,31 @@ div.game-creator {
   text-align: center;
 }
 
+div.game-creator-pic {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -200px;
+  padding: 0px;
+  margin-bottom: -150px;
+  border-radius: 50%;
+  background-color: #a5d4ba;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  border: 10px solid #fff;
+  border: 10px solid rgba(255, 255, 255, 0.9);
+  outline: none;
+}
+
 img.game-creator-pic {
   width: 350px;
-  float: right;
-  padding: 20px;
+  height: 350px;
+  padding: 0px;
+  border-radius: 195px;
 }
 
 div.bio {
@@ -217,19 +249,17 @@ div.bio {
   height: auto;
   width: auto;
   max-width: 650px;
-
+  margin: auto;
 }
 
-div.bio p.name{
+div.bio h2.name{
   font-weight: bold;
   margin: 0;
   margin-bottom: 20px;
   padding: 40px;
-  padding-top: 20px;
+  padding-top: 0px;
   padding-bottom: 20px;
-  width: 100%;
-  text-align: left;
-  text-transform: uppercase;
+  text-align: center;
 }
 
 div.bio p.biotext {
