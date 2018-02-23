@@ -9,10 +9,6 @@
   }
   div.main-description section {
     width: 80%;
-    text-align: center;
-  }
-  div.main-description p {
-    text-align: center;
   }
   header {
     height: auto;
@@ -26,6 +22,9 @@
     width: 100%;
   }
   div.game-creator {
-    width: calc(100% - 20px);
+    width: 100%;
+  }
+  div.game-creator p {
+    text-align:left;
   }
  }

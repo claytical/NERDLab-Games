@@ -10,9 +10,6 @@
      div.main-description section {
        width: 80%;
      }
-     div.main-description p {
-       text-align: left;
-     }
      header {
        height: auto;
        min-height: 750px;
