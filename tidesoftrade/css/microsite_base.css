@@ -211,13 +211,14 @@ div.game-creator {
 
 img.game-creator-pic {
   width: 350px;
+  float: right;
+  padding: 20px;
 }
 
 div.bio {
   position: relative;
   height: auto;
   width: auto;
-  margin: auto;
   max-width: 650px;
 
 }
