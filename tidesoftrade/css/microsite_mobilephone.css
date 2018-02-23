@@ -1,43 +1,22 @@
 /* CSS stylesheet: Tides of Trade
    Mobile Phone size specific styles
    Created by Laura Kurtzberg */
-@media (max-width: 680px) {
+
+@media (max-width: 600px) {
+  header div#title-logo {
+    transform: none;
+    padding: 10px;
+  }
   div.main-description section {
     width: 80%;
+    text-align: center;
   }
   div.main-description p {
-    text-align: left;
+    text-align: center;
   }
   header {
     height: auto;
     min-height: 500px;
-    padding-left: 0;
-    margin-left: 0;
-    text-align: center;
-  }
-  header div#title-logo img {
-    margin-top: 15vh;
-  }
-  footer {
-    width: 100%;
-  }
-  div.game-creator {
-    width: calc(100% - 20px);
-  }
-}
-
-@media (max-width: 480px) {
-  div.main-description section {
-    width: 80%;
-    text-align: center;
-  }
-  div.main-description p {
-    text-align: center;
-  }
-  header {
-    height: auto;
-    min-height: 0px;
-    max-height: 400px;
     padding-left: 0;
     margin-left: 0;
     text-align: center;

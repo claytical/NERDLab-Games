@@ -1,3 +1,32 @@
 /* CSS stylesheet: Tides of Trade
    Tablet size specific styles
    Created by Laura Kurtzberg */
+
+   @media (max-width: 980px) {
+     header div#title-logo {
+       transform: none;
+       padding: 30px;
+     }
+     div.main-description section {
+       width: 80%;
+     }
+     div.main-description p {
+       text-align: left;
+     }
+     header {
+       height: auto;
+       min-height: 750px;
+       padding-left: 0;
+       margin-left: 0;
+       text-align: center;
+     }
+     header div#title-logo img {
+       margin-top: 15vh;
+     }
+     footer {
+       width: 100%;
+     }
+     div.game-creator {
+       width: calc(100% - 20px);
+     }
+   }
