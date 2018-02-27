@@ -28,8 +28,8 @@ body {
   font-family: Roboto, Sans-Serif;
   font-weight: 300;
   font-size: 1.1em;
-  background-color: #fdfffc;
-  color: #0F0F0F;
+  background-color: #111111;
+  color: #F0F0F0;
   margin:0;
   padding: 0;
 }
@@ -132,7 +132,7 @@ div.subpagelogo img.logo {
 
 header {
   background-color: grey;
-  background-image: url("../images/survivr-background.png");
+/*  background-image: url("../images/logo.png");*/
   background-size: cover;
   display: block;
   position: relative;
@@ -206,7 +206,7 @@ div.game-creator {
   margin: auto;
   margin-top: 240px;
   padding: 0;
-  background-color: #a5d4ba;
+  background-color: #aaaaaa;
   box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
@@ -227,7 +227,7 @@ div.game-creator-pic {
   padding: 0px;
   margin-bottom: -160px;
   border-radius: 50%;
-  background-color: #a5d4ba;
+  background-color: #999999;
   box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
@@ -394,87 +394,33 @@ JMpress (Image Gallery) Section
 
 .color-1 {
 	background-color: #a5d4ba;
-  background-image: url("../images/GalleryImages/exhibit-pic1.jpg");
+  background-image: url("../images/GalleryImages/surviVR_1.png");
   background-size: cover;
   background-position: top center;
 }
 .color-2 {
 	background-color: #a5d4ba;
-  background-image: url("../images/GalleryImages/exhibit-pic2.jpg");
+  background-image: url("../images/GalleryImages/surviVR_2.png");
   background-size: cover;
   background-position: top center;
 }
 .color-3 {
 	background-color: #a5d4ba;
-  background-image: url("../images/GalleryImages/exhibit-pic3.jpg");
+  background-image: url("../images/GalleryImages/surviVR_2.png");
   background-size: cover;
   background-position: top center;
 }
 .color-4 {
 	background-color: #a5d4ba;
-  background-image: url("../images/GalleryImages/exhibit-pic4.jpg");
+  background-image: url("../images/GalleryImages/surviVR_4.png");
   background-size: cover;
   background-position: top center;
 }
 .color-5 {
 	background-color: #a5d4ba;
-  background-image: url("../images/GalleryImages/exhibit-pic5.jpg");
+  background-image: url("../images/GalleryImages/surviVR_5.png");
   background-size: cover;
   background-position: top center;
-}
-.color-6 {
-  background-color: #a5d4ba;
-  background-image: url("../images/GalleryImages/exhibit-pic6.jpg");
-  background-size: cover;
-  background-position: top center;
-}
-.color-7 {
-  background-color: #a5d4ba;
-  background-image: url("../images/GalleryImages/exhibit-pic7.jpg");
-  background-size: cover;
-  background-position: top center;
-}
-.color-8 {
-  background-color: #a5d4ba;
-  background-image: url("../images/GalleryImages/exhibit-pic8.jpg");
-  background-size: cover;
-  background-position: top center;
-}
-.color-9 {
-  background-color: #a5d4ba;
-  background-image: url("../images/GalleryImages/exhibit-pic9.jpg");
-  background-size: cover;
-  background-position: top center;
-}
-.color-10 {
-	background-color: #a5d4ba;
-  background-image: url("../images/GalleryImages/exhibit-pic10.jpg");
-  background-size: cover;
-  background-position: top center;
-}
-.color-11 {
-  background-color: #a5d4ba;
-  background-image: url("../images/GalleryImages/exhibit-pic11.jpg");
-  background-size: cover;
-  background-position: top center;
-}
-.color-12 {
-  background-color: #a5d4ba;
-  background-image: url("../images/GalleryImages/exhibit-pic12.jpg");
-  background-size: cover;
-  background-position: top center;
-}
-.color-13 {
-  background-color: #a5d4ba;
-  background-image: url("../images/GalleryImages/exhibit-pic13.jpg");
-  background-size: cover;
-  background-position: bottom center;
-}
-.color-14 {
-  background-color: #a5d4ba;
-  background-image: url("../images/GalleryImages/exhibit-pic14.jpg");
-  background-size: cover;
-  background-position: bottom center;
 }
 
 .step {
