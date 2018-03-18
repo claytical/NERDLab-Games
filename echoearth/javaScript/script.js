@@ -1,5 +1,3 @@
-document.getElementById("downarrow").onclick = function() {myScrollFunction()};
-
 function myScrollFunction() {
         var element_to_scroll_to = document.getElementById('demovideo');
         element_to_scroll_to.scrollIntoView({block: "end", behavior: "smooth"});

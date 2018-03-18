@@ -86,41 +86,6 @@ strong {
 	width: 50%;
 }
 
-/*.handcops {
-	height: 320px;
-	width: 27%;
-	background-image: url("../images/handcops.svg");
-	position: right;
-	background-repeat: no-repeat;
-	margin-left: 3%;
-	margin-top: 2%;
-	overflow: auto;
-}
-
-.condoms {
-	height: 300px;
-	width: 25%;
-	background-image: url("../images/condoms.svg");
-	position: right;
-	background-repeat: no-repeat;
-	margin-left: 45%;
-	margin-top: 2%;
-	overflow: auto;
-
-}
-
-div#uparrow {
-    background: #ccc none repeat scroll 0 0;
-    border: 3px solid #666;
-    margin: 5px;
-    padding: 5px;
-    position: relative;
-    width: 200px;
-    height: 100px;
-    overflow: auto;
-  }
-  */
-
 article.description {
   	width: 60%;
   	float: left;
@@ -380,27 +345,6 @@ a:hover {
 	top: 50px;
 }
 
-.handcops {
-	height: 80px;
-	width: 90%;
-	background-image: url("../images/handcops.svg");
-	position: center;
-	background-repeat: no-repeat;
-	overflow: hidden;
-	margin-left: 7%;
-}
-
-.condoms {
-	height: 80px;
-	width: 30%;
-	background-image: url("../images/condoms.svg");
-	position: center;
-	background-repeat: no-repeat;
-	overflow: hidden;
-	margin-left: 70%;
-	margin-top: -50px;
-}
-
 .circle {
 	height: 55px;
 	width: 55px;
@@ -629,34 +573,270 @@ body {
 
 }
 
-/*@media only screen and (min-width: 1510px) {
-
-body {
-	background-color: blue;
-	overflow-x: hidden;
+/******************* JMpress (Image Gallery) Section ************************/
+ .jms-slideshow {
+		 position: relative;
+		 width: 80%;
+		 max-width: 1400px;
+		 margin: 20px auto;
+		 height: 640px;
+}
+ .jms-wrapper {
+		 width: auto;
+		 height: 640px;
+		 background-color: #fff;
+		 box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+		 -webkit-background-clip: padding;
+		 -moz-background-clip: padding;
+		 background-clip: padding-box;
+		 border: 10px solid #fff;
+		 border: 10px solid rgba(255, 255, 255, 0.9);
+		 outline: none;
+		 -webkit-transition: background-image 1s linear;
+		 -moz-transition: background-image 1s linear;
+		 -o-transition: background-image 1s linear;
+		 -ms-transition: background-image 1s linear;
+		 transition: background-image 1s linear;
+}
+ .color-1 {
+		 background-color: #a5d4ba;
+		 background-image: url("../images/EEE_frostScience_01.jpg");
+		 background-size: cover;
+		 background-position: top center;
+}
+ .color-2 {
+		 background-color: #a5d4ba;
+		 background-image: url("../images/EEE_frostScience_02.jpg");
+		 background-size: cover;
+		 background-position: top center;
+}
+ .color-3 {
+		 background-color: #a5d4ba;
+		 background-image: url("../images/EEE_frostScience_03.jpg");
+		 background-size: cover;
+		 background-position: top center;
+}
+ .color-4 {
+		 background-color: #a5d4ba;
+		 background-image: url("../images/smithsonian2017/EEE_Smithsonian_01.JPG");
+		 background-size: cover;
+		 background-position: top center;
+}
+ .color-5 {
+		 background-color: #a5d4ba;
+		 background-image: url("../images/smithsonian2017/EEE_Smithsonian_02.JPG");
+		 background-size: cover;
+		 background-position: top center;
+}
+ .color-6 {
+		 background-color: #a5d4ba;
+		 background-image: url("../images/smithsonian2017/EEE_Smithsonian_03.JPG");
+		 background-size: cover;
+		 background-position: top center;
+}
+ .color-7 {
+		 background-color: #a5d4ba;
+		 background-image: url("../images/smithsonian2017/EEE_Smithsonian_04.JPG");
+		 background-size: cover;
+		 background-position: top center;
+}
+ .color-8 {
+		 background-color: #a5d4ba;
+		 background-image: url("../images/smithsonian2017/EEE_Smithsonian_05.JPG");
+		 background-size: cover;
+		 background-position: top center;
+}
+ .color-9 {
+		 background-color: #a5d4ba;
+		 background-image: url("../images/smithsonian2017/EEE_Smithsonian_06.JPG");
+		 background-size: cover;
+		 background-position: top center;
+}
+ .color-10 {
+		 background-color: #a5d4ba;
+		 background-size: cover;
+		 background-image: url("../images/smithsonian2017/EEE_Smithsonian_07.JPG");
+		 background-position: top center;
+}
+ .color-11 {
+		 background-color: #a5d4ba;
+		 background-image: url("../images/1.jpg");
+		 background-size: cover;
+		 background-position: top center;
+}
+ .color-12 {
+		 background-color: #a5d4ba;
+		 background-image: url("../images/2.jpg");
+		 background-size: cover;
+		 background-position: top center;
+}
+ .color-13 {
+		 background-color: #a5d4ba;
+		 background-image: url("../images/3.jpg");
+		 background-size: cover;
+		 background-position: bottom center;
+}
+ .color-14 {
+		 background-color: #a5d4ba;
+		 background-image: url("../images/4.jpg");
+		 background-size: cover;
+		 background-position: bottom center;
+}
+.color-15 {
+		background-color: #a5d4ba;
+		background-image: url("../images/5.jpg");
+		background-size: cover;
+		background-position: bottom center;
+}
+.color-16 {
+		background-color: #a5d4ba;
+		background-image: url("../images/6.jpg");
+		background-size: cover;
+		background-position: bottom center;
+}
+.color-17 {
+		background-color: #a5d4ba;
+		background-image: url("../images/7.jpg");
+		background-size: cover;
+		background-position: bottom center;
 }
 
-.handcops {
-	height: 320px;
-	width: 27%;
-	background-image: url("/../images/handcops.svg");
-	position: right;
-	background-repeat: no-repeat;
-	margin-left: 3%;
-	overflow: auto;
+ .step {
+		 width: 900px;
+		 height: 420px;
+		 display: block;
+		 -webkit-transition: opacity 1s;
+		 -moz-transition: opacity 1s;
+		 -ms-transition: opacity 1s;
+		 -o-transition: opacity 1s;
+		 transition: opacity 1s;
 }
-
-.condoms {
-	position: absolute;
-	height: 300px;
-	width: 25%;
-	background-image: url("/../images/condoms.svg");
-	position: right;
-	background-repeat: no-repeat;
-	margin-left: 70%;
-	overflow: auto;
-	margin-top: -300px;
-
+ .step:not(.active) {
+		 opacity: 0;
+		 filter: alpha(opacity=0);
+		/* internet explorer */
+		 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+		/*IE8*/
 }
-
-}*/
+ .jms-content {
+		 margin: 0px 370px 0px 20px;
+		 position: relative;
+		 clear: both;
+}
+ .jms-dots {
+		 width: 100%;
+		 position: absolute;
+		 text-align: center;
+		 left: 0px;
+		 bottom: 20px;
+		 z-index: 2000;
+		 -webkit-user-select: none;
+		 -moz-user-select: none;
+		 -ms-user-select: none;
+		 -o-user-select: none;
+		 user-select: none;
+}
+ .jms-dots span {
+		 display: inline-block;
+		 position: relative;
+		 width: 12px;
+		 height: 12px;
+		 border-radius: 50%;
+		 background: #777;
+		 margin: 3px;
+		 cursor: pointer;
+		 box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset, 1px 1px 1px rgba(255,255,255,0.3);
+}
+ .jms-dots span.jms-dots-current:after {
+		 content: '';
+		 width: 8px;
+		 height: 8px;
+		 position: absolute;
+		 top: 2px;
+		 left: 2px;
+		 border-radius: 50%;
+		 background: #ffffff;
+		/* Old browsers */
+		 background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+		/* FF3.6+ */
+		 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed));
+		/* Chrome,Safari4+ */
+		 background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+		/* Chrome10+,Safari5.1+ */
+		 background: -o-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+		/* Opera 11.10+ */
+		 background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+		/* IE10+ */
+		 background: linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+		/* W3C */
+		 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+		/* IE6-9 */
+}
+ .jms-arrows {
+		 -webkit-user-select: none;
+		 -moz-user-select: none;
+		 -ms-user-select: none;
+		 -o-user-select: none;
+		 user-select: none;
+}
+ .jms-arrows span {
+		 position: absolute;
+		 top: 50%;
+		 margin-top: -10px;
+		 height: 80px;
+		 width: 30px;
+		 cursor: pointer;
+		 z-index: 2000;
+		 box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+		 border-radius: 3px;
+}
+ .jms-arrows span.jms-arrows-prev {
+		 background: #fff url(../images/arrow_left.png) no-repeat 50% 50%;
+		 left: -10px;
+}
+ .jms-arrows span.jms-arrows-next {
+		 background: #fff url(../images/arrow_right.png) no-repeat 50% 50%;
+		 right: -10px;
+}
+/* Not supported style */
+ .jms-wrapper.not-supported {
+		 background-color: #E3D8FF;
+		 background-color: rgba(227, 216, 268, 1);
+}
+ .jms-wrapper.not-supported:after {
+		 content: 'The slideshow functionality is not supported on your device.';
+		 padding: 0px 0px 30px 0px;
+		 text-align: center;
+		 display: block;
+}
+ .jms-wrapper.not-supported .step {
+		 display: none;
+		 position: relative;
+		 opacity: 1;
+		 filter: alpha(opacity=99);
+		/* internet explorer */
+		 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+		/*IE8*/
+		 margin: 20px auto;
+}
+ .jms-wrapper.not-supported .step:first-of-type {
+		 display: block;
+}
+ .jms-wrapper.not-supported .step:not(.active) a.jms-link {
+		 opacity: 1;
+		 margin-top: 40px;
+}
+ .step {
+		 width: 100%;
+		 position: relative;
+}
+ .step:not(.active) {
+		 opacity: 1;
+		 filter: alpha(opacity=99);
+		 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+}
+ .step:not(.active) a.jms-link{
+		 opacity: 1;
+		 margin-top: 40px;
+}
+/*************************************************************/
