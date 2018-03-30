@@ -1,0 +1,629 @@
+/* SASS stylesheet: NERDLab Microsite
+   Base styles
+   Created by Laura Kurtzberg */
+
+/*****************************************************************
+ Variables
+*****************************************************************/
+
+/*Uncomment to use BebasNeue font, or replace with another font
+  in the fonts folder*/
+/*@font-face {
+  font-family: BebasNeue;
+  src: url(../fonts/BebasNeue.woff);
+}*/
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Roboto, sans-serif;
+}
+/*************************************************************/
+
+
+/*************************************************************
+ Global Styles
+*************************************************************/
+body {
+  font-family: Roboto, Sans-Serif;
+  font-weight: 300;
+  font-size: 1.1em;
+  background-color: #fdfffc;
+  color: #0F0F0F;
+  margin:0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Bree Serif', Serif;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.subheading {
+  font-family: Roboto, Sans-Serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+span.highlight {
+  color: #0998C6;
+}
+
+img {
+  max-width: 100%;
+}
+
+div.positioned-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section {
+  display: block;
+  position: static;
+  clear: both;
+  height: auto;
+  width: 80%;
+  max-width: 1400px;
+  margin-top: 0;
+  margin: auto;
+}
+
+a {
+  color: #7fefbd;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7F7F7F;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #85c9b4;
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+}
+
+p {
+  text-align: justify;
+  line-height: 2;
+  font-size: 1em;
+  margin-top: 0px;
+  padding-top: 50px;
+}
+
+div.text-container {
+  width: 60%;
+  margin: auto;
+}
+/*************************************************************/
+
+
+/**************************************************************
+ Header Styles
+**************************************************************/
+div.subpagelogo {
+  background-color: #1f9fcd;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+  text-align: center;
+}
+
+div.subpagelogo img.logo {
+  height: 60px;
+  padding: 10px;
+  margin: 0;
+}
+
+header {
+  background-color: grey;
+  background-image: url("../images/CIA_map_of_the_Caribbean.png");
+  background-size: cover;
+  display: block;
+  position: relative;
+  clear: both;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  min-height: 750px;
+  height: 95%;
+  padding-left: 60px;
+  text-align: center;
+}
+
+header div#title-logo {
+  text-align: center;
+  margin: auto;
+  max-width: 700px;
+  top: 50%;
+  transform: translateY(-55%);
+  z-index: 100;
+  position: relative;
+}
+
+div.coming-soon {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 90%;
+  max-width: 500px;
+}
+
+#gradient {
+  position:absolute;
+  z-index:2;
+  right:0; bottom:0; left:0;
+  height:300px;
+  background: none;
+  background: -moz-linear-gradient(top,  rgba(210,228,218,0) 0%, rgba(253,255,252,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(210,228,218,0)), color-stop(100%,rgba(253,255,252,1)));
+  background: -webkit-linear-gradient(top,  rgba(210,228,218,0) 0%,rgba(253,255,252,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(210,228,218,0) 0%,rgba(253,255,252,1) 100%);
+  background: linear-gradient(to bottom,  rgba(210,228,218,0) 0%,rgba(253,255,252,1) 100%);
+}
+/*************************************************************/
+
+
+/*************************************************************
+ Description and Game Designer Bio Section Styles
+*************************************************************/
+div.main-description {
+  width: auto;
+  margin: auto;
+  max-width: 919px;
+}
+
+div.exhibit {
+  width: auto;
+  margin: auto;
+  max-width: 919px;
+  margin-top: 60px;
+}
+
+div.exhibit p {
+  padding-top: 0px;
+}
+
+div.game-creator {
+  width: calc(80% - 20px);
+  max-width: 750px;
+  position: relative;
+  margin: auto;
+  margin-top: 240px;
+  padding: 0;
+  background-color: #e8e8e8;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  border: 10px solid #fff;
+  border: 10px solid rgba(255, 255, 255, 0.9);
+  outline: none;
+  text-align: center;
+}
+
+div.game-creator-pic {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -200px;
+  padding: 0px;
+  margin-bottom: -160px;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  border: 10px solid #fff;
+  border: 10px solid rgba(255, 255, 255, 0.9);
+  outline: none;
+}
+
+img.game-creator-pic {
+  width: 350px;
+  height: 350px;
+  padding: 0px;
+  border-radius: 195px;
+}
+
+div.bio {
+  position: relative;
+  height: auto;
+  width: auto;
+  max-width: 650px;
+  margin: auto;
+}
+
+div.bio h2.game-designer{
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+h2.game-designer span.name {
+  display: block;
+}
+
+div.bio p.biotext {
+  margin-bottom: 0px;
+  padding: 40px;
+  padding-top: 0px;
+}
+/*************************************************************/
+
+
+/*************************************************************
+  Footer Styles
+*************************************************************/
+footer {
+  height: auto;
+  background-color: #1f9fcd;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 100px;
+}
+
+footer p#footerlogo img.logo {
+  height: 80px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 0px;
+}
+
+p#footerlogo {
+  height: auto;
+  z-index: 1000;
+  position: relative;
+  text-align: center;
+}
+
+/* Circle tab above the footer */
+footer .circle {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: -50px;
+  margin-bottom: -35px;
+  border-radius: 70px;
+  width: 140px;
+  height: 140px;
+  background-color: #1f9fcd;
+  z-index: -1;
+  line-height: 90px;
+}
+
+/* Arrow inside the Circle tab above the footer */
+footer .circle img.arrow {
+  width: 50px;
+  transform: rotateX(180deg);
+}
+
+footer div.footer-content {
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+  top: -50px;
+}
+
+footer ul.socialmedia {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer ul.socialmedia li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+footer ul.socialmedia li a {
+  color: white;
+}
+
+footer div.footer-content p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1em;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+footer p.footertext {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+div#uparrow {
+  z-index: 100;
+}
+/*************************************************************/
+
+
+/*************************************************************
+JMpress (Image Gallery) Section
+*************************************************************/
+.jms-slideshow {
+	position: relative;
+	width: 80%;
+	max-width: 1400px;
+	margin: 20px auto;
+	height: 640px;
+}
+
+.jms-wrapper {
+	width: auto;
+	height: 640px;
+	background-color: #fff;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+	-webkit-background-clip: padding;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	border: 10px solid #fff;
+	border: 10px solid rgba(255, 255, 255, 0.9);
+	outline: none;
+	-webkit-transition: background-image 1s linear;
+	-moz-transition: background-image 1s linear;
+	-o-transition: background-image 1s linear;
+	-ms-transition: background-image 1s linear;
+	transition: background-image 1s linear;
+}
+
+.color-1 {
+	background-color: #617d85;
+  background-image: url("../images/GalleryImages/exhibit-pic1.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.color-2 {
+	background-color: #617d85;
+  background-image: url("../images/GalleryImages/exhibit-pic2.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.color-3 {
+	background-color: #617d85;
+  background-image: url("../images/GalleryImages/exhibit-pic3.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.color-4 {
+	background-color: #617d85;
+  background-image: url("../images/GalleryImages/exhibit-pic4.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.color-5 {
+	background-color: #617d85;
+  background-image: url("../images/GalleryImages/exhibit-pic5.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.color-6 {
+  background-color: #617d85;
+  background-image: url("../images/GalleryImages/exhibit-pic6.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.color-7 {
+  background-color: #617d85;
+  background-image: url("../images/GalleryImages/exhibit-pic7.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.color-8 {
+  background-color: #617d85;
+  background-image: url("../images/GalleryImages/exhibit-pic8.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.color-9 {
+  background-color: #617d85;
+  background-image: url("../images/GalleryImages/exhibit-pic9.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.color-10 {
+	background-color: #617d85;
+  background-image: url("../images/GalleryImages/exhibit-pic10.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.color-11 {
+  background-color: #617d85;
+  background-image: url("../images/GalleryImages/exhibit-pic11.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.color-12 {
+  background-color: #617d85;
+  background-image: url("../images/GalleryImages/exhibit-pic12.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.color-13 {
+  background-color: #617d85;
+  background-image: url("../images/GalleryImages/exhibit-pic13.jpg");
+  background-size: cover;
+  background-position: bottom center;
+}
+.color-14 {
+  background-color: #617d85;
+  background-image: url("../images/GalleryImages/exhibit-pic14.jpg");
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.step {
+	width: 900px;
+    height: 420px;
+	display: block;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-ms-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.step:not(.active) {
+	opacity: 0;
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+}
+
+.jms-content {
+	margin: 0px 370px 0px 20px;
+	position: relative;
+	clear: both;
+}
+
+.jms-dots {
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	left: 0px;
+	bottom: 20px;
+	z-index: 2000;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.jms-dots span {
+	display: inline-block;
+	position: relative;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #777;
+	margin: 3px;
+	cursor: pointer;
+	box-shadow:
+		1px 1px 1px rgba(0,0,0,0.1) inset,
+		1px 1px 1px rgba(255,255,255,0.3);
+}
+
+.jms-dots span.jms-dots-current:after {
+	content: '';
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	border-radius: 50%;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+	background: linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+}
+
+.jms-arrows {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.jms-arrows span {
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	height: 80px;
+	width: 30px;
+	cursor: pointer;
+	z-index: 2000;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+}
+
+.jms-arrows span.jms-arrows-prev {
+	background: #fff url(../images/arrow_left.png) no-repeat 50% 50%;
+	left: -10px;
+}
+
+.jms-arrows span.jms-arrows-next {
+	background: #fff url(../images/arrow_right.png) no-repeat 50% 50%;
+	right: -10px;
+}
+
+/* Not supported style */
+.jms-wrapper.not-supported {
+	background-color: #E3D8FF;
+	background-color: rgba(227, 216, 268, 1);
+}
+
+.jms-wrapper.not-supported:after {
+	content: 'The slideshow functionality is not supported on your device.';
+	padding: 0px 0px 30px 0px;
+	text-align: center;
+	display: block;
+}
+
+.jms-wrapper.not-supported .step {
+	display: none;
+	position: relative;
+	opacity: 1;
+	filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+	margin: 20px auto;
+}
+
+.jms-wrapper.not-supported .step:first-of-type {
+	display: block;
+}
+
+.jms-wrapper.not-supported .step:not(.active) a.jms-link {
+	opacity: 1;
+	margin-top: 40px;
+}
+
+.step {
+	width: 100%;
+	position: relative;
+}
+
+.step:not(.active) {
+		opacity: 1;
+		filter: alpha(opacity=99);
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+}
+
+.step:not(.active) a.jms-link{
+		opacity: 1;
+		margin-top: 40px;
+}
+/*************************************************************/

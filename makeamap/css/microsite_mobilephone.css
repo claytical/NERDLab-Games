@@ -1,0 +1,30 @@
+/* CSS stylesheet: Tides of Trade
+   Mobile Phone size specific styles
+   Created by Laura Kurtzberg */
+
+@media (max-width: 600px) {
+  header div#title-logo {
+    transform: none;
+    padding: 10px;
+  }
+  div.main-description section {
+    width: 80%;
+  }
+  header {
+    height: auto;
+    min-height: 500px;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  footer {
+    width: 100%;
+  }
+  div.game-creator {
+    width: 100%;
+  }
+  div.game-creator p {
+    text-align:left;
+  }
+ }
