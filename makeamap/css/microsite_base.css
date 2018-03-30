@@ -144,15 +144,16 @@ header {
   width: auto;
   margin: 0;
   padding: 0;
-  min-height: 750px;
-  height: 95%;
-  padding-left: 60px;
+  min-height: 650px;
+  height: 75%;
+  padding-left: 0px;
   text-align: center;
 }
 
 header div#title-logo {
   text-align: center;
   margin: auto;
+  width: auto;
   max-width: 700px;
   top: 50%;
   transform: translateY(-55%);
