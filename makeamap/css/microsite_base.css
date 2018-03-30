@@ -102,6 +102,10 @@ p {
   padding-top: 50px;
 }
 
+p + p {
+  padding-top: 10px;
+}
+
 div.text-container {
   width: 60%;
   margin: auto;
@@ -186,6 +190,17 @@ div.main-description {
   width: auto;
   margin: auto;
   max-width: 919px;
+}
+
+div.process-description {
+  width: auto;
+  margin: auto;
+  max-width: 919px;
+}
+
+div.process-description h2 {
+  padding-bottom: 0px;
+  margin-bottom: -20px;
 }
 
 div.exhibit {
