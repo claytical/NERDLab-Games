@@ -170,10 +170,11 @@ div.subpagelogo img.logo {
     height: 60px;
     margin: 0;
 }
+
 header {
     background-color: grey;
     /* background-image: url("../images/Dwell_splash.jpg"); */
-    background: url(../images/Dwell_splash.jpg) no-repeat center center fixed; 
+    background: url(../images/Dwell_splash.jpg) no-repeat center center fixed;
     background-size: cover;
     /* background-size: contain; */
     resize: both;
@@ -186,30 +187,12 @@ header {
    */
     padding-left: 60px;
 }
-section.secondimage {
-    background-color: grey;
-    background-image: url("../images/EEE_frostScience_02.jpg");
-    background-size: cover;
-    display: block;
-    position: relative;
-    clear: both;
-    width: 100%;
-    min-height: 680px;
-    padding-left: 60px;
-    background-position: center center;
+
+em {
+  font-style: italic;
 }
-section.thirdimage {
-    background-color: grey;
-    background-image: url("../images/EEE_Smithsonian_twoPlayers.jpg");
-    background-size: cover;
-    display: block;
-    position: relative;
-    clear: both;
-    width: 100%;
-    min-height: 680px;
-    padding-left: 60px;
-    background-position: center center;
-}
+
+
 header h1.title {
     font-family: 'Open Sans', Sans-serif;
     font-size: 3em;
