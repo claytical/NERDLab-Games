@@ -459,16 +459,19 @@ section.contact {
     float: right;
     margin: 30px;
 }
+
+.contact-button {
+  margin-bottom: 75px;
+}
+
 a.button, #bottom a {
    /* color: #ffffff;
    */
 }
 .button:hover {
     text-decoration: none;
-    background-color: rgb(11,64,66)
-   /*#5998C6*/
-   ;
-    color: #f9b65d;
+    background-color: rgb(246,135, 32);
+    color: #fff;
 }
 div.form-group {
     display: block;
