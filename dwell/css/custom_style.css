@@ -53,7 +53,11 @@ article#tech-logos .supporting-img {
 	background-color: #000;
 }*/
 
-
+.embedded-slides {
+	margin: 50px auto 20px;
+	display: block;
+	text-align: center;
+}
 
 
 

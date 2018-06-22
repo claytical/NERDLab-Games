@@ -172,13 +172,16 @@ div.subpagelogo img.logo {
 }
 header {
     background-color: grey;
-    background-image: url("../images/Dwell_splash.jpg");
+    /* background-image: url("../images/Dwell_splash.jpg"); */
+    background: url(../images/Dwell_splash.jpg) no-repeat center center fixed; 
     background-size: cover;
+    /* background-size: contain; */
+    resize: both;
     display: block;
     position: relative;
     clear: both;
     width: 100%;
-    min-height: 680px;
+    min-height: 480px;
    /* height: 90vh;
    */
     padding-left: 60px;
