@@ -106,7 +106,10 @@ article.description {
 /*	box-shadow: 10px 10px 15px #000000;*/
 }
 
-p { margin-bottom: 10px; }
+p {
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
 
 .facebook {
 	background-image: url("../images/facebook.svg");

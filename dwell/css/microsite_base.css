@@ -66,17 +66,7 @@ article.event {
     margin-bottom: 10px;
     font-size: 1.75em;
 }
-.event h1.subheading {
-    font-size: 1.25em;
-}
-.event h2.subheading {
-    font-size: 1.25em;
-    font-weight: 300;
-}
-#team {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+
 .blue-background {
     color: #F0F0F0;
     background-color: #0000B0;
@@ -135,6 +125,8 @@ sup {
 .clear {
     clear: both;
 }
+
+/***************************************************************** NERDLab Styles *****************************************************************/
 div.nerdlab-banner {
     height: 50px;
     padding: 20px;
@@ -223,6 +215,7 @@ div.gamelogo img {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     width: 20%;
+    min-width: 220px;
     /* opacity: .92; */
 }
 div.learnMore {
@@ -281,7 +274,7 @@ iframe#demovimeo {
     top: 0;
     left: 0;
 }
-/***************************************************************** About EEE / Section Styles *****************************************************************/
+/***************************************************************** About / Section Styles *****************************************************************/
 section.about {
     color: #000000;
     padding: 20px;
@@ -364,8 +357,9 @@ footer p.footertext {
     color: white;
     font-weight: bold;
 }
-/*****************************************************************/
+/******************************************************************************************************************************************************************/
 /******************************************************************** Parralax Style rules ********************************************************************/
+
 /* background setup */
 .background {
     background-repeat: no-repeat;
