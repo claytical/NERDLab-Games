@@ -154,7 +154,7 @@ div.subpagelogo {
     text-decoration: none;
     position: fixed;
     width: calc(100% - 20px);
-    height: 60px;
+    height: 80px;
     z-index: 999;
     text-align: center;
 }
