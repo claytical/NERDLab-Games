@@ -1,243 +1,448 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Dwell</title>
+      <link href='https://fonts.googleapis.com/css?family=Lato:100,400,700' rel='stylesheet' type='text/css'>
+      <link type="text/css" rel="stylesheet" href="css/lightGallery.css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+      <link rel="stylesheet" type="text/css" href="dist/device-mockups.min.css">
+      <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+      <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+      <link type="text/css" rel="stylesheet" href="css/styleSlider.css" />
+      <link type="text/css" rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+         crossorigin="anonymous"></script>
+      <script src="js/lightgallery-all.min.js"></script>
+      <script src="js/jquery.mousewheel.min.js"></script>
+      <script src="js/lightslider.js"></script>
+      <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+      <script src="js/scroll.js"></script>
+      <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+      <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+      <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+      <script type="text/javascript" src="js/gallery.js"></script>
+   </head>
+   <body>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="navLargeScreen">
+               <nav class="navigation" id="mainNav">
+                  <div class=" logoHolder">
+                     <a href="http://nerdlab.miami/">  <img src="images/nerdlab-cubeBlack1.png" alt="logo" class="logo"></a>
+                     <div class="social">
+                        <a href="#"><i href="#" class="fab fa-facebook-square socialIcon"></i></a>
+                        <a href="#"><i href="#" class="fab fa-twitter-square socialIcon"></i></a>
+                     </div>
+                     <div class="projectTitle">
+                        <h3 class="projectName">Dwell</h3>
+                     </div>
+                  </div>
+                  <div class="navBar">
+                     <a class="navigation__link active" href="#1"><span class="navIcon"><i class="fas fa-book-open"></i></span>Introduction</a>
+                     <a class="navigation__link" href="#2"><span class="navIcon"><i class="fas fa-eye"></i></span>About</a>
+                     <a class="navigation__link" href="#3"><span class="navIcon"><i class="fas fa-images"></i></span>Gameplay</a>
+                     <a class="navigation__link" href="#4"><span class="navIcon"><i class="fas fa-download"></i></span>Gallery</a>
+                     <a class="navigation__link" href="#5" onclick="closeNav()"><span class="navIcon"><i class="fas fa-download"></i></span>Thumbnail Gallery</a>
+                     <a class="navigation__link" href="#6"><span class="navIcon"><i class="fas fa-award"></i></span>Team</a>
+                  </div>
+               </nav>
+            </div>
+            <div class="navMediumScreen">
+               <div id="mySidenav" class="sidenav">
+                  <a href="http://nerdlab.miami/" onclick="closeNav()"><span class="navIcon"><img src="images/nerdlab-cubeWhite.png" alt="logo" class="logo" style="width:40px; height:auto"></span></a>
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a class="navigation__link" href="#1" onclick="closeNav()"><span class="navIcon"><i class="fas fa-book-open"></i></span>Introduction</a>
+                  <a class="navigation__link" href="#2" onclick="closeNav()"><span class="navIcon"><i class="fas fa-eye"></i></span>About</a>
+                  <a class="navigation__link" href="#3" onclick="closeNav()"><span class="navIcon"><i class="fas fa-images"></i></span>Gameplay</a>
+                  <a class="navigation__link" href="#4" onclick="closeNav()"><span class="navIcon"><i class="fas fa-download"></i></span>Gallery</a>
+                  <a class="navigation__link" href="#5" onclick="closeNav()"><span class="navIcon"><i class="fas fa-download"></i></span>Thumbnail Gallery</a>
+                  <a class="navigation__link" href="#6" onclick="closeNav()"><span class="navIcon"><i class="fas fa-award"></i></span>Team</a>
+               </div>
+               <div>
+                  <span style="font-size:30px;cursor:pointer; " onclick="openNav()">&#9776; <span style="font-family:BebasNeue;margin-left:10px">Dwell</span></span>
+               </div>
+            </div>
+            <div class="col-lg-12 col-md-12 sections" id="test">
+               <div class="page-section hero" id="1">
+                  <div class="imgContainer">
+                     <img class="headImage" src="images/Dwell_splash.jpg" alt="headImage">
+                  </div>
+                  <h2>Dwell™</h2>
+                  <p class="justifyText">
+                     Dwell™ was developed by an interdisciplinary team led by faculty at the University of Miami’s School of Communication and School of Nursing and Health Studies as an engaging tabletop simulation game to teach about poverty’s impact on one’s choices, health, livelihood, communities, and families. Given the importance of educating future healthcare providers about the implications of poverty, the Dwell team’s goal was to create a game with an educational impact that does not require long setup time or a significant amount of human capital to run the event, especially in comparison to similar tools currently used for health education.
+                  </p>
+                  <div class="container clients">
+                     <section>
+                        <div class="row">
+                           <div class="col-4 col-md-3"><img class="awdimage" src="images/Logo_UMInteractive_blackText.png"></div>
+                        </div>
+                     </section>
+                  </div>
+               </div>
+               <hr>
+               <div class="page-section hero" id="2">
+                  <h2>About</h2>
+                  <p class="justifyText">
+                     Poverty is an issue that allied health and healthcare professionals face when practicing in any setting, including hospitals, clinics, and schools. Poverty is a ubiquitous condition that impacts half the world’s population indirectly and directly. Locally, the city of Miami is one of the poorest cities in the United States with 21.3 percent of residents living below the poverty level (Miami-Dade County Department of Regulatory and Economic Resources). In 2015, more than 43 million people were living in poverty nationally (World Hunger Education Service). Internationally, the World Bank estimated that 896 million people live on $1.90 day or less (World Hunger Education Service). Research has shown that poverty influences the five dimensions of family, including health, productivity, physical environment, emotional well-being, and family interaction (Park, Turnbull, & Turnbull).
+                  </p>
+                  <p class="justifyText">
+                     Despite these facts, many individuals working with poverty stricken people require a much greater understanding of the global and often life-long impacts that being poor has particularly on health. By playing Dwell, participants roleplay as an individual or multi-person household and experience how poverty influences their ability to live a healthy life and access healthy resources. An emphasis on facilitated reflection and debrief are critical to the Dwell educational experience.
+                  </p>
+                  <p class="justifyText">
+                     Initial results from playtest sessions indicate that players found the game to be engaging and an enjoyable way to learn about poverty. Pilot testing of the game’s potential educational impacts with undergraduate students will begin in late 2018 and will expand to include more persons who interact with poverty-stricken individuals in professional capacities.
+                  </p>
+               </div>
+               <hr>
+               <div class="page-section deviceControl" id="3">
+                  <h2>Gameplay</h2>
+                  <div class="row">
+                     <div class="col-12 col-md-6 col-lg-6">
+                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS9x-0s4_oA0NgEDSOTFA23w26bpn5nhHD_SbNaQTVghCim46pArL-pdMiVsYuTy12Rjf5rK1zwVlTh/embed?start=false&amp;loop=false&amp;delayms=15000" frameborder="0" width="100%" height="400px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-6 demoText justifyText">
+                        <p>In Dwell, players roleplay as one of five characters with daily as well as longer term goals, current living and working arrangements, and initial possessions and money available. Players take turns navigating Dwellville - represented by the gameboard - to accomplish these goals. Throughout the game, players track their (in)ability to go to school or work or complete a health check. A player’s in-game progress represents their character or household’s resiliency. The game also includes periodic facts related to poverty as well as built-in periodic discussion phases to fully anchor concepts through dialogue, reflection, and debriefing.
+                        </p>
+                        <p>
+                           Dwell gameplay is ideally led by a trained facilitator who can also provide greater context for gameplay and facilitated debrief. However, the following slides may be used for self-led gameplay and are best viewed in full-screen mode.
+                        </p>
+                        <!-- <div class="downloadButtons">
+                           <img src="images/image_preview.png" alt"playstore" class="downloadImage">
+                           <img src="images/apple-app-store-download.png" alt"playstore" class="downloadImage">
+                           </div> -->
+                     </div>
+                  </div>
+               </div>
+               <hr>
+               <div class="page-section" id="4">
+                  <h2>Gallery</h2>
+                  <div id="lightgallery" >
+                     <a href="images/gallery/G1.jpg">
+                     <img src="images/gallery/G1.jpg" class="img-fluid lightGalleryImage"/>
+                     </a>
+                     <a href="images/gallery/G2.jpg">
+                     <img src="images/gallery/G2.jpg" class="img-fluid lightGalleryImage" />
+                     </a>
+                     <a href="images/gallery/G3.jpg">
+                     <img src="images/gallery/G3.jpg" class="img-fluid lightGalleryImage" />
+                     </a>
+                     <a href="images/gallery/G4.jpg">
+                     <img src="images/gallery/G4.jpg" class="img-fluid lightGalleryImage" />
+                     </a>
+                     <a href="images/gallery/G5.jpg">
+                     <img src="images/gallery/G5.jpg" class="img-fluid lightGalleryImage" />
+                     </a>
+                     <a href="images/gallery/G6.jpg">
+                     <img src="images/gallery/G6.jpg" class="img-fluid lightGalleryImage" />
+                     </a>
+                     <a href="images/gallery/G7.jpg">
+                     <img src="images/gallery/G7.jpg" class="img-fluid lightGalleryImage" />
+                     </a>
+                     <a href="images/gallery/G8.jpg">
+                     <img src="images/gallery/G8.jpg" class="img-fluid lightGalleryImage" />
+                     </a>
+                     <a href="images/gallery/G9.jpg">
+                     <img src="images/gallery/G9.jpg" class="img-fluid lightGalleryImage" />
+                     </a>
+                     <a href="images/gallery/G10.jpg">
+                     <img src="images/gallery/G10.jpg" class="img-fluid lightGalleryImage" />
+                     </a>
+                     <a href="images/gallery/G11.jpg">
+                     <img src="images/gallery/G11.jpg" class="img-fluid lightGalleryImage" />
+                     </a>
+                     <a href="images/gallery/G12.jpg">
+                     <img src="images/gallery/G12.jpg" class="img-fluid lightGalleryImage" />
+                     </a>
+                  </div>
+               </div>
+               <hr>
+               <div class="page-section" id="5">
+                  <h2>Gallery</h2>
+                  <div class="container">
+                     <div class="content">
+                        <div id="rg-gallery" class="rg-gallery">
+                           <div class="rg-thumbs">
+                              <!-- Elastislide Carousel Thumbnail Viewer -->
+                              <div class="es-carousel-wrapper">
+                                 <div class="es-nav">
+                                    <span class="es-nav-prev">Previous</span>
+                                    <span class="es-nav-next">Next</span>
+                                 </div>
+                                 <div class="es-carousel">
+                                    <ul>
+                                       <li><a href="#"><img src="images/gallery/G1.jpg" data-large="images/gallery/G1.jpg" alt="image01"  /></a></li>
+                                       <li><a href="#"><img src="images/gallery/G2.jpg" data-large="images/gallery/G2.jpg" alt="image02" /></a></li>
+                                       <li><a href="#"><img src="images/gallery/G3.jpg" data-large="images/gallery/G3.jpg" alt="image03" /></a></li>
+                                       <li><a href="#"><img src="images/gallery/G4.jpg" data-large="images/gallery/G4.jpg" alt="image04" /></a></li>
+                                       <li><a href="#"><img src="images/gallery/G5.jpg" data-large="images/gallery/G5.jpg" alt="image05"  /></a></li>
+                                       <li><a href="#"><img src="images/gallery/G6.jpg" data-large="images/gallery/G6.jpg" alt="image06"  /></a></li>
+                                       <li><a href="#"><img src="images/gallery/G7.jpg" data-large="images/gallery/G7.jpg" alt="image07"  /></a></li>
+                                       <li><a href="#"><img src="images/gallery/G8.jpg" data-large="images/gallery/G8.jpg" alt="image08" /></a></li>
+                                       <li><a href="#"><img src="images/gallery/G9.jpg" data-large="images/gallery/G9.jpg" alt="image09"  /></a></li>
+                                       <li><a href="#"><img src="images/gallery/G10.jpg" data-large="images/gallery/G10.jpg" alt="image10"  /></a></li>
+                                       <li><a href="#"><img src="images/gallery/G11.jpg" data-large="images/gallery/G11.jpg" alt="image11"  /></a></li>
+                                       <li><a href="#"><img src="images/gallery/G12.jpg" data-large="images/gallery/G12.jpg" alt="image12"  /></a></li>
+                                       <li><a href="#"><img src="images/gallery/G13.jpg" data-large="images/gallery/G13.jpg" alt="image10"  /></a></li>
+                                       <li><a href="#"><img src="images/gallery/G14.jpg" data-large="images/gallery/G14.jpg" alt="image11"  /></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- rg-thumbs -->
+                        </div>
+                        <!-- rg-gallery -->
+                     </div>
+                     <!-- content -->
+                  </div>
+                  <!-- container -->
+               </div>
+               <hr>
+               <!-- <div class="page-section " id="6">
+                  <h2>Video</h2>
+                  <video width="100%" controls>
+                  <source src="videos/dongrey-gameplay.mp4" type="video/mp4">
+                  </video>
+                  </div>
+                  <hr> -->
+               <!-- <div class="page-section " id="7">
+                  <div class="container">
+                    <h2>Awards</h2>
+                     <section>
+                       <div class="container">
+                        <div class="row">
+                        <div class="col-4 col-md-3 awdImgcontainer"><img class="awdimage" src="images/balefirelabs.png"></div>
+                        <div class="col-4 col-md-3  awdImgcontainer"><img class="awdimage" src="images/aejmc-firstplace.png"></div>
+                        <div class="col-4 col-md-3 awdImgcontainer"><img class="awdimage" src="images/balefirelabs.png"></div>
+                        <div class="col-4 col-md-3 awdImgcontainer"><img class="awdimage" src="images/aejmc-firstplace.png"></div>
+                        <div class="col-4 col-md-3 awdImgcontainer"><img class="awdimage" src="images/balefirelabs.png"></div>
+                        <div class="col-4 col-md-3 awdImgcontainer"><img class="awdimage" src="images/aejmc-firstplace.png"></div>
+                        <div class="col-4 col-md-3 awdImgcontainer"><img class="awdimage" src="images/balefirelabs.png"></div>
+                        <div class="col-4 col-md-3 awdImgcontainer"><img class="awdimage" src="images/aejmc-firstplace.png"></div>
+                    </div>
+                  </div>
+                     </section>
+                  </div>
+                  </div> -->
+               <!-- <div class="page-section " id="8">
+                  <h2>Exhibitions</h2>
+                  <div class="row">
+                          <div class="col-12 col-md-8 ">
+                          <h3>Exhibit Name 1</h3>
+                          <h5>Place, Date and Time </h5>
+                            <p class="justifyText">Echo Earth was selected as one of 48 projects for exhibition at the 2017 ACCelerate Creativity and Innovation Festival at the Smithsonian National Museum of American History in Washington, D.C., from October 13-15, 2017. The festival had over 10,000 visitors each day, thousands of which got to experience Echo Earth first hand. Participants spanned many ages, including multi-generational families.
 
-<html lang="en">
+                                  Special thanks to Samsung for their generous sponsorship of hardware, including numerous Samsung Gear VR sets and Smart TVs, during the festival.
 
-<head>
-    <meta charset="utf-8">
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <meta name="description" content="VR endless swimmer, players transform into a baby beluga whale immersed in the deep blue Arctic learning to search for food" />
-    <meta name="author" content="Lien Tran, Jill Sanko, Deborah Salani, Yui Matsuda, Pablo Obando, Casey Lue, University of Miami, School of Communication, School of Nursing and Health Studies" />
-    <meta name="keywords" content="simulation, tabletop, poverty, Dwell, Dwell game, game, social impact, poverty simulation, health, health disparities" />
-    <link rel="icon" href="favicon/favicon.ico">
+                                  The festival is a celebration of creative exploration and research happening across the ACC at the nexus of science, engineering, arts and design (SEAD). It is an opportunity for all ACC schools to showcase their work to each other, potential ACC students and their parents, alumni, companies, legislators, and invited guests from the nation’s capital.
 
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+                                  Smithsonian Magazine highlighted Echo Earth in its "These Collegiate Innovators Are at the Vanguard of Technology and Art" article summarizing the weekend festivites.
+                            </p>
+                          </div>
+                          <div class="col-4">
+                            <img class="exhibitionLogo" src="images/acc-logo-black.png">
+                  </div>
+                  </div>
 
+                  <div class="container text-center my-3 exhibitionImages">
+                  <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                  <div class="carousel-inner w-100" role="listbox">
+                      <div class="carousel-item row no-gutters active">
+                          <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/222/fff?text=1"></div>
+                          <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/444?text=2"></div>
+                          <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/888?text=3"></div>
+                          <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/111/fff?text=4"></div>
+                      </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                  </a>
+                  </div>
+                  </div>
 
-    <title>Dwell&trade;, poverty tabletop simulation</title>
+                  <hr>
 
-    <!-- Add Google Fonts Here -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+                  <div class="row">
+                  <div class="col-12 col-md-8">
+                  <h3>Exhibit Name 2</h3>
+                  <h5>Place, Date and Time </h5>
+                  <p class="justifyText">Echo Earth was selected as one of 48 projects for exhibition at the 2017 ACCelerate Creativity and Innovation Festival at the Smithsonian National Museum of American History in Washington, D.C., from October 13-15, 2017. The festival had over 10,000 visitors each day, thousands of which got to experience Echo Earth first hand. Participants spanned many ages, including multi-generational families.
+                  Special thanks to Samsung for their generous sponsorship of hardware, including numerous Samsung Gear VR sets and Smart TVs, during the festival.
+                  The festival is a celebration of creative exploration and research happening across the ACC at the nexus of science, engineering, arts and design (SEAD). It is an opportunity for all ACC schools to showcase their work to each other, potential ACC students and their parents, alumni, companies, legislators, and invited guests from the nation’s capital.
+                  Smithsonian Magazine highlighted Echo Earth in its "These Collegiate Innovators Are at the Vanguard of Technology and Art" article summarizing the weekend festivites.
+                  </p>
+                  </div>
+                  <div class="col-4">
+                  <img class="exhibitionLogo" src="images/logo_frost.png">
+                  </div>
+                  </div>
 
+                  <div class="container text-center my-3 exhibitionImages">
+                  <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                  <div class="carousel-inner w-100" role="listbox">
+                      <div class="carousel-item row no-gutters active">
+                          <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/222/fff?text=1"></div>
+                          <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/444?text=2"></div>
+                          <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/888?text=3"></div>
+                          <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/111/fff?text=4"></div>
+                      </div>
 
-    <link type="text/css" rel="stylesheet" href="release/featherlight.min.css" />
-    <link type="text/css" rel="stylesheet" href="release/featherlight.gallery.min.css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/microsite_base.css">
-    <link rel="stylesheet" href="css/microsite_tablet.css">
-    <link rel="stylesheet" href="css/microsite_mobilephone.css">
-    <link rel="stylesheet" href="css/custom_style.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://use.fontawesome.com/ce0a8a07a0.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-12049001-15"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+                  </div>
+                  <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                  </a>
+                  </div>
+                  </div>
+                  <div class="container testimonials">
+                  <div class="row">
+                  <div class="col-md-10 col-center m-auto">
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner testimonialText">
+                  <div class="item carousel-item active">
+                  <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                  <p class="overview"><b>Famous Personality 1</b>, Designer</p>
+                  </div>
+                  <div class="item carousel-item">
+                  <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+                  <p class="overview"><b>Famous Personality 2</b>, Developer</p>
+                  </div>
+                  <div class="item carousel-item">
+                  <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+                  <p class="overview"><b>Famous Personality 3</b>, Writer</p>
+                  </div>
+                  </div>
+                  <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+                  </a>
+                  <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+                  </a>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  <hr> -->
+               <div class="page-section lastSection" id="9">
+                  <h2>Team</h2>
+                  <h2 style="text-align:left;padding-bottom:0px;">Faculty Collaborators</h2>
+                  <div class="container">
+                     <div class="row" style="background:#fff">
+                        <div class="col-6 col-lg-4">
+                           <div class="teamMember">
+                              <img class="teamMemberPhoto" src="images/lien.png" alt="">
+                              <p class="h5">Lien Tran</p>
+                              <p class="h6">Co-Director</p>
+                              <h3>
+                                 <a href="#"><i class="fab fa-facebook socialIcon"></i></a>
+                                 <a href="#">  <i class="fab fa-twitter-square socialIcon"></i></a>
+                                 <a href="#">  <i class="fab fa-instagram socialIcon"></i></a>
+                              </h3>
+                           </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                           <div class="teamMember">
+                              <img class="teamMemberPhoto" src="images/user.png" alt="">
+                              <p class="h5">Jill Sanko</p>
+                              <p class="h6">Interactive Developer</p>
+                              <h3>
+                                 <a href="#"><i class="fab fa-facebook socialIcon"></i></a>
+                                 <a href="#"><i class="fab fa-twitter-square socialIcon"></i></a>
+                                 <a href="#"><i class="fab fa-instagram socialIcon"></i></a>
+                              </h3>
+                           </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                           <div class="teamMember">
+                              <img class="teamMemberPhoto" src="images/user.png" alt="">
+                              <p class="h5">Deborah Salani</p>
+                              <p class="h6">Designer</p>
+                              <h3>
+                                 <a href="#"><i class="fab fa-facebook socialIcon"></i></a>
+                                 <a href="#"><i class="fab fa-twitter-square socialIcon"></i></a>
+                                 <a href="#"><i class="fab fa-instagram socialIcon"></i></a>
+                              </h3>
+                           </div>
+                        </div>
+                     </div>
+                     <p>Our interdisciplinary team brings together faculty with experience in simulation, game design, social impact games, poverty, and nursing education.</p>
+                  </div>
+                  <h2 style="text-align:left;padding-left:0px;">Acknowledgements</h2>
+                  <p>Special thanks to Yui Matsuda, Susana Barroso-Fernandez, Jacqueline Lopez, and Laura Albuja for their subject matter expertise and Casey Lue and Pablo Obando, for their graphic design contributions. Thank you to the University of Miami’s Center for Communication, Culture, and Change for providing the pilot funding necessary to prototype and test Dwell.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="col-12 footerContent">
+            <p>© 2019 NERDLab All rights reserved</p>
+         </div>
+      </footer>
+   </body>
+   <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
 
-  gtag('config', 'UA-12049001-15');
-</script>
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-</head>
-
-<body>
-    <div class="subpagelogo">
-        <a href="http://nerdlab.miami" target="_blank"><img class="logo" src="images/nerdlab-cube.png" alt="nerdlab logo" /></a>
-    </div>
-
-    <header id="top">
-        <div class="gamelogo">
-            <a href="index.html"><img src="images/U_Dwell@3x.png" alt="game logo" /></a>
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+      }
+   </script>
+   <script>
+      $('#lightSlider').lightSlider({
+        gallery: true,
+        autoWidth: false,
+        item: 1,
+        loop:true,
+        slideMargin: 2,
+        thumbItem: 9,
+        speed: 1200, //ms'
+           auto: true,
+           loop: false,
+           controls: true,
+           prevHtml: '',
+            nextHtml: '',
+            pause: 4000,
+            currentPagerPosition: 'left',
+        });
+   </script>
+   <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+      <div class="rg-image-wrapper">
+        {{if itemsCount > 1}}
+          <div class="rg-image-nav">
+            <a href="#" class="rg-image-nav-prev">Previous Image</a>
+            <a href="#" class="rg-image-nav-next">Next Image</a>
+          </div>
+        {{/if}}
+        <div class="rg-image"></div>
+        <div class="rg-loading"></div>
+        <div class="rg-caption-wrapper">
+          <div class="rg-caption" style="display:none;">
+            <p></p>
+          </div>
         </div>
-
-        <!-- <div class="socialmedia">
-            <a href="https://twitter.com/echoearthexp" target="_blank"><img class="logo" src="images/twitter.png" alt="Twitter logo" /></a>
-            <a href="https://www.facebook.com/EchoEarthExp" target="_blank"><img class="logo" src="images/facebook.png" alt="Facebook logo" /></a>
-        </div> -->
-
-        <br class="clear" />
-    </header>
-
-
-    <!--   ABOUT Description -->
-    <section>
-        <h1 class="section-title"><em>Dwell&trade;</em></h1>
-
-        <!-- <p class="subheading">A game simulating poverty&rsquo;s effect on one&rsquo;s health and health care access</p> -->
-
-        <p><em>Dwell&trade;</em> was developed by an interdisciplinary team led by faculty at the University of Miami&rsquo;s <a href="http://com.miami.edu">School of Communication</a> and <a href="https://www.sonhs.miami.edu/">School of Nursing and Health Studies</a> as an engaging tabletop simulation game to teach about poverty’s impact on one’s choices, health, livelihood, communities, and families. Given the importance of educating future healthcare providers about the implications of poverty, the <em>Dwell</em> team’s goal was to create a game with an educational impact that does not require long setup time or a significant amount of human capital to run the event, especially in comparison to similar tools currently used for health education.</p>
-
-        <p>Poverty is an issue that allied health and healthcare professionals face when practicing in any setting, including hospitals, clinics, and schools. Poverty is a ubiquitous condition that impacts half the world&rsquo;s population indirectly and directly. Locally, the city of Miami is one of the poorest cities in the United States with 21.3 percent of residents living below the poverty level (Miami-Dade County Department of Regulatory and Economic Resources). In 2015, more than 43 million people were living in poverty nationally (World Hunger Education Service). Internationally, the World Bank estimated that 896 million people live on $1.90 day or less (World Hunger Education Service). Research has shown that poverty influences the five dimensions of family, including health, productivity, physical environment, emotional well-being, and family interaction (Park, Turnbull, & Turnbull).</p>
-
-        <p>Despite these facts, many individuals working with poverty stricken people require a much greater understanding of the global and often life-long impacts that being poor has particularly on health. By playing <em>Dwell</em>, participants roleplay as an individual or multi-person household and experience how poverty influences their ability to live a healthy life and access healthy resources. An emphasis on facilitated reflection and debrief are critical to the <em>Dwell</em> educational experience.</p>
-
-        <p>Initial results from playtest sessions indicate that players found the game to be engaging and an enjoyable way to learn about poverty. Pilot testing of the game&rsquo;s potential educational impacts with undergraduate students will begin in late 2018 and will expand to include more persons who interact with poverty-stricken individuals in professional capacities.</p>
-
-
-        <!-- <a href="#" class="button">Order Game</a> -->
-    </section>
-
-    <!-- <div class="container">
-        <section id="jms-slideshow" class="jms-slideshow">
-              <div class="step" data-color="color-1" data-x="0000">
-              </div>
-              <div class="step" data-color="color-2" data-x="1000">
-              </div>
-              <div class="step" data-color="color-3" data-x="2000">
-              </div>
-              <div class="step" data-color="color-4" data-x="3000">
-              </div>
-              <div class="step" data-color="color-5" data-x="4000">
-              </div>
-              <div class="step" data-color="color-6" data-x="5000">
-              </div>
-              <div class="step" data-color="color-7" data-x="6000">
-              </div>
-              <div class="step" data-color="color-8" data-x="7000">
-              </div>
-              <div class="step" data-color="color-9" data-x="8000">
-              </div>
-              <div class="step" data-color="color-10" data-x="9000">
-              </div>
-              <div class="step" data-color="color-11" data-x="10000">
-              </div>
-              <div class="step" data-color="color-12" data-x="11000">
-              </div>
-              <div class="step" data-color="color-13" data-x="12000">
-              </div>
-              <div class="step" data-color="color-14" data-x="13000">
-              </div>
-              <div class="step" data-color="color-15" data-x="14000">
-              </div>
-              <div class="step" data-color="color-16" data-x="15000">
-              </div>
-              <div class="step" data-color="color-17" data-x="16000">
-              </div>
-        </section>
-    </div> -->
-
-
-    <section>
-        <h1 class="section-title">Gameplay</h1>
-
-        <p>In Dwell, players roleplay as one of five characters with daily as well as longer term goals, current living and working arrangements, and initial possessions and money available. Players take turns navigating Dwellville - represented by the gameboard - to accomplish these goals. Throughout the game, players track their (in)ability to go to school or work or complete a health check. A player’s in-game progress represents their character or household&rsquo;s resiliency. The game also includes periodic facts related to poverty as well as built-in periodic  discussion phases to fully anchor concepts through dialogue, reflection, and debriefing.</p>
-
-        <p><em>Dwell</em> gameplay is ideally led by a trained facilitator who can also provide greater context for gameplay and facilitated debrief. However, the following slides may be used for self-led gameplay and are best viewed in full-screen mode.</p>
-
-        <article class="embedded-slides">
-          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS9x-0s4_oA0NgEDSOTFA23w26bpn5nhHD_SbNaQTVghCim46pArL-pdMiVsYuTy12Rjf5rK1zwVlTh/embed?start=false&loop=false&delayms=15000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-        </article>
-    </section>
-
-    <section>
-        <h1 class="section-title">Gallery</h1>
-
-        <div class="row">
-          <div class="column">
-            <img src="images/Gallery/G1.jpg" style="width:100%">
-            <img src="images/Gallery/G2.jpg" style="width:100%">
-            <img src="images/Gallery/G3.jpg" style="width:100%">
-            <img src="images/Gallery/G4.jpg" style="width:100%">
-          </div>
-          <div class="column">
-            <img src="images/Gallery/G5.jpg" style="width:100%">
-            <img src="images/Gallery/G6.jpg" style="width:100%">
-            <img src="images/Gallery/G7.jpg" style="width:100%">
-            <img src="images/Gallery/G8.jpg" style="width:100%">
-          </div>
-          <div class="column">
-            <img src="images/Gallery/G9.jpg" style="width:100%">
-            <img src="images/Gallery/G10.jpg" style="width:100%">
-            <img src="images/Gallery/G11.jpg" style="width:100%">
-          </div>
-          <div class="column">
-            <img src="images/Gallery/G12.jpg" style="width:100%">
-            <img src="images/Gallery/G13.jpg" style="width:100%">
-            <img src="images/Gallery/G14.jpg" style="width:100%">
-          </div>
-        </div>
-    </section>
-
-    <section>
-        <h1 class="section-title">Team</h1>
-
-        <h2 class="subheading">Faculty Collaborators</h2>
-
-        <p><a href="http://com.miami.edu/profile/lien-tran">Lien Tran</a> <sup>1</sup>, <a href="http://people.miami.edu/profile/j.sanko@miami.edu">Jill Sanko</a> <sup>2</sup>, <a href="http://people.miami.edu/profile/dsalani@miami.edu">Deborah Salani</a> <sup>2</sup>, and <a href="http://people.miami.edu/profile/yxm301@miami.edu">Yui Matsuda</a> <sup>2</sup></p>
-
-        <p>Our interdisciplinary team brings together faculty with experience in simulation, game design, social impact games, poverty, and nursing education.</p>
-
-        <h2 class="subheading">Acknowledgements</h2>
-
-        <p>Special thanks to Susana Barroso-Fernandez <sup>2</sup>, Jacqueline Lopez <sup>2</sup>, and Laura Albuja <sup>2</sup> for their subject matter expertise and Casey Lue <sup>1</sup> and Pablo Obando <sup>1, 2</sup> for their graphic design contributions. Thank you to the University of Miami&rsquo;s <a href="http://com.miami.edu/center-for-ccc">Center for Communication, Culture, and Change</a> for providing the pilot funding necessary to prototype and test <em>Dwell</em>.</p>
-
-        <article class="subscript">
-          <p><sup>1</sup> <a href="http://com.miami.edu">University of Miami School of Communication</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup> <a href="https://www.sonhs.miami.edu/">University of Miami School of Nursing and Health Studies</a></p>
-        </article>
-
-
-        <!-- <h2 class="subheading">Want to learn more?</h2>
-        <p>Contact Lien Tran at <a href="mailto:l.tran@miami.edu">l[dot]tran[at]miami[dot]edu</a>.</p> -->
-        <a href="mailto:l.tran@miami.edu" target="_blank" class="button contact-button">Contact Us</a>
-
-        <article>&copy; 2019 Dwell &trade; and the University of Miami</article>
-    </section>
-
-    <!--DEMO VIDEO  -->
-
-    <div class="staticblock">
-        <!-- <section id="demovideo">
-            <span class="video-height"></span>
-            <iframe id="demovimeo" src="https://player.vimeo.com/video/214193964" width="640" height="356" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </section> -->
-    </div>
-
-    <!--   FOOTER-->
-    <footer id="bottom">
-        <div id="uparrow" class="circle"><a href="#top"><img class="arrow" src="images/arrow.png" alt="click to return to top" /></a></div>
-        <p class="footertext">New Experience Research &amp; Design Lab <a href="http://nerdlab.miami" target="_blank" >(NERDLab)</a> is a student-faculty cooperative driven by research, development, and an enthusiasm for social impact based out of the University of Miami&rsquo;s <a href="http://interactive.miami.edu" target="_blank">Interactive Media</a> program.</p>
-    </footer>
-
-    <!--   SCRIPTS-->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-     <script type="text/javascript" src="javaScript/script.js"></script>
-     <!-- gallery slideshow scripts -->
-    <script type="text/javascript" src="javaScript/jmpress.min.js"></script>
-  	<!-- jmslideshow plugin : extends the jmpress plugin -->
-  	<script type="text/javascript" src="javaScript/jquery.jmslideshow.js"></script>
-  	<script type="text/javascript" src="javaScript/modernizr.custom.48780.js"></script>
-
-<script type="text/javascript">
- $(function() {
-   var jmpressOpts	= {
-     animation		: { transitionDuration : '0.8s' }
-   };
-
-   $( '#jms-slideshow' ).jmslideshow( $.extend( true, { jmpressOpts : jmpressOpts }, {
-     autoplay	: true,
-     bgColorSpeed: '0.2s'
-   }));
-  });
-</script>
-</body>
-
+      </div>
+   </script>
 </html>
