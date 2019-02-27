@@ -166,7 +166,7 @@ div.subpagelogo img.logo {
 header {
     background-color: grey;
     /* background-image: url("../images/Dwell_splash.jpg"); */
-    background: url(../images/Dwell_splash.jpg) no-repeat center center fixed;
+    background: url(../images/Gallery/G10.jpg) no-repeat center center fixed;            
     background-size: cover;
     /* background-size: contain; */
     resize: both;
