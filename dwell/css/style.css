@@ -73,7 +73,8 @@ padding-left: 40px;
 }
 
 .logo{
-
+width:100px !important;
+height:auto !important;
 }
 
 .logoHolder{
@@ -104,7 +105,7 @@ padding-left: 40px;
 
 .lastSection
 {
-  margin-bottom:40px;
+  margin-bottom:200px;
 }
 
 .projectName
@@ -404,8 +405,9 @@ h2{
 
 .footerContent
 {
-  padding-top:20px;
-  padding-bottom:20px;
+  /* padding-top:20px;
+  padding-bottom:20px; */
+
   color:#fff;
   background: #000;
 }
@@ -545,6 +547,12 @@ margin-left: 0px;
 }
 .footerContent{
   z-index: 100;
+  margin-top:-23px;
+  position: fixed;
+bottom: 0;
+z-index: 99;
+width: 100%;
+text-align: right;
 }
 
 .awdImgcontainer
@@ -601,4 +609,16 @@ img {
 .hideClass{
   display:none;
 
+}
+.Acknowledgements
+{
+text-align:left;padding-left:0px;
+margin-bottom: 0px;
+padding-bottom: 0px;
+}
+
+
+.footerText
+{
+  margin-bottom:0px;
 }
