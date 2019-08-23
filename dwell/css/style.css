@@ -176,6 +176,7 @@ margin: auto;
 h2{
   text-align:center;
   padding: 20px;
+  margin-bottom:0px;
 }
 /* Slider */
 
@@ -621,4 +622,10 @@ padding-bottom: 0px;
 .footerText
 {
   margin-bottom:0px;
+}
+
+.awardsRows
+{
+  display: block;
+  text-align: center;
 }
