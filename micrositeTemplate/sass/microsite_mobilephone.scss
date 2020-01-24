@@ -41,7 +41,9 @@
   div#download-container {
     position: absolute;
     top: 80px;
-    right: 80px;
+    right: 0;
+    left: 0;
+    margin: auto;
     width: 200px;
     height: 200px;
     z-index: 100;

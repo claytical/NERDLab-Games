@@ -6,34 +6,42 @@
     height: auto;
     padding-left: 0;
     margin-left: 0;
-    text-align: center; }
-    header h1.title {
-      font-size: 6em;
-      text-align: center;
-      margin-left: 0;
-      padding-left: 0;
-      padding-top: 250px;
-      padding-bottom: 100px; }
-    header p.description {
-      max-width: 100%;
-      font-size: 1.2em;
-      line-height: 1.2em;
-      padding: 40px;
-      text-align: center; }
-    header p.description:nth-child(3) {
-      display: none; }
+    text-align: center;
+  }
+  header h1.title {
+    font-size: 6em;
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 250px;
+    padding-bottom: 100px;
+  }
+  header p.description {
+    max-width: 100%;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    padding: 40px;
+    text-align: center;
+  }
+  header p.description:nth-child(3) {
+    display: none;
+  }
 
   section {
     width: 100%;
-    padding: 20px; }
+    padding: 20px;
+  }
 
   div#download-container {
     position: absolute;
     top: 80px;
-    right: 80px;
+    right: 0;
+    left: 0;
+    margin: auto;
     width: 200px;
     height: 200px;
-    z-index: 100; }
+    z-index: 100;
+  }
 
   div.download {
     width: 198px;
@@ -41,78 +49,99 @@
     padding: 1px;
     margin-top: 20px;
     border-radius: 10px;
-    background-color: rgba(200, 200, 200, 0.5); }
+    background-color: rgba(200, 200, 200, 0.5);
+  }
 
   div.download:hover {
     border-radius: 10px;
-    background-color: rgba(200, 200, 200, 0.8); }
+    background-color: rgba(200, 200, 200, 0.8);
+  }
 
   div.learnMore {
     display: none;
-    visibility: hidden; }
+    visibility: hidden;
+  }
 
   section.awards {
     height: auto;
     text-align: center;
-    border: none; }
-    section.awards div.centered {
-      width: 100%; }
-    section.awards img.badge {
-      float: none;
-      margin-top: 0px;
-      margin-left: 0px;
-      width: 250px;
-      max-width: 100%; }
-    section.awards p {
-      font-size: 1em;
-      line-height: 1.2em;
-      padding-top: 15px;
-      margin-left: 0px;
-      width: 100%; }
-    section.awards p:nth-child(2) {
-      margin-top: 15px; }
-    section.awards p:last-child {
-      margin-bottom: 50px; }
+    border: none;
+  }
+  section.awards div.centered {
+    width: 100%;
+  }
+  section.awards img.badge {
+    float: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 250px;
+    max-width: 100%;
+  }
+  section.awards p {
+    font-size: 1em;
+    line-height: 1.2em;
+    padding-top: 15px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  section.awards p:nth-child(2) {
+    margin-top: 15px;
+  }
+  section.awards p:last-child {
+    margin-bottom: 50px;
+  }
 
   div.NerdLAB {
-    width: 80%; }
+    width: 80%;
+  }
 
   footer {
-    width: 100%; } }
+    width: 100%;
+  }
+}
 @media (max-width: 480px) {
   header {
     height: auto;
     padding-left: 0;
     margin-left: 0;
-    text-align: center; }
-    header h1.title {
-      max-width: 98%;
-      margin: auto;
-      font-size: 6em;
-      text-align: center;
-      padding-top: 250px;
-      padding-bottom: 100px; }
-    header p.description {
-      max-width: 100%;
-      font-size: 1.2em;
-      line-height: 1.2em;
-      padding: 40px;
-      text-align: center; }
-    header p.description:nth-child(3) {
-      display: none; }
+    text-align: center;
+  }
+  header h1.title {
+    max-width: 98%;
+    margin: auto;
+    font-size: 6em;
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 100px;
+  }
+  header p.description {
+    max-width: 100%;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    padding: 40px;
+    text-align: center;
+  }
+  header p.description:nth-child(3) {
+    display: none;
+  }
 
   section {
     width: 100%;
-    padding: 20px; }
+    padding: 20px;
+  }
 
   div.NerdLAB {
-    width: 80%; }
+    width: 80%;
+  }
 
   footer {
-    width: 100%; }
+    width: 100%;
+  }
 
   div.contact {
     width: 100%;
-    padding: 40px; } }
+    padding: 40px;
+  }
+}
 
 /*# sourceMappingURL=microsite_mobilephone.css.map */
