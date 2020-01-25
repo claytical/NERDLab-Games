@@ -6,7 +6,6 @@
 
   header {
     height: auto;
-    padding-bottom: 100px;
 
     h1.title {
       padding-top: 250px;
@@ -27,7 +26,7 @@
   div#download-container {
     position: absolute;
     top: 80px;
-    right: 80px;
+    right: 20px;
     width: 200px;
     height: 200px;
     z-index: 100;
@@ -89,10 +88,6 @@
   section {
     width: 100%;
     padding: 20px;
-  }
-
-  div.download {
-    margin-left: 45px;
   }
 
   section.awards {
