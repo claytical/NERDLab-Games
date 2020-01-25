@@ -66,6 +66,8 @@ h3 {
   color: #084042;
 font-family: 'Wendy One', sans-serif;
 font-size: 2.2rem!important;
+padding-left: 1rem;
+padding-right: 1rem;
 }
 
 /* h3:hover{
@@ -80,6 +82,14 @@ font-size: 2.4rem!important;
 
 }
 
+h5 {
+  color: #fff;
+font-family: 'Wendy One', sans-serif;
+font-size: 2.2rem !important;
+padding-left: 1rem;
+padding-right: 1rem;
+}
+
 
 /* .button{
   padding: 0;
@@ -91,21 +101,67 @@ font-size: 2.4rem!important;
 
 .theButtons{
   border-radius: 3rem;
-  border: .2rem solid #F6871F;
+  border: 0.2rem solid #F6871F;
   background-color: rgba(246,135,31,0.4);
   padding-top: 1rem;
   padding-bottom: .5rem;
   padding-left: 2rem;
   padding-right: 2rem;
 
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
-  margin-right:0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .theButtons:hover{
   background-color:rgba(246,135,31,1);
 }
+
+.theButtonsVoid{
+  border-radius: 3rem;
+  border: .2rem solid #F6871F;
+  background-color: rgba(246,135,31,1);
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-right:0.5rem;
+}
+
+.topButton{
+  border-radius: 3rem;
+  border: 0.2rem solid #084042;
+  background-color: rgba(8,64,66,0.4);
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.topButton:hover{
+  background-color: rgba(8,64,66,1);
+}
+
+.topButtonVoid{
+  border-radius: 3rem;
+  border: 0.2rem solid #084042;
+  background-color: rgba(8,64,66,1);
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
 
 .intro{
   padding-left: 0;
