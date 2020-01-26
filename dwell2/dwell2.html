@@ -18,6 +18,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
+    <!-- jquery + fancybox -->
+    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	  <script src="jquery.fancybox.min.js"></script>
+
 
     <title>Dwell™</title>
   </head>
@@ -36,7 +45,7 @@
 
       <!-- navbar -->
 
-                        <div class="col-12 col-lg-2 teal" >
+        <div class="col-12 col-lg-2 teal" >
           <div class="row justify-content-center">
             <div class= "col">
               <nav class="navbar navbar-expand-lg navbar-light">
@@ -92,8 +101,11 @@
 
 
         <div class="row justify-content-end fixed-top">
-            <div class="col-3 button">
-              <button class="theButtons"><a href="dwell-Lv2page.html"><h3>For Facilitators</h3></a></button>
+          <div class="col-2 button  d-none d-lg-block">
+            <button class="topButtonVoid"><a href="#"><h4>Dwell™</h4></a></button>
+          </div>
+            <div class="col-3 button  d-none d-lg-block">
+              <button class="topButton"><a href="dwell-Lv2page.html"><h4>For Facilitators</h4></a></button>
             </div>
         </div>
 
@@ -189,12 +201,13 @@
             <h2 class = "subtitle text-center"  id="gallerySection">Image Gallery</h2>
 
                 <!-- align-end -->
-              <div class="row   ml-xl-5 ml-md-4 ml-sm-3      mr-xl-n5 mr-md-n4 mr-sm-n3">
+              <div class="row   ml-xl-5 ml-md-4 ml-sm-3      mr-xl-n5 mr-md-n4 mr-sm-n3   imglist">
 
                 <div class="col-12 col-sm-4 p-2">
                   <div class="hovereffect">
-                  <img src="https://github.com/UMInteractive/NERDLab-Games/blob/master/dwell/images/Gallery/G1.jpg?raw=true"
+                    <img src="https://github.com/UMInteractive/NERDLab-Games/blob/master/dwell/images/Gallery/G1.jpg?raw=true"
                     class="img-fluid galleryImgShadow" alt="Responsive image" >
+
                   </div>
                 </div>
 
@@ -257,7 +270,7 @@
                     <div class="hovereffect">
                   <img src="https://github.com/UMInteractive/NERDLab-Games/blob/master/dwell/images/Gallery/G9.jpg?raw=true"
                   class="img-fluid galleryImgShadow" alt="Responsive image" >
-                  <div>
+                </div>
                 </div>
               </div>
 
