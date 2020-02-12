@@ -1,0 +1,131 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <title>Game Title</title>
+    <meta name="description" content="NerdLab Game">
+    <meta name="author" content="Game Creator">
+
+    <!-- Add Google Fonts Here -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Bootstrap CDN stuff -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/microsite_base.css">
+    <!-- <link rel="stylesheet" href="css/microsite_tablet.css"> -->
+    <!-- <link rel="stylesheet" href="css/microsite_mobilephone.css"> -->
+    <script src="https://use.fontawesome.com/ce0a8a07a0.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header style="overflow: auto">
+        <nav class="navbar ptb-5 fixed-top justify-content-center subpageNav">
+            <div class="containter-fluid">
+                    <a class="navbar-brand" href="http://nerdlab.miami/">
+                        <img class="logo"  width="47px" height="50px" src="images/nerdlab-cube.png" alt="nerdlab logo"/>
+                    </a>
+                </div>
+
+        </nav>
+    </header>
+
+    <div class="container-fluid" id="titleSection">
+        <div class="container-fluid text-center h-100 p-0" id="titleSectionOverlay">
+
+            <!-- having trouble keeping the download icons top left with position absolute it gets messed up so I moved to below the title the whole time -->
+            <!-- <div id="download-container"> -->
+            <div class="row m-0 align-items-center" style="padding-top: 75px;">
+                <div class="col p-0">
+                        <p class="text-center h1 m-0 mainHeading align-middle">Game Title</p>
+
+                </div>
+            </div>
+
+            <div class="row m-0 justify-content-center align-items-center">
+
+                <div class="col-4 p-0">
+                    <div class="m-auto download"><a href="#" target="_blank" rel="noopener noreferrer"><img class="googleplay" src="images/googleplay.png" alt="available on google play"/></a></div>
+                </div>
+
+                <div class="col-4 p-0">
+                    <div class="m-auto download"><a href="#" target="_blank" rel="noopener noreferrer"><img class="googleplay" src="images/appstore.png" alt="available on appstore"/></a></div>
+                </div>
+            </div>
+
+            <!-- GET THE ARROW CORRECT IN THE DIFFERENT VIEW PORTS! -->
+
+            <div class="row align-items-end">
+                <div class="col p-0">
+                    <div class="position-absolute" style="bottom: -10px">
+                        <img id="downarrow" height="30px" src="images/arrow.png" alt="more content below" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <section class="awardblock">
+        <img src="images/balefirelabs.png" alt="Balefire Top Rated EdApp Award badge" />
+        <img src="images/aejmc-firstplace.png" alt="AEJMC Web Competition badge" />
+        <img src="images/seriousplay.png" alt="Serious Play award badge" />
+    </section>
+
+    <div class="staticblock">
+        <section id="demovideo">
+            <span class="video-height"></span>
+            <iframe id="demovimeo" src="https://player.vimeo.com/video/210962496" width="640" height="356" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </section>
+    </div>
+
+    <section class="faq">
+        <h2 class="subheading">FAQ</h2>
+        <ul class="questions">
+            <li>
+                <p class="question">Question</p>
+                <p>Answer</p>
+            </li>
+            <li>
+                <p class="question">Question</p>
+                <p>Answer</p>
+            </li>
+            <li>
+                <p class="question">Question</p>
+                <p>Answer</p>
+            </li>
+        </ul>
+    </section>
+
+
+    <div class="fullscreen background parallax" style="background-image:url('./images/building_bg_a.png'); clear:both;" data-img-width="2069" data-img-height="1167" data-diff="100">
+    </div>
+
+    <footer>
+        <div id="uparrow" class="circle"><img class="arrow" src="images/arrow.png" alt="click to return to top"/></div>
+        <ul class="socialmedia">
+            <li class="vimeo"><a href="#" title="email us"><i class="fa fa-vimeo fa-lg" aria-hidden="true"></a></i></li>
+            <li class="twitter"><a href="#" title="email us"><i class="fa fa-twitter fa-lg" aria-hidden="true"></a></i></li>
+            <li class="email"><a href="#" title="email us"><i class="fa fa-at fa-lg" aria-hidden="true"></a></i></li>
+        </ul>
+        <p class="footertext">NERDLab is a student-faculty cooperative driven by research, development, and an enthusiasm for social impact.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="javaScript/script.js"></script>
+    <script src="javaScript/parallax.js"></script>
+</body>
+</html>

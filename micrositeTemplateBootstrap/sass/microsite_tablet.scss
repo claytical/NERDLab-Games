@@ -1,0 +1,128 @@
+/* SASS stylesheet: NERDLab Microsite
+   Tablet size specific styles
+   Created by Laura Kurtzberg */
+
+@media (max-width: 1500px) {
+
+  header {
+    height: auto;
+
+    h1.title {
+      padding-top: 250px;
+      padding-bottom: 100px;
+    }
+
+    p.description {
+      font-size: 1.2em;
+    }
+
+    img.teacontainer {
+      right: 60px;
+    }
+  }
+
+  //Download Button
+
+  div#download-container {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 200px;
+    height: 200px;
+    z-index: 100;
+  }
+
+  div.download {
+    width: 198px;
+    height: 59px;
+    padding: 1px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgba(200,200,200,0.5);
+  }
+
+  div.download:hover {
+    border-radius: 10px;
+    background-color: rgba(200,200,200, 0.8);
+  }
+
+  section.awards {
+    height: 450px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 100px;
+
+    div.centered {
+      width: 100%;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.2em;
+      width: 40%;
+      margin-right: 0px;
+      float: left;
+    }
+
+    p:nth-child(2) {
+      margin-top: 35px;
+    }
+  }
+}
+
+@media (max-width: 900px){
+// move the get on the app store to below the title and move title up
+}
+
+
+@media (max-width: 800px) {
+  header  {
+    h1.title {
+      padding-top: 250px;
+      padding-bottom: 100px;
+    }
+    p.description {
+      font-size: 1.2em;
+    }
+  }
+
+  p.description:nth-child(3) {
+      display: none;
+  }
+
+  section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  section.awards {
+    height: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 20px;
+
+    div.centered {
+      width: 100%;
+    }
+
+    p {
+      padding-top: 0px;
+      margin-left: 40px;
+      margin-right: 0px;
+      width: 50%;
+      float: left;
+    }
+
+    p:nth-child(2) {
+      margin-top: 40px;
+    }
+
+    p:last-child {
+      padding-bottom: 40px;
+    }
+  }
+  div.contact {
+    width: 100%;
+    padding: 80px;
+  }
+}
