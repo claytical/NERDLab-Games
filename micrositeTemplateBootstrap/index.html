@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Game Title</title>
     <meta name="description" content="NerdLab Game">
@@ -18,9 +18,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="css/microsite_mobilephone.css">
+
     <link rel="stylesheet" href="css/microsite_base.css">
     <!-- <link rel="stylesheet" href="css/microsite_tablet.css"> -->
-    <!-- <link rel="stylesheet" href="css/microsite_mobilephone.css"> -->
     <script src="https://use.fontawesome.com/ce0a8a07a0.js"></script>
 
     <!--[if lt IE 9]>
@@ -29,67 +30,60 @@
 </head>
 
 <body>
-    <header style="overflow: auto">
-        <nav class="navbar ptb-5 fixed-top justify-content-center subpageNav">
-            <div class="containter-fluid">
-                    <a class="navbar-brand" href="http://nerdlab.miami/">
-                        <img class="logo"  width="47px" height="50px" src="images/nerdlab-cube.png" alt="nerdlab logo"/>
-                    </a>
-                </div>
+    <header>
+        <nav class="navbar fixed-top justify-content-center p-0 subpageNav">
+            <a class="navbar-brand m-auto" href="http://nerdlab.miami/">
+                <img class="logo"  width="47px" height="50px" src="images/nerdlab-cube.png" alt="nerdlab logo"/>
+            </a>
 
         </nav>
     </header>
 
-    <div class="container-fluid" id="titleSection">
-        <div class="container-fluid text-center h-100 p-0" id="titleSectionOverlay">
+    <div id="titleSection" class="container-fluid h-100">
+        <div id="titleSectionOverlay"class="container-fluid text-center h-100 p-0" >
 
             <!-- having trouble keeping the download icons top left with position absolute it gets messed up so I moved to below the title the whole time -->
             <!-- <div id="download-container"> -->
-            <div class="row m-0 align-items-center" style="padding-top: 75px;">
+            <div id="titleRow" class="row m-0 align-items-center">
                 <div class="col p-0">
-                        <p class="text-center h1 m-0 mainHeading align-middle">Game Title</p>
+                    <p id="gameTitleText"class="h1 text-center m-0 px-4">Game Title</p>
 
                 </div>
             </div>
 
-            <div class="row m-0 justify-content-center align-items-center">
+            <div class="downloadContainer row py-3 m-0 text-center">
 
-                <div class="col-4 p-0">
-                    <div class="m-auto download"><a href="#" target="_blank" rel="noopener noreferrer"><img class="googleplay" src="images/googleplay.png" alt="available on google play"/></a></div>
-                </div>
+                <!-- CANNOT GET THE DOWNLOAD ICONS CENTERED!!! -->
 
-                <div class="col-4 p-0">
-                    <div class="m-auto download"><a href="#" target="_blank" rel="noopener noreferrer"><img class="googleplay" src="images/appstore.png" alt="available on appstore"/></a></div>
-                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img class="downloadIcon d-block mx-auto" src="images/appstore.png" alt="available on appstore"/>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img class="downloadIcon d-block mx-auto"src="images/googleplay.png" alt="available on google play"/>
+                </a>
+
+
             </div>
 
-            <!-- GET THE ARROW CORRECT IN THE DIFFERENT VIEW PORTS! -->
+            <!-- fix scroll in in mobile! -->
 
-            <div class="row align-items-end">
-                <div class="col p-0">
-                    <div class="position-absolute" style="bottom: -10px">
-                        <img id="downarrow" height="30px" src="images/arrow.png" alt="more content below" />
-                    </div>
-                </div>
+            <div class="row justify-content-center align-items-end py-3">
+                <img id="downarrow" height="30px" src="images/arrow.png" alt="more content below" />
             </div>
         </div>
+
     </div>
 
 
 
+    <div id="awards" class="container-fluid pt-5 pb-5 text-center">
+        <img class="img-thumbnail" src="images/balefirelabs.png" alt="Balefire Top Rated EdApp Award badge" />
+        <img class="img-thumbnail" src="images/aejmc-firstplace.png" alt="AEJMC Web Competition badge" />
+        <img class="img-thumbnail" src="images/seriousplay.png" alt="Serious Play award badge" />
+    </div>
 
-
-    <section class="awardblock">
-        <img src="images/balefirelabs.png" alt="Balefire Top Rated EdApp Award badge" />
-        <img src="images/aejmc-firstplace.png" alt="AEJMC Web Competition badge" />
-        <img src="images/seriousplay.png" alt="Serious Play award badge" />
-    </section>
-
-    <div class="staticblock">
-        <section id="demovideo">
-            <span class="video-height"></span>
-            <iframe id="demovimeo" src="https://player.vimeo.com/video/210962496" width="640" height="356" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </section>
+    <div id="demoSection" class="container-fluid h-auto">
+        <iframe id="demovimeo" src="https://player.vimeo.com/video/210962496" width="640" height="356" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 
     <section class="faq">

@@ -1,147 +1,209 @@
 /* SASS stylesheet: NERDLab Microsite
-   Mobile Phone size specific styles
-   Created by Laura Kurtzberg */
-@media (max-width: 680px) {
-  header {
+Mobile Phone size specific styles
+Created by Laura Kurtzberg and Edited/ Modified by Isabelle Geller */
+@media (min-width: 0px) {
+  /*****************************************************************
+  Header Styles
+  *****************************************************************/
+  div#titleSection p#gameTitleText {
+    font-weight: 800;
+    line-height: 15vmax;
+    font-size: calc(75px + 2vmax);
+  }
+  div#titleSection img#downarrow {
+    width: 50px;
     height: auto;
-    padding-left: 0;
-    margin-left: 0;
-    text-align: center;
   }
-  header h1.title {
-    font-size: 6em;
-    text-align: center;
-    margin-left: 0;
-    padding-left: 0;
-    padding-top: 250px;
-    padding-bottom: 100px;
+  div#titleSection img#downarrow:hover {
+    width: 60px;
+    height: auto;
   }
-  header p.description {
-    max-width: 100%;
-    font-size: 1.2em;
-    line-height: 1.2em;
-    padding: 40px;
-    text-align: center;
+  div#titleSection img.downloadIcon {
+    background-color: rgba(200, 200, 200, 0.5);
+    max-width: 100px;
   }
-  header p.description:nth-child(3) {
-    display: none;
+  div#titleSection div.download:hover {
+    border-radius: 10px;
+    background-color: pink;
   }
 
-  section {
-    width: 100%;
+  /*****************************************************************
+  Awards / Badges Section Styles
+  *****************************************************************/
+  div#awards img.img-thumbnail {
+    border: 0px;
+    max-height: 200px;
     padding: 20px;
   }
 
+  /*****************************************************************
+  Demo Video Section Styles
+  *****************************************************************/
+  div#demoSection {
+    background-color: red;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  div#demoSection iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  /* header {
+      height: auto;
+      padding-left: 0;
+      margin-left: 0;
+      text-align: center;
+
+      h1.title {
+      font-size: 6em;
+      text-align: center;
+      margin-left: 0;
+      padding-left: 0;
+      padding-top: 250px;
+      padding-bottom: 100px;
+  }
+
+  p.description {
+  max-width: 100%;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  padding: 40px;
+  text-align: center;
+  }
+
+  p.description:nth-child(3) {
+  display: none;
+  }
+  }
+
+  section {
+  width: 100%;
+  padding: 20px;
+  }
+
+  //Download Button
+
   div#download-container {
-    position: absolute;
-    top: 80px;
-    right: 0;
-    left: 0;
-    margin: auto;
-    width: 200px;
-    height: 200px;
-    z-index: 100;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  z-index: 100;
   }
 
   div.download {
-    width: 198px;
-    height: 59px;
-    padding: 1px;
-    margin-top: 20px;
-    border-radius: 10px;
-    background-color: rgba(200, 200, 200, 0.5);
+  width: 198px;
+  height: 59px;
+  padding: 1px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgba(200,200,200,0.5);
   }
 
   div.download:hover {
-    border-radius: 10px;
-    background-color: rgba(200, 200, 200, 0.8);
+  border-radius: 10px;
+  background-color: rgba(200,200,200, 0.8);
   }
 
+
   div.learnMore {
-    display: none;
-    visibility: hidden;
+  display: none;
+  visibility: hidden;
   }
 
   section.awards {
-    height: auto;
-    text-align: center;
-    border: none;
+  height: auto;
+  text-align: center;
+  border: none;
+
+  div.centered {
+  width: 100%;
   }
-  section.awards div.centered {
-    width: 100%;
+
+  img.badge {
+  float: none;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 250px;
+  max-width: 100%;
   }
-  section.awards img.badge {
-    float: none;
-    margin-top: 0px;
-    margin-left: 0px;
-    width: 250px;
-    max-width: 100%;
+
+  p {
+  font-size: 1em;
+  line-height: 1.2em;
+  padding-top: 15px;
+  margin-left: 0px;
+  width: 100%;
   }
-  section.awards p {
-    font-size: 1em;
-    line-height: 1.2em;
-    padding-top: 15px;
-    margin-left: 0px;
-    width: 100%;
+
+  p:nth-child(2){
+  margin-top: 15px;
   }
-  section.awards p:nth-child(2) {
-    margin-top: 15px;
+  p:last-child {
+  margin-bottom: 50px;
   }
-  section.awards p:last-child {
-    margin-bottom: 50px;
   }
 
   div.NerdLAB {
-    width: 80%;
+  width: 80%;
   }
 
   footer {
-    width: 100%;
+  width: 100%;
   }
-}
-@media (max-width: 480px) {
+  }
+
+  @media (max-width: 480px) {
   header {
-    height: auto;
-    padding-left: 0;
-    margin-left: 0;
-    text-align: center;
+  height: auto;
+  padding-left: 0;
+  margin-left: 0;
+  text-align: center;
+
+  h1.title {
+  max-width: 98%;
+  margin: auto;
+  font-size: 6em;
+  text-align: center;
+  padding-top: 250px;
+  padding-bottom: 100px;
   }
-  header h1.title {
-    max-width: 98%;
-    margin: auto;
-    font-size: 6em;
-    text-align: center;
-    padding-top: 250px;
-    padding-bottom: 100px;
+
+  p.description {
+  max-width: 100%;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  padding: 40px;
+  text-align: center;
   }
-  header p.description {
-    max-width: 100%;
-    font-size: 1.2em;
-    line-height: 1.2em;
-    padding: 40px;
-    text-align: center;
+
+  p.description:nth-child(3) {
+  display: none;
   }
-  header p.description:nth-child(3) {
-    display: none;
   }
 
   section {
-    width: 100%;
-    padding: 20px;
+  width: 100%;
+  padding: 20px;
   }
 
   div.NerdLAB {
-    width: 80%;
+  width: 80%;
   }
 
   footer {
-    width: 100%;
+  width: 100%;
   }
 
   div.contact {
-    width: 100%;
-    padding: 40px;
-  }
+  width: 100%;
+  padding: 40px;
+  }*/
 }
 
 /*# sourceMappingURL=microsite_mobilephone.css.map */
