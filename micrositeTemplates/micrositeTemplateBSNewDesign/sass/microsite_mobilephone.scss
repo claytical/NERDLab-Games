@@ -1,0 +1,196 @@
+/* SASS stylesheet: NERDLab Microsite
+Mobile Phone size specific styles
+Created by Laura Kurtzberg and Edited/ Modified by Isabelle Geller */
+
+/*
+redesign like datascience.movie
+ */
+
+@import 'reset';
+
+/*****************************************************************
+Global Styles and Variables
+*****************************************************************/
+@media (min-width: 0px) {
+
+    html {
+        box-sizing: border-box;
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    // Optional add local Font Faces, and create Font Stacks
+    @font-face {
+        font-family: BebasNeue;
+        src: url(../fonts/BebasNeue.woff);
+    }
+    $title: BebasNeue, Sans-serif;
+    $headings: BebasNeue, Sans-serif;
+    $mainFont: Roboto, Sans-Serif;
+
+    // Color Palette
+    $Highlight-Color: #0998C6;
+    $Background-Color: #FFFFFF;
+    $Text-Color: #0F0F0F;
+    $Main-Color-One: #7F7F7F;
+    $Main-Color-Two: #85c9b4;
+
+
+    html, body {
+        height: 100%;
+        overflow-x: hidden;
+        font-family: Roboto, sans-serif;
+    }
+
+    .arrowDiv{
+        img{
+            width: 50px;
+            height: auto;
+        }
+        &:hover{
+            filter: drop-shadow(0 0 0.75rem white);
+        }
+    }
+
+    a i.fa {
+        color: white;
+        &:hover{
+            filter: drop-shadow(0 0 0.75rem white);
+
+        }
+    }
+
+    span.highlight {
+        color: $Highlight-Color;
+    }
+
+    //Link Styles
+    a {
+        color: $Highlight-Color;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $Main-Color-One;
+        text-decoration: underline;
+    }
+
+    a:visited {
+        color: $Main-Color-Two;
+        text-decoration: none;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+
+
+
+    /*****************************************************************
+    Header/Nav Styles
+    *****************************************************************/
+    header nav.navbar{
+        //background-color: #0998C6;
+    }
+
+    /*****************************************************************
+    Body Styles
+    *****************************************************************/
+    /*****************************************************************
+    Title Styles
+    *****************************************************************/
+    section#titleSection{
+        background-image: url('../images/headerBackground.png');
+        background-size: cover;
+        padding: 60px 0px 0px 0px;
+
+        main#titleSectionOverlay{
+            background-color: rgb(128,128,128, 0.6);
+
+            p#gameTitleText{
+                font-weight: 900;
+                line-height: normal;
+                font-size: calc(75px + 2vmax);
+                font-family: $title;
+            }
+
+            aside#downloadContainer{
+                img.downloadIcon {
+                    background-color: rgba(200, 200, 200, 0.5);
+                    border-radius: 10px;
+                    max-width: 150px;
+
+                    &:hover {
+                        border-radius: 10px;
+                        background-color: rgba(200,200,200, 0.8);
+                    }
+                }
+            }
+            footer{
+                background-color: transparent;
+            }
+        }
+    }
+
+    /*****************************************************************
+    Awards / Badges Section Styles
+    *****************************************************************/
+
+    section#awards{
+
+        img.img-thumbnail{
+            border: 0px;
+            max-height: 200px;
+            padding: 20px;
+        }
+    }
+
+
+    /*****************************************************************
+    FAQ styles
+    *****************************************************************/
+    section#faq{
+        p.h2.text-center{
+            font-family: $headings;
+            font-size: 50px;
+        }
+        ul{
+            font-family: $mainFont;
+        }
+    }
+
+    /*****************************************************************
+    Footer Styles
+    *****************************************************************/
+    body footer{
+        font-family: $mainFont;
+        background-color: #0998C6;
+
+        div.arrowDiv{
+            background-color: #0998C6;
+            img#uparrow{
+                transform: rotate(180deg);
+            }
+        }
+
+        ul.list-group.list-group-horizontal{
+            li.list-group-item{
+                background-color: transparent;
+
+            }
+        }
+
+        p{
+            color: white;
+            font-size: 15px;
+        }
+
+    }
+
+
+}
+
+
+

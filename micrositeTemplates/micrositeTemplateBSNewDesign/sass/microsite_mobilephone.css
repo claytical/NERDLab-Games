@@ -1,0 +1,199 @@
+/* SASS stylesheet: NERDLab Microsite
+Mobile Phone size specific styles
+Created by Laura Kurtzberg and Edited/ Modified by Isabelle Geller */
+/*
+redesign like datascience.movie
+ */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*****************************************************************
+Global Styles and Variables
+*****************************************************************/
+@media (min-width: 0px) {
+  html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  @font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/BebasNeue.woff);
+  }
+  html, body {
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Roboto, sans-serif;
+  }
+
+  .arrowDiv img {
+    width: 50px;
+    height: auto;
+  }
+  .arrowDiv:hover {
+    filter: drop-shadow(0 0 0.75rem white);
+  }
+
+  a i.fa {
+    color: white;
+  }
+  a i.fa:hover {
+    filter: drop-shadow(0 0 0.75rem white);
+  }
+
+  span.highlight {
+    color: #0998C6;
+  }
+
+  a {
+    color: #0998C6;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #7F7F7F;
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: #85c9b4;
+    text-decoration: none;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  /*****************************************************************
+  Header/Nav Styles
+  *****************************************************************/
+  /*****************************************************************
+  Body Styles
+  *****************************************************************/
+  /*****************************************************************
+  Title Styles
+  *****************************************************************/
+  section#titleSection {
+    background-image: url("../images/headerBackground.png");
+    background-size: cover;
+    padding: 60px 0px 0px 0px;
+  }
+  section#titleSection main#titleSectionOverlay {
+    background-color: rgba(128, 128, 128, 0.6);
+  }
+  section#titleSection main#titleSectionOverlay p#gameTitleText {
+    font-weight: 900;
+    line-height: normal;
+    font-size: calc(75px + 2vmax);
+    font-family: BebasNeue, Sans-serif;
+  }
+  section#titleSection main#titleSectionOverlay aside#downloadContainer img.downloadIcon {
+    background-color: rgba(200, 200, 200, 0.5);
+    border-radius: 10px;
+    max-width: 150px;
+  }
+  section#titleSection main#titleSectionOverlay aside#downloadContainer img.downloadIcon:hover {
+    border-radius: 10px;
+    background-color: rgba(200, 200, 200, 0.8);
+  }
+  section#titleSection main#titleSectionOverlay footer {
+    background-color: transparent;
+  }
+
+  /*****************************************************************
+  Awards / Badges Section Styles
+  *****************************************************************/
+  section#awards img.img-thumbnail {
+    border: 0px;
+    max-height: 200px;
+    padding: 20px;
+  }
+
+  /*****************************************************************
+  FAQ styles
+  *****************************************************************/
+  section#faq p.h2.text-center {
+    font-family: BebasNeue, Sans-serif;
+    font-size: 50px;
+  }
+  section#faq ul {
+    font-family: Roboto, Sans-Serif;
+  }
+
+  /*****************************************************************
+  Footer Styles
+  *****************************************************************/
+  body footer {
+    font-family: Roboto, Sans-Serif;
+    background-color: #0998C6;
+  }
+  body footer div.arrowDiv {
+    background-color: #0998C6;
+  }
+  body footer div.arrowDiv img#uparrow {
+    transform: rotate(180deg);
+  }
+  body footer ul.list-group.list-group-horizontal li.list-group-item {
+    background-color: transparent;
+  }
+  body footer p {
+    color: white;
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=microsite_mobilephone.css.map */
