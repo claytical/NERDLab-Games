@@ -78,12 +78,21 @@ Global Styles and Variables
     height: 100%;
     overflow-x: hidden;
     font-family: Roboto, sans-serif;
+    background-image: url("../images/headerBackground.png");
+    background-size: cover;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url("https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a") no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url("https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a") no-repeat;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url("https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a") no-repeat;
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url("https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a") no-repeat;
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url("https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a") no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url("https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a") no-repeat;
   }
 
   .arrowDiv img {
     width: 50px;
     height: auto;
   }
+
   .arrowDiv:hover {
     filter: drop-shadow(0 0 0.75rem white);
   }
@@ -91,6 +100,7 @@ Global Styles and Variables
   a i.fa {
     color: white;
   }
+
   a i.fa:hover {
     filter: drop-shadow(0 0 0.75rem white);
   }
@@ -122,7 +132,7 @@ Global Styles and Variables
   Header/Nav Styles
   *****************************************************************/
   header nav.navbar {
-    background-color: #0998C6;
+    background-color: rgba(128, 128, 128, 0.6);
   }
 
   /*****************************************************************
@@ -131,30 +141,29 @@ Global Styles and Variables
   /*****************************************************************
   Title Styles
   *****************************************************************/
-  section#titleSection {
-    background-image: url("../images/headerBackground.png");
-    background-size: cover;
-    padding: 60px 0px 0px 0px;
-  }
-  section#titleSection main#titleSectionOverlay {
+  section#titleSection section#titleSectionOverlay {
     background-color: rgba(128, 128, 128, 0.6);
   }
-  section#titleSection main#titleSectionOverlay p#gameTitleText {
+
+  section#titleSection section#titleSectionOverlay p#gameTitleText {
     font-weight: 900;
     line-height: normal;
     font-size: calc(75px + 2vmax);
     font-family: BebasNeue, Sans-serif;
   }
-  section#titleSection main#titleSectionOverlay aside#downloadContainer img.downloadIcon {
+
+  section#titleSection section#titleSectionOverlay aside#downloadContainer img.downloadIcon {
     background-color: rgba(200, 200, 200, 0.5);
     border-radius: 10px;
     max-width: 150px;
   }
-  section#titleSection main#titleSectionOverlay aside#downloadContainer img.downloadIcon:hover {
+
+  section#titleSection section#titleSectionOverlay aside#downloadContainer img.downloadIcon:hover {
     border-radius: 10px;
     background-color: rgba(200, 200, 200, 0.8);
   }
-  section#titleSection main#titleSectionOverlay footer {
+
+  section#titleSection section#titleSectionOverlay footer {
     background-color: transparent;
   }
 
@@ -165,6 +174,7 @@ Global Styles and Variables
     border: 0px;
     max-height: 200px;
     padding: 20px;
+    background-color: transparent;
   }
 
   /*****************************************************************
@@ -174,6 +184,7 @@ Global Styles and Variables
     font-family: BebasNeue, Sans-serif;
     font-size: 50px;
   }
+
   section#faq ul {
     font-family: Roboto, Sans-Serif;
   }
@@ -185,19 +196,24 @@ Global Styles and Variables
     font-family: Roboto, Sans-Serif;
     background-color: #0998C6;
   }
+
   body footer div.arrowDiv {
     background-color: #0998C6;
   }
+
   body footer div.arrowDiv img#uparrow {
     transform: rotate(180deg);
   }
+
   body footer ul.list-group.list-group-horizontal li.list-group-item {
     background-color: transparent;
   }
+
   body footer p {
     color: white;
     font-size: 15px;
   }
 }
+/*# sourceMappingURL=microsite_mobilephone.css.map */
 
 /*# sourceMappingURL=microsite_mobilephone.css.map */

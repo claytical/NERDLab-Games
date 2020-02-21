@@ -18,13 +18,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-<!--Icon site: https://friconix.com/start/-->
+    <link rel="stylesheet" href="css/microsite_mobilephone.css">
+
+
+    <!--Icon site: https://friconix.com/start/-->
     <script defer src="https://friconix.com/cdn/friconix.js"> </script>
 <!--font awesome-->
     <script src="https://use.fontawesome.com/ce0a8a07a0.js"></script>
 
 
-    <link rel="stylesheet" href="css/microsite_mobilephone.css">
 
 
     <!--[if lt IE 9]>
@@ -32,19 +34,20 @@
     <![endif]-->
 </head>
 
-<body >
+<body>
 <header>
-    <nav class="navbar fixed-top justify-content-center p-0 subpageNav">
+<!--    data science doesnt have it fixed for mobile, i have left fixed?-->
+    <nav class="navbar justify-content-center p-2">
         <a class="navbar-brand m-auto" href="http://nerdlab.miami/">
             <img class="logo"  width="47px" height="50px" src="images/nerdlab-cube.png" alt="nerdlab logo"/>
         </a>
     </nav>
-</header>
-<main>
-    <section id="titleSection" class="container-fluid h-auto">
-        <main id="titleSectionOverlay"class="container-fluid text-center h-100 p-0" >
 
-            <p id="gameTitleText"class="h1 text-center m-0 px-4 pt-5">Game Title</p>
+</header>
+    <section id="titleSection" class="container-fluid h-100 p-0">
+        <section id="titleSectionOverlay"class="container-fluid text-center h-100 pt-5" >
+
+            <p id="gameTitleText"class="h1 text-center align-middle px-4 pt-5">Game Title</p>
 
             <aside id="downloadContainer" class="m-0 p-4">
                 <a class="" href="#" target="_blank" rel="noopener noreferrer">
@@ -55,10 +58,10 @@
                 </a>
             </aside>
 
-            <footer class="arrowDiv pb-3">
+            <footer class="arrowDiv pb-3 pt-5 mt-5">
                 <img id="downarrow" src="images/arrow.png" alt="more content below" />
             </footer>
-        </main>
+        </section>
     </section>
 
 
@@ -145,7 +148,6 @@
 
     <div class="fullscreen background parallax" style="background-image:url('./images/building_bg_a.png'); clear:both;" data-img-width="2069" data-img-height="1167" data-diff="100">
     </div>
-</main>
 
 
 <footer class="text-center m-auto">
