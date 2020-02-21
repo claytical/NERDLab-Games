@@ -1,3 +1,4 @@
+// // arrowCenter();
 document.getElementById("downarrow").onclick = function() {myScrollFunction()};
 
 function myScrollFunction() {
@@ -24,3 +25,19 @@ $(window).scroll(function() {
 });
 
 document.getElementById("uparrow").onclick = function() {$('html, body').animate({ scrollTop: 0 }, 'fast');};
+
+
+// //get the width of the arrow so it can be absolute centered and do it on resize
+// function arrowCenter(){
+//     $arrow = document.getElementById("downarrow");
+//     $arrowDiv = document.getElementById("arrowDiv");
+//     $halfWinWidth = ($(window).width())/2;
+//     $arrowWidth = ($arrow.getBoundingClientRect()).width / 2;
+//     $arrowDivLeft = ($halfWinWidth - $arrowWidth) + "px";
+//     console.log($arrowDivLeft);
+//     $($arrowDiv).css("left", $arrowDivLeft);
+// }
+
+
+
+

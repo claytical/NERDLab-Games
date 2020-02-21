@@ -1,209 +1,203 @@
 /* SASS stylesheet: NERDLab Microsite
 Mobile Phone size specific styles
 Created by Laura Kurtzberg and Edited/ Modified by Isabelle Geller */
+/*
+redesign like datascience.movie
+ */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*****************************************************************
+Global Styles and Variables
+*****************************************************************/
 @media (min-width: 0px) {
-  /*****************************************************************
-  Header Styles
-  *****************************************************************/
-  div#titleSection p#gameTitleText {
-    font-weight: 800;
-    line-height: 15vmax;
-    font-size: calc(75px + 2vmax);
+  html {
+    box-sizing: border-box;
   }
-  div#titleSection img#downarrow {
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  @font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/BebasNeue.woff);
+  }
+  html, body {
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Roboto, sans-serif;
+  }
+
+  .arrowDiv img {
     width: 50px;
     height: auto;
   }
-  div#titleSection img#downarrow:hover {
-    width: 60px;
-    height: auto;
+  .arrowDiv:hover {
+    filter: drop-shadow(0 0 0.75rem white);
   }
-  div#titleSection img.downloadIcon {
+
+  a i.fa {
+    color: white;
+  }
+  a i.fa:hover {
+    filter: drop-shadow(0 0 0.75rem white);
+  }
+
+  span.highlight {
+    color: #0998C6;
+  }
+
+  a {
+    color: #0998C6;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #7F7F7F;
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: #85c9b4;
+    text-decoration: none;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  /*****************************************************************
+  Header/Nav Styles
+  *****************************************************************/
+  header nav.navbar {
+    background-color: #0998C6;
+  }
+
+  /*****************************************************************
+  Body Styles
+  *****************************************************************/
+  /*****************************************************************
+  Title Styles
+  *****************************************************************/
+  section#titleSection {
+    background-image: url("../images/headerBackground.png");
+    background-size: cover;
+    padding: 60px 0px 0px 0px;
+  }
+  section#titleSection main#titleSectionOverlay {
+    background-color: rgba(128, 128, 128, 0.6);
+  }
+  section#titleSection main#titleSectionOverlay p#gameTitleText {
+    font-weight: 900;
+    line-height: normal;
+    font-size: calc(75px + 2vmax);
+    font-family: BebasNeue, Sans-serif;
+  }
+  section#titleSection main#titleSectionOverlay aside#downloadContainer img.downloadIcon {
     background-color: rgba(200, 200, 200, 0.5);
-    max-width: 100px;
-  }
-  div#titleSection div.download:hover {
     border-radius: 10px;
-    background-color: pink;
+    max-width: 150px;
+  }
+  section#titleSection main#titleSectionOverlay aside#downloadContainer img.downloadIcon:hover {
+    border-radius: 10px;
+    background-color: rgba(200, 200, 200, 0.8);
+  }
+  section#titleSection main#titleSectionOverlay footer {
+    background-color: transparent;
   }
 
   /*****************************************************************
   Awards / Badges Section Styles
   *****************************************************************/
-  div#awards img.img-thumbnail {
+  section#awards img.img-thumbnail {
     border: 0px;
     max-height: 200px;
     padding: 20px;
   }
 
   /*****************************************************************
-  Demo Video Section Styles
+  FAQ styles
   *****************************************************************/
-  div#demoSection {
-    background-color: red;
-    padding-bottom: 15px;
-    padding-top: 15px;
+  section#faq p.h2.text-center {
+    font-family: BebasNeue, Sans-serif;
+    font-size: 50px;
   }
-  div#demoSection iframe {
-    width: 100%;
-    height: 100%;
-    display: block;
+  section#faq ul {
+    font-family: Roboto, Sans-Serif;
   }
 
-  /* header {
-      height: auto;
-      padding-left: 0;
-      margin-left: 0;
-      text-align: center;
-
-      h1.title {
-      font-size: 6em;
-      text-align: center;
-      margin-left: 0;
-      padding-left: 0;
-      padding-top: 250px;
-      padding-bottom: 100px;
+  /*****************************************************************
+  Footer Styles
+  *****************************************************************/
+  body footer {
+    font-family: Roboto, Sans-Serif;
+    background-color: #0998C6;
   }
-
-  p.description {
-  max-width: 100%;
-  font-size: 1.2em;
-  line-height: 1.2em;
-  padding: 40px;
-  text-align: center;
+  body footer div.arrowDiv {
+    background-color: #0998C6;
   }
-
-  p.description:nth-child(3) {
-  display: none;
+  body footer div.arrowDiv img#uparrow {
+    transform: rotate(180deg);
   }
+  body footer ul.list-group.list-group-horizontal li.list-group-item {
+    background-color: transparent;
   }
-
-  section {
-  width: 100%;
-  padding: 20px;
+  body footer p {
+    color: white;
+    font-size: 15px;
   }
-
-  //Download Button
-
-  div#download-container {
-  position: absolute;
-  top: 80px;
-  right: 0;
-  left: 0;
-  margin: auto;
-  width: 200px;
-  height: 200px;
-  z-index: 100;
-  }
-
-  div.download {
-  width: 198px;
-  height: 59px;
-  padding: 1px;
-  margin-top: 20px;
-  border-radius: 10px;
-  background-color: rgba(200,200,200,0.5);
-  }
-
-  div.download:hover {
-  border-radius: 10px;
-  background-color: rgba(200,200,200, 0.8);
-  }
-
-
-  div.learnMore {
-  display: none;
-  visibility: hidden;
-  }
-
-  section.awards {
-  height: auto;
-  text-align: center;
-  border: none;
-
-  div.centered {
-  width: 100%;
-  }
-
-  img.badge {
-  float: none;
-  margin-top: 0px;
-  margin-left: 0px;
-  width: 250px;
-  max-width: 100%;
-  }
-
-  p {
-  font-size: 1em;
-  line-height: 1.2em;
-  padding-top: 15px;
-  margin-left: 0px;
-  width: 100%;
-  }
-
-  p:nth-child(2){
-  margin-top: 15px;
-  }
-  p:last-child {
-  margin-bottom: 50px;
-  }
-  }
-
-  div.NerdLAB {
-  width: 80%;
-  }
-
-  footer {
-  width: 100%;
-  }
-  }
-
-  @media (max-width: 480px) {
-  header {
-  height: auto;
-  padding-left: 0;
-  margin-left: 0;
-  text-align: center;
-
-  h1.title {
-  max-width: 98%;
-  margin: auto;
-  font-size: 6em;
-  text-align: center;
-  padding-top: 250px;
-  padding-bottom: 100px;
-  }
-
-  p.description {
-  max-width: 100%;
-  font-size: 1.2em;
-  line-height: 1.2em;
-  padding: 40px;
-  text-align: center;
-  }
-
-  p.description:nth-child(3) {
-  display: none;
-  }
-  }
-
-  section {
-  width: 100%;
-  padding: 20px;
-  }
-
-  div.NerdLAB {
-  width: 80%;
-  }
-
-  footer {
-  width: 100%;
-  }
-
-  div.contact {
-  width: 100%;
-  padding: 40px;
-  }*/
 }
 
 /*# sourceMappingURL=microsite_mobilephone.css.map */

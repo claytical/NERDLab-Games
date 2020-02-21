@@ -20,8 +20,9 @@
 
     <link rel="stylesheet" href="css/microsite_mobilephone.css">
 
-    <link rel="stylesheet" href="css/microsite_base.css">
+<!--    <link rel="stylesheet" href="css/microsite_base.css">-->
     <!-- <link rel="stylesheet" href="css/microsite_tablet.css"> -->
+    <!--<link rel="stylesheet" href="css/microsite_tablet.css"> -->
     <script src="https://use.fontawesome.com/ce0a8a07a0.js"></script>
 
     <!--[if lt IE 9]>
@@ -29,97 +30,150 @@
     <![endif]-->
 </head>
 
-<body>
-    <header>
-        <nav class="navbar fixed-top justify-content-center p-0 subpageNav">
-            <a class="navbar-brand m-auto" href="http://nerdlab.miami/">
-                <img class="logo"  width="47px" height="50px" src="images/nerdlab-cube.png" alt="nerdlab logo"/>
-            </a>
+<body >
+<header>
+    <nav class="navbar fixed-top justify-content-center p-0 subpageNav">
+        <a class="navbar-brand m-auto" href="http://nerdlab.miami/">
+            <img class="logo"  width="47px" height="50px" src="images/nerdlab-cube.png" alt="nerdlab logo"/>
+        </a>
+    </nav>
+</header>
+<main>
+    <section id="titleSection" class="container-fluid h-auto">
+        <main id="titleSectionOverlay"class="container-fluid text-center h-100 p-0" >
 
-        </nav>
-    </header>
+            <p id="gameTitleText"class="h1 text-center m-0 px-4 pt-5">Game Title</p>
 
-    <div id="titleSection" class="container-fluid h-100">
-        <div id="titleSectionOverlay"class="container-fluid text-center h-100 p-0" >
-
-            <!-- having trouble keeping the download icons top left with position absolute it gets messed up so I moved to below the title the whole time -->
-            <!-- <div id="download-container"> -->
-            <div id="titleRow" class="row m-0 align-items-center">
-                <div class="col p-0">
-                    <p id="gameTitleText"class="h1 text-center m-0 px-4">Game Title</p>
-
-                </div>
-            </div>
-
-            <div class="downloadContainer row py-3 m-0 text-center">
-
-                <!-- CANNOT GET THE DOWNLOAD ICONS CENTERED!!! -->
-
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img class="downloadIcon d-block mx-auto" src="images/appstore.png" alt="available on appstore"/>
+            <aside id="downloadContainer" class="m-0 p-4">
+                <a class="" href="#" target="_blank" rel="noopener noreferrer">
+                    <img class="downloadIcon d-inline-block mx-3 my-2" src="images/appstore.png" alt="available on appstore"/>
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img class="downloadIcon d-block mx-auto"src="images/googleplay.png" alt="available on google play"/>
+                <a class="" href="#" target="_blank" rel="noopener noreferrer">
+                    <img class="downloadIcon d-inline-block mx-3 my-2 "src="images/googleplay.png" alt="available on google play"/>
                 </a>
+            </aside>
+
+            <footer class="arrowDiv pb-3">
+                <img id="downarrow" src="images/arrow.png" alt="more content below" />
+            </footer>
+        </main>
+    </section>
 
 
-            </div>
-
-            <!-- fix scroll in in mobile! -->
-
-            <div class="row justify-content-center align-items-end py-3">
-                <img id="downarrow" height="30px" src="images/arrow.png" alt="more content below" />
-            </div>
-        </div>
-
-    </div>
-
-
-
-    <div id="awards" class="container-fluid pt-5 pb-5 text-center">
-        <img class="img-thumbnail" src="images/balefirelabs.png" alt="Balefire Top Rated EdApp Award badge" />
+    <section id="awards" class="container-fluid pt-5 pb-5 text-center">
+        <img class="img-thumbnail img-fluid" src="images/balefirelabs.png" alt="Balefire Top Rated EdApp Award badge" />
         <img class="img-thumbnail" src="images/aejmc-firstplace.png" alt="AEJMC Web Competition badge" />
         <img class="img-thumbnail" src="images/seriousplay.png" alt="Serious Play award badge" />
-    </div>
+    </section>
 
-    <div id="demoSection" class="container-fluid h-auto">
-        <iframe id="demovimeo" src="https://player.vimeo.com/video/210962496" width="640" height="356" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
 
-    <section class="faq">
-        <h2 class="subheading">FAQ</h2>
-        <ul class="questions">
-            <li>
-                <p class="question">Question</p>
-                <p>Answer</p>
+    <section id="demovideo" class="embed-responsive embed-responsive-16by9 py-1">
+        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/210962496" allowfullscreen></iframe>
+    </section>
+
+    <!--FAQ Collapse-->
+    <!--<div id="faq" class="py-5 px-4">
+        <p class="h2 text-center">FAQ</p>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Question
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Answer
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Question
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Answer
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Question
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Answer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!--FAQ Normal Text-->
+    <section id="faq" class="py-5 px-4">
+        <p class="h2 text-center">FAQ</p>
+        <ul class="list-group">
+            <li class="list-group-item border-0">
+                <p class="pb-1 font-weight-bold">Question</p>
+                <p class="pl-3">Answer</p>
+
             </li>
-            <li>
-                <p class="question">Question</p>
-                <p>Answer</p>
+            <li class="list-group-item border-0">
+                <p class="pb-1 font-weight-bold">Question</p>
+                <p class="pl-3">Answer</p>
             </li>
-            <li>
-                <p class="question">Question</p>
-                <p>Answer</p>
+            <li  class="list-group-item border-0">
+                <p class="pb-1 font-weight-bold">Question</p>
+                <p class="pl-3">Answer</p>
             </li>
         </ul>
     </section>
 
-
     <div class="fullscreen background parallax" style="background-image:url('./images/building_bg_a.png'); clear:both;" data-img-width="2069" data-img-height="1167" data-diff="100">
     </div>
+</main>
 
-    <footer>
-        <div id="uparrow" class="circle"><img class="arrow" src="images/arrow.png" alt="click to return to top"/></div>
-        <ul class="socialmedia">
-            <li class="vimeo"><a href="#" title="email us"><i class="fa fa-vimeo fa-lg" aria-hidden="true"></a></i></li>
-            <li class="twitter"><a href="#" title="email us"><i class="fa fa-twitter fa-lg" aria-hidden="true"></a></i></li>
-            <li class="email"><a href="#" title="email us"><i class="fa fa-at fa-lg" aria-hidden="true"></a></i></li>
-        </ul>
-        <p class="footertext">NERDLab is a student-faculty cooperative driven by research, development, and an enthusiasm for social impact.</p>
-    </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="javaScript/script.js"></script>
-    <script src="javaScript/parallax.js"></script>
+<footer class="text-center m-auto">
+    <header class="arrowDiv py-4 m-auto">
+        <img id="uparrow" src="images/arrow.png" alt="click to return to top"/>
+    </header>
+
+    <ul class="list-group list-group-horizontal justify-content-center pb-4">
+        <li class="list-group-item border-0">
+            <a href="#" title="email us">
+                <i class="fa fa-vimeo fa-2x" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="list-group-item border-0">
+            <a href="#" title="email us">
+                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="list-group-item border-0">
+            <a href="#" title="email us">
+                <i class="fa fa-at fa-2x" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+
+    <p class="px-5 pb-4 text-left">NERDLab is a student-faculty cooperative driven by research, development, and an enthusiasm for social impact.</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="javaScript/script.js"></script>
+<script src="javaScript/parallax.js"></script>
 </body>
 </html>
