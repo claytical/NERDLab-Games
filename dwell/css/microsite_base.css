@@ -153,7 +153,8 @@ div.subpagelogo {
     padding: 10px;
     text-decoration: none;
     position: fixed;
-    width: calc(100% - 20px);
+    width: 100%;
+    /* width: calc(100% - 20px); */
     height: 80px;
     z-index: 999;
     text-align: center;
@@ -166,7 +167,7 @@ div.subpagelogo img.logo {
 header {
     background-color: grey;
     /* background-image: url("../images/Dwell_splash.jpg"); */
-    background: url(../images/Gallery/G10.jpg) no-repeat center center fixed;            
+    background: url(../images/Gallery/G10.jpg) no-repeat center center fixed;
     background-size: cover;
     /* background-size: contain; */
     resize: both;
