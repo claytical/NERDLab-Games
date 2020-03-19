@@ -37,46 +37,94 @@
 <body>
 <header>
 <!--    data science doesnt have it fixed for mobile, i have left fixed?-->
-    <nav class="navbar justify-content-center p-2">
+    <nav class="navbar align-self-start p-2">
         <a class="navbar-brand m-auto" href="http://nerdlab.miami/">
             <img class="logo"  width="47px" height="50px" src="images/nerdlab-cube.png" alt="nerdlab logo"/>
         </a>
     </nav>
 
 </header>
-    <section id="titleSection" class="container-fluid h-100 p-0">
-        <section id="titleSectionOverlay"class="container-fluid text-center h-100 pt-5" >
+    <section id="titleSection" class="container-fluid p-0">
+        <section id="titleSectionOverlay"class="d-flex align-items-center flex-wrap container-fluid text-center h-100 px-0" >
+            <span class="d-block w-100 mt-5">
+                <p id="gameTitleText"class="h1 text-center  px-4 mb-4">Game Title</p>
 
-            <p id="gameTitleText"class="h1 text-center align-middle px-4 pt-5">Game Title</p>
-
-            <aside id="downloadContainer" class="m-0 p-4">
                 <a class="" href="#" target="_blank" rel="noopener noreferrer">
-                    <img class="downloadIcon d-inline-block mx-3 my-2" src="images/appstore.png" alt="available on appstore"/>
+                    <img class="downloadIcon d-block mx-auto my-3" src="images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png" alt="available on appstore"/>
                 </a>
-                <a class="" href="#" target="_blank" rel="noopener noreferrer">
-                    <img class="downloadIcon d-inline-block mx-3 my-2 "src="images/googleplay.png" alt="available on google play"/>
-                </a>
-            </aside>
 
-            <footer class="arrowDiv pb-3 pt-5 mt-5">
-                <img id="downarrow" src="images/arrow.png" alt="more content below" />
+                <a class="" href="#" target="_blank" rel="noopener noreferrer">
+                    <img class="downloadIcon d-block m-auto"src="images/google-play-badge%20(1).png" alt="available on google play"/>
+                </a>
+
+
+            </span>
+            <footer class="arrowDiv mx-auto pb-3 mt-4 pt-4 align-self-end">
+                <a href="#awards">
+                    <img id="downarrow" src="images/arrow.png" alt="more content below" />
+                </a>
             </footer>
+
         </section>
     </section>
 
 
-    <section id="awards" class="container-fluid pt-5 pb-5 text-center">
+    <section id="awards" class="container-fluid pt-5 pb-5 text-center h-100">
         <img class="img-thumbnail img-fluid" src="images/balefirelabs.png" alt="Balefire Top Rated EdApp Award badge" />
         <img class="img-thumbnail" src="images/aejmc-firstplace.png" alt="AEJMC Web Competition badge" />
         <img class="img-thumbnail" src="images/seriousplay.png" alt="Serious Play award badge" />
     </section>
 
 
-    <section id="demovideo" class="embed-responsive embed-responsive-16by9 py-1">
-        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/210962496" allowfullscreen></iframe>
+
+    <section id="demo" class="container-fluid h-100 d-flex">
+        <span id="videoPlaceHolder" class="d-flex align-self-center align-items-center h-75 w-75 mx-auto">
+            <!-- Button trigger modal -->
+                <button id="openButton" class="mx-auto btn badge badge-pill btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                Launch static backdrop modal
+            </button>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog m-0" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header fixed-top">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body d-flex align-items-center p-0 m-3">
+        <section id="demovideo" class="embed-responsive embed-responsive-16by9 py-1 h-100">
+        <iframe class="embed-responsive-item px-3" src="https://player.vimeo.com/video/210962496" allowfullscreen></iframe>
+    </section>
+                        </div>
+<!--                        <div class="modal-footer">-->
+<!--                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--                            <button type="button" class="btn btn-primary">Understood</button>-->
+<!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </span>
+<!--        <div class="h-100 d-flex ">-->
+<!--            <img class="align-self-center h-50 w-100 px-4" src="images/videoPlaceholder.jpg">-->
+<!--            <p>hey this is a test</p>-->
+<!--        </div>-->
+
+
+
+
+
+
+
+
+
+
     </section>
 
-    <!--FAQ Collapse-->
+
+<!--FAQ Collapse-->
     <!--<div id="faq" class="py-5 px-4">
         <p class="h2 text-center">FAQ</p>
         <div class="accordion" id="accordionExample">
@@ -127,7 +175,7 @@
     </div> -->
 
     <!--FAQ Normal Text-->
-    <section id="faq" class="py-5 px-4">
+    <section id="faq" class="py-5 px-4 h-100">
         <p class="h2 text-center">FAQ</p>
         <ul class="list-group">
             <li class="list-group-item border-0">

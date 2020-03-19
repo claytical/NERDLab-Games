@@ -78,14 +78,7 @@ Global Styles and Variables
     height: 100%;
     overflow-x: hidden;
     font-family: Roboto, sans-serif;
-    background-image: url("../images/headerBackground.png");
-    background-size: cover;
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url("https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a") no-repeat;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url("https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a") no-repeat;
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url("https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a") no-repeat;
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url("https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a") no-repeat;
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url("https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a") no-repeat;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url("https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a") no-repeat;
+    background: linear-gradient(180deg, rgba(49, 48, 85, 0.7) 0%, rgba(49, 48, 85, 0.7) 61%), url("../images/headerBackground.png");
   }
 
   .arrowDiv img {
@@ -132,7 +125,7 @@ Global Styles and Variables
   Header/Nav Styles
   *****************************************************************/
   header nav.navbar {
-    background-color: rgba(128, 128, 128, 0.6);
+    position: unset !important;
   }
 
   /*****************************************************************
@@ -141,26 +134,25 @@ Global Styles and Variables
   /*****************************************************************
   Title Styles
   *****************************************************************/
-  section#titleSection section#titleSectionOverlay {
-    background-color: rgba(128, 128, 128, 0.6);
+  section#titleSection {
+    height: calc(100% - 78px);
   }
 
   section#titleSection section#titleSectionOverlay p#gameTitleText {
+    color: red;
     font-weight: 900;
     line-height: normal;
-    font-size: calc(75px + 2vmax);
+    font-size: 19vmax;
     font-family: BebasNeue, Sans-serif;
   }
 
-  section#titleSection section#titleSectionOverlay aside#downloadContainer img.downloadIcon {
-    background-color: rgba(200, 200, 200, 0.5);
-    border-radius: 10px;
-    max-width: 150px;
+  section#titleSection section#titleSectionOverlay img.downloadIcon {
+    width: 150px;
+    height: 50.125px;
   }
 
-  section#titleSection section#titleSectionOverlay aside#downloadContainer img.downloadIcon:hover {
-    border-radius: 10px;
-    background-color: rgba(200, 200, 200, 0.8);
+  section#titleSection section#titleSectionOverlay img.downloadIcon:hover {
+    filter: drop-shadow(0 0 0.1rem white);
   }
 
   section#titleSection section#titleSectionOverlay footer {
@@ -170,6 +162,11 @@ Global Styles and Variables
   /*****************************************************************
   Awards / Badges Section Styles
   *****************************************************************/
+  section#awards {
+    background: linear-gradient(180deg, rgba(49, 48, 85, 0.7) 0%, rgba(49, 48, 85, 0.7) 61%), url("../images/inline_image_preview.jpg");
+    background-size: cover;
+  }
+
   section#awards img.img-thumbnail {
     border: 0px;
     max-height: 200px;
@@ -178,7 +175,31 @@ Global Styles and Variables
   }
 
   /*****************************************************************
-  FAQ styles
+   Demo styles
+  *****************************************************************/
+  section#demo span#videoPlaceHolder {
+    background: url("../images/videoPlaceholder.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  section#demo span#videoPlaceHolder button#openButton {
+    transform: scale(1.5, 1.5);
+  }
+
+  section#demo span#videoPlaceHolder div.modal-content {
+    min-height: 100vh;
+    min-width: 100vw;
+    border-radius: 0px;
+  }
+
+  section#demo span#videoPlaceHolder div.modal-content div.modal-header {
+    border: 0px;
+  }
+
+  /*****************************************************************
+   FAQ styles
   *****************************************************************/
   section#faq p.h2.text-center {
     font-family: BebasNeue, Sans-serif;
