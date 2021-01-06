@@ -29,7 +29,7 @@
 	<main role="main">
 		<iframe id="qualtrics" src="https://umiami.qualtrics.com/jfe/form/SV_5oS8PWSJiPfMN01" title="Qualtrics Consent Form" style="width:100%; margin-top:60px; height:100%;"></iframe>
 
-    		<a id="playbutton" href="​​​​​​#" style="display:none;">PLAY THE GAME!</a>
+    		<a id="playbutton" class="btn btn-primary btn-lg" href="​​​​​​#" style="display:none;">PLAY THE GAME!</a>
 
 
 	<script>
@@ -75,6 +75,9 @@ function iFrameListener(event){
      var play_link = document.getElementById("playbutton");
      play_link.setAttribute('href', "https://mole.ruby.nerdlab.miami/join/rand?username=​​" + JSON.parse(secondPageValue).username);
      play_link.style.display = "block";
+     play_link.style.height = "70px";
+     play_link.style.fontSize = "36px";
+     qualtrics_form.style.height = "690px";
 
 }
 
