@@ -9,6 +9,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 	<script>
 		document.domain = "nerdlab.miami";
+		var surveyFinished = false;
 	</script>
 	<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" rel="stylesheet">
 	<link href="https://mole.ruby.nerdlab.miami/css/app-37f9770756afac8f850c29890d704c76.css?vsn=d" rel="stylesheet">
@@ -27,9 +28,23 @@
 	</header>
 	<main role="main">
 		<iframe id="qualtrics" src="https://umiami.qualtrics.com/jfe/form/SV_5oS8PWSJiPfMN01" title="Qualtrics Consent Form" style="width:100%; margin-top:60px; height:100%;"></iframe>
-	</main>
 	<script>
+		const frame = document.getElementById('qualtrics');
+		frame.contentWindow.postMessage(/*any variable or object here*/, 'http://your-second-site.com');
+
 		var qualtrics_form = document.getElementById('qualtrics');
+
+window.addEventListener('message', function(e) {
+    // Get the sent data
+    const data = e.data;
+    
+    // If you encode the message in JSON before sending them, 
+    // then decode here
+    const decoded = JSON.parse(data);
+    console.log(decoded);
+});
 	</script>
+
+	</main>
 </body>
 </html>
