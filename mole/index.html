@@ -34,6 +34,7 @@
 
 		var qualtrics_form = document.getElementById('qualtrics');
 
+/*
 window.addEventListener('message', function(e) {
     // Get the sent data
     const data = e.data;
@@ -43,6 +44,42 @@ window.addEventListener('message', function(e) {
     const decoded = JSON.parse(data);
     console.log(decoded);
 });
+
+
+*/
+
+
+
+
+
+function addAnEventListener(obj,evt,func){
+    if ('addEventListener' in obj){
+        obj.addEventListener(evt,func, false);
+		console.log("attach event added");
+
+    } else if ('attachEvent' in obj){//IE
+        obj.attachEvent('on'+evt,func);
+		console.log("attach event on else if");
+
+    }
+}
+
+function iFrameListener(event){
+	console.log("iframe listener event...");
+     secondPageValue = event.data;
+     console.log(event.data);
+}
+
+var secondPageValue='';
+
+addAnEventListener(window,'message',iFrameListener);
+console.log("added event listener");
+
+
+
+
+
+
 	</script>
 
 	</main>
