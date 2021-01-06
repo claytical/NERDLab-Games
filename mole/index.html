@@ -28,6 +28,10 @@
 	</header>
 	<main role="main">
 		<iframe id="qualtrics" src="https://umiami.qualtrics.com/jfe/form/SV_5oS8PWSJiPfMN01" title="Qualtrics Consent Form" style="width:100%; margin-top:60px; height:100%;"></iframe>
+
+    		<a id="playbutton" href="​​​​​​#" style="display:none;">PLAY THE GAME!</a>
+
+
 	<script>
 		const frame = document.getElementById('qualtrics');
 
@@ -68,6 +72,10 @@ function iFrameListener(event){
 	console.log("iframe listener event...");
      secondPageValue = event.data;
      console.log(event.data);
+     var play_link = document.getElementById("playbutton");
+     play_link.setAttribute('href', "https://mole.ruby.nerdlab.miami/join/rand?username=​​" + JSON.parse(secondPageValue).username);
+     play_link.style.display = "block";
+
 }
 
 var secondPageValue='';
