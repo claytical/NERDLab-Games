@@ -75,7 +75,8 @@ function iFrameListener(event){
      //add usernamne to dynata data
 
      		$.post("https://moletrack.nerdlab.miami/play.php", { 
-				id:uid,
+				pid:dynata_pid,
+				psid:dynata_psid,
 				username:player
 			},
 			function(response,status){
@@ -100,7 +101,7 @@ function iFrameListener(event){
 	var dynata_pid = getUrlVars()['PID'];
 	var dynata_psid = getUrlVars()['psid'];
 	var player = '';
-	var uid = '';
+//	var uid = '';
 
 	if(typeof dynata_psid === 'undefined' && typeof dynata_pid === 'undefined')  {
 		//not from dynata
@@ -114,7 +115,7 @@ function iFrameListener(event){
 				psid:dynata_psid
 			},
 			function(response,status){
-				uid = response;
+//				uid = response;
 			}
 		);
 	}
