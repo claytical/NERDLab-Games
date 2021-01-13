@@ -102,8 +102,9 @@ function iFrameListener(event){
 	var player = '';
 	var uid = '';
 
-	if(typeof psid === 'undefined' && typeof pid === 'undefined')  {
+	if(typeof dynata_psid === 'undefined' && typeof dynata_pid === 'undefined')  {
 		//not from dynata
+		console.log("ignoring...");
 	}
 	else {
 
