@@ -6,54 +6,47 @@
     <title>Squawker Evaluation</title>
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-
-    <!-- CSS Reset -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-
     <!-- Milligram CSS -->
-    <link rel="stylesheet" href="css/milligram.min.css">
+    <link rel="stylesheet" href="css/bulma.css">
 
   </head>
   <body>
     <div class="container">
-      <div class="clearfix">
-        <div class="float-left">
-            <img src="images/um_logo.png" width="50"/>
-            <div class="column">
-              <div class="row">
-                <h1>Thank You For Participating in Our Study!</h1> 
-              </div>
-              <div class="row">
-              <p>If your browser is able to support WebGL, the game should appear on the left side of the screen. If you would like to use another version, please use the links below. The PC and Mac downloads must be unzipped to play. The executable is named <em>Squawker</em>.</p>
-              </div>
-              <div class="row">
-              <a class="button" href="downloads/squawker_win.zip">Windows / PC</a>
-              </div>          
-              <div class="row">
-              <a class="button" href="downloads/squawker_mac.zip">OSX / Mac</a>
-              </div>          
-              <div class="row">
-              <a class="button" href="#">Android</a>
-              </div>          
-            </div>
+      <div class="columns">
+        <div class="column is-half">
+          <canvas id="unity-canvas" style="width: 576px; height: 1024px; background: #231F20"></canvas>
+          <script src="Build/squawk.loader.js"></script>
+          <script>
+            createUnityInstance(document.querySelector("#unity-canvas"), {
+              dataUrl: "Build/squawk.data.gz",
+              frameworkUrl: "Build/squawk.framework.js.gz",
+              codeUrl: "Build/squawk.wasm.gz",
+              streamingAssetsUrl: "StreamingAssets",
+              companyName: "NERDLab",
+              productName: "Squawker",
+              productVersion: "5",
+            });
+          </script>
+        </div>
+
+        <div class="column is-half">
+          <div>
+            <img src="images/um_logo.png" class="image is-32x32 is-pulled-left"/>
+            <h1 class="title">Thank You For Participating in Our Study!</h1> 
           </div>
-      <div class="float-right">
-      <div class="column">
-        <canvas id="unity-canvas" style="width: 576px; height: 1024px; background: #231F20"></canvas>
-        <script src="Build/squawk.loader.js"></script>
-        <script>
-          createUnityInstance(document.querySelector("#unity-canvas"), {
-            dataUrl: "Build/squawk.data.gz",
-            frameworkUrl: "Build/squawk.framework.js.gz",
-            codeUrl: "Build/squawk.wasm.gz",
-            streamingAssetsUrl: "StreamingAssets",
-            companyName: "NERDLab",
-            productName: "Squawker",
-            productVersion: "5",
-          });
-        </script>
-      </div>
-    </div>
+
+              <p>If your browser is able to support WebGL, the game should appear on the left side of the screen. If you would like to use another version, please use the links below. The PC and Mac downloads must be unzipped to play. The executable is named <em>Squawker</em>.</p>
+
+              <ul>
+ 
+                <li><a class="button" href="downloads/squawker_win.zip">Windows / PC</a></li>
+
+                <li><a class="button" href="downloads/squawker_mac.zip">OSX / Mac</a></li>
+
+                <li><a class="button" href="#">Android</a></li>
+              </ul>
+        </div>
+
     </div>
   </div>
   </body>
