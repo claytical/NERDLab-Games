@@ -16,23 +16,27 @@
   </head>
   <body>
     <div class="container">
+      <div class="clearfix">
+        <div class="float-left">
             <img src="images/um_logo.png" width="50"/>
-      <div class="column">
-          <div class="row">
-            <h1>Thank You For Participating in Our Study!</h1> 
-            <p>If your browser is able to support WebGL, the game should appear on the left side of the screen. If you would like to use another version, please use the links below. The PC and Mac downloads must be unzipped to play. The executable is named <em>Squawker</em>.</p>
-            </div>
-            <div class="row">
+            <div class="column">
+              <div class="row">
+                <h1>Thank You For Participating in Our Study!</h1> 
+              </div>
+              <div class="row">
+              <p>If your browser is able to support WebGL, the game should appear on the left side of the screen. If you would like to use another version, please use the links below. The PC and Mac downloads must be unzipped to play. The executable is named <em>Squawker</em>.</p>
+              </div>
+              <div class="row">
               <a class="button" href="downloads/squawker_win.zip">Windows / PC</a>
-            </div>          
-            <div class="row">
+              </div>          
+              <div class="row">
               <a class="button" href="downloads/squawker_mac.zip">OSX / Mac</a>
-            </div>          
-            <div class="row">
+              </div>          
+              <div class="row">
               <a class="button" href="#">Android</a>
-            </div>          
-          </div>
-
+              </div>          
+            </div>
+      <div class="float-right">
       <div class="column">
         <canvas id="unity-canvas" style="width: 576px; height: 1024px; background: #231F20"></canvas>
         <script src="Build/squawk.loader.js"></script>
@@ -49,5 +53,7 @@
         </script>
       </div>
     </div>
+    </div>
+  </div>
   </body>
 </html>
