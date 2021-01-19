@@ -16,6 +16,10 @@
       <div class="columns">
         <div class="column is-half">
           <canvas id="unity-canvas" style="width: 100%; background: #231F20"></canvas>
+          <script>
+            var canvas = document.getElementById('unity-canvas');
+            canvas.height = document.body.clientHeight;
+          </script>
           <script src="Build/squawk.loader.js"></script>
           <script>
             createUnityInstance(document.querySelector("#unity-canvas"), {
@@ -27,14 +31,6 @@
               productName: "Squawker",
               productVersion: "5",
             });
-
-
-            var canvas = document.getElementById('unity-canvas'), context = canvas.getContext('2d');
-
-            function resizeCanvas() {
-              canvas.height = screen.height;
-            }
-            resizeCanvas();            
 
           </script>
         </div>
