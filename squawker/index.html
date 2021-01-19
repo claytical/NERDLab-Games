@@ -8,14 +8,57 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <!-- Milligram CSS -->
     <link rel="stylesheet" href="css/bulma.min.css">
+    <style>
+      @media only screen and (min-height: 1040px) {
+        #unity-canvas {
+          width: 576px; 
+          height: 1024px;
+/* 56.24% */
+        }
+      }
 
+
+      @media only screen and (min-height: 940px) {
+        #unity-canvas {
+          width: 506px; 
+          height: 900px;
+/* 56.24% */
+        }
+      }
+
+      @media only screen and (min-height: 840px) {
+        #unity-canvas {
+          width: 450px; 
+          height: 800px;
+/* 56.24% */
+        }
+      }
+
+
+      @media only screen and (min-height: 740px) {
+        #unity-canvas {
+          width: 393px; 
+          height: 700px;
+/* 56.24% */
+        }
+      }
+      @media only screen and (min-height: 640px) {
+        #unity-canvas {
+          width: 360px; 
+          height: 600px;
+/* 56.24% */
+        }
+      }
+
+
+    </style>
   </head>
   <body>
     <div class="container">
       <section class="section">
       <div class="columns">
         <div class="column is-half">
-          <canvas id="unity-canvas" style="width: 100%; background: #231F20"></canvas>
+          <canvas id="unity-canvas"></canvas>
           <script>
             var canvas = document.getElementById('unity-canvas');
             canvas.height = document.body.clientHeight;
