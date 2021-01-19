@@ -29,16 +29,12 @@
             });
 
 
-            var canvas = document.getElementById('unity-canvas'),
+            var canvas = document.getElementById('unity-canvas'), context = canvas.getContext('2d');
 
             function resizeCanvas() {
-              canvas.height = window.innerHeight;
+              canvas.height = screen.height;
             }
             resizeCanvas();            
-
-           // resize the canvas to fill browser window dynamically
-            window.addEventListener('resize', resizeCanvas, false);
-
 
           </script>
         </div>
@@ -50,7 +46,7 @@
           </div>
             <div class="columns">
               <div class="column">
-                <p>If your browser is able to support WebGL, the game should appear on the left side of the screen. If you would like to use another version, please use the links below. The PC and Mac downloads must be unzipped to play. The executable is named <em>Squawker</em>. 
+                <p>If your browser is able to support WebGL, the game should appear on the left side of the screen. If you would like to use another version, please use the links below. The PC and Mac downloads must be unzipped to play. The executable is named <em>Squawker</em>. </p>
 
                   <h3 class="subtitle is-3">Security Warnings</h3>
                   <p>As the executable does not come from the App or Windows Store, you will most likely receive a security warning message.</p>
