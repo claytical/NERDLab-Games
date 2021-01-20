@@ -62,15 +62,13 @@
           <script src="Build/squawk.loader.js"></script>
           <script>
             createUnityInstance(document.querySelector("#unity-canvas"), {
-              dataUrl: "Build/squawk.data.gz",
-              frameworkUrl: "Build/squawk.framework.js.gz",
-              codeUrl: "Build/squawk.wasm.gz",
+              dataUrl: "Build/squawk.data.unityweb",
+              frameworkUrl: "Build/squawk.framework.js.unityweb",
+              codeUrl: "Build/squawk.wasm.unityweb",
               streamingAssetsUrl: "StreamingAssets",
               companyName: "NERDLab",
               productName: "Squawker",
               productVersion: "5",
-            });
-
           </script>
         </div>
 
