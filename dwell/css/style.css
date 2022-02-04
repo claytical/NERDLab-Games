@@ -1,6 +1,6 @@
 * {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   transition: all .1s ease;
 }
 
@@ -11,15 +11,13 @@
 
 :root {
   --main-color: #434244;
-  --main-active-color:#0998C6;
+  --main-active-color:#DA3C78;
 }
-
 
 html, body {
   height: 100%;
     /* max-width: 100%;
     overflow-x: hidden; */
-
 }
 
 h1 {
@@ -73,8 +71,7 @@ padding-left: 40px;
 }
 
 .logo{
-width:100px !important;
-height:auto !important;
+
 }
 
 .logoHolder{
@@ -105,7 +102,7 @@ height:auto !important;
 
 .lastSection
 {
-  margin-bottom:200px;
+  margin-bottom:40px;
 }
 
 .projectName
@@ -176,7 +173,6 @@ margin: auto;
 h2{
   text-align:center;
   padding: 20px;
-  margin-bottom:0px;
 }
 /* Slider */
 
@@ -406,9 +402,8 @@ h2{
 
 .footerContent
 {
-  /* padding-top:20px;
-  padding-bottom:20px; */
-
+  padding-top:20px;
+  padding-bottom:20px;
   color:#fff;
   background: #000;
 }
@@ -548,12 +543,6 @@ margin-left: 0px;
 }
 .footerContent{
   z-index: 100;
-  margin-top:-23px;
-  position: fixed;
-bottom: 0;
-z-index: 99;
-width: 100%;
-text-align: right;
 }
 
 .awdImgcontainer
@@ -606,344 +595,3 @@ img {
 {
   text-align:center!important;
 }
-
-.hideClass{
-  display:none;
-
-}
-.Acknowledgements
-{
-text-align:left;padding-left:0px;
-margin-bottom: 0px;
-padding-bottom: 0px;
-}
-
-<<<<<<< HEAD
-.contact {
-	width: 100%;
-	height: 100vh;
-}
-
-}
-
-/******************* JMpress (Image Gallery) Section ************************/
- .jms-slideshow {
-		 position: relative;
-		 width: 80%;
-		 max-width: 1400px;
-		 margin: 20px auto;
-		 height: 640px;
-}
- .jms-wrapper {
-		 width: auto;
-		 height: 640px;
-		 background-color: #fff;
-		 box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
-		 -webkit-background-clip: padding;
-		 -moz-background-clip: padding;
-		 background-clip: padding-box;
-		 border: 10px solid #fff;
-		 border: 10px solid rgba(255, 255, 255, 0.9);
-		 outline: none;
-		 -webkit-transition: background-image 1s linear;
-		 -moz-transition: background-image 1s linear;
-		 -o-transition: background-image 1s linear;
-		 -ms-transition: background-image 1s linear;
-		 transition: background-image 1s linear;
-}
- .color-1 {
-		 background-color: #a5d4ba;
-		 background-image: url("../images/EEE_frostScience_01.jpg");
-		 background-size: cover;
-		 background-position: top center;
-}
- .color-2 {
-		 background-color: #a5d4ba;
-		 background-image: url("../images/EEE_frostScience_02.jpg");
-		 background-size: cover;
-		 background-position: top center;
-}
- .color-3 {
-		 background-color: #a5d4ba;
-		 background-image: url("../images/EEE_frostScience_03.jpg");
-		 background-size: cover;
-		 background-position: top center;
-}
- .color-4 {
-		 background-color: #a5d4ba;
-		 background-image: url("../images/smithsonian2017/EEE_Smithsonian_01.JPG");
-		 background-size: cover;
-		 background-position: top center;
-}
- .color-5 {
-		 background-color: #a5d4ba;
-		 background-image: url("../images/smithsonian2017/EEE_Smithsonian_02.JPG");
-		 background-size: cover;
-		 background-position: top center;
-}
- .color-6 {
-		 background-color: #a5d4ba;
-		 background-image: url("../images/smithsonian2017/EEE_Smithsonian_03.JPG");
-		 background-size: cover;
-		 background-position: top center;
-}
- .color-7 {
-		 background-color: #a5d4ba;
-		 background-image: url("../images/smithsonian2017/EEE_Smithsonian_04.JPG");
-		 background-size: cover;
-		 background-position: top center;
-}
- .color-8 {
-		 background-color: #a5d4ba;
-		 background-image: url("../images/smithsonian2017/EEE_Smithsonian_05.JPG");
-		 background-size: cover;
-		 background-position: top center;
-}
- .color-9 {
-		 background-color: #a5d4ba;
-		 background-image: url("../images/smithsonian2017/EEE_Smithsonian_06.JPG");
-		 background-size: cover;
-		 background-position: top center;
-}
- .color-10 {
-		 background-color: #a5d4ba;
-		 background-size: cover;
-		 background-image: url("../images/smithsonian2017/EEE_Smithsonian_07.JPG");
-		 background-position: top center;
-}
- .color-11 {
-		 background-color: #a5d4ba;
-		 background-image: url("../images/1.jpg");
-		 background-size: cover;
-		 background-position: top center;
-}
- .color-12 {
-		 background-color: #a5d4ba;
-		 background-image: url("../images/2.jpg");
-		 background-size: cover;
-		 background-position: top center;
-}
- .color-13 {
-		 background-color: #a5d4ba;
-		 background-image: url("../images/3.jpg");
-		 background-size: cover;
-		 background-position: bottom center;
-}
- .color-14 {
-		 background-color: #a5d4ba;
-		 background-image: url("../images/4.jpg");
-		 background-size: cover;
-		 background-position: bottom center;
-}
-.color-15 {
-		background-color: #a5d4ba;
-		background-image: url("../images/5.jpg");
-		background-size: cover;
-		background-position: bottom center;
-}
-.color-16 {
-		background-color: #a5d4ba;
-		background-image: url("../images/6.jpg");
-		background-size: cover;
-		background-position: bottom center;
-}
-.color-17 {
-		background-color: #a5d4ba;
-		background-image: url("../images/7.jpg");
-		background-size: cover;
-		background-position: bottom center;
-}
-
- .step {
-		 width: 900px;
-		 height: 420px;
-		 display: block;
-		 -webkit-transition: opacity 1s;
-		 -moz-transition: opacity 1s;
-		 -ms-transition: opacity 1s;
-		 -o-transition: opacity 1s;
-		 transition: opacity 1s;
-}
- .step:not(.active) {
-		 opacity: 0;
-		 filter: alpha(opacity=0);
-		/* internet explorer */
-		 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
-		/*IE8*/
-}
- .jms-content {
-		 margin: 0px 370px 0px 20px;
-		 position: relative;
-		 clear: both;
-}
- .jms-dots {
-		 width: 100%;
-		 position: absolute;
-		 text-align: center;
-		 left: 0px;
-		 bottom: 20px;
-		 z-index: 2000;
-		 -webkit-user-select: none;
-		 -moz-user-select: none;
-		 -ms-user-select: none;
-		 -o-user-select: none;
-		 user-select: none;
-}
- .jms-dots span {
-		 display: inline-block;
-		 position: relative;
-		 width: 12px;
-		 height: 12px;
-		 border-radius: 50%;
-		 background: #777;
-		 margin: 3px;
-		 cursor: pointer;
-		 box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset, 1px 1px 1px rgba(255,255,255,0.3);
-}
- .jms-dots span.jms-dots-current:after {
-		 content: '';
-		 width: 8px;
-		 height: 8px;
-		 position: absolute;
-		 top: 2px;
-		 left: 2px;
-		 border-radius: 50%;
-		 background: #ffffff;
-		/* Old browsers */
-		 background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
-		/* FF3.6+ */
-		 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed));
-		/* Chrome,Safari4+ */
-		 background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
-		/* Chrome10+,Safari5.1+ */
-		 background: -o-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
-		/* Opera 11.10+ */
-		 background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
-		/* IE10+ */
-		 background: linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
-		/* W3C */
-		 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
-		/* IE6-9 */
-}
- .jms-arrows {
-		 -webkit-user-select: none;
-		 -moz-user-select: none;
-		 -ms-user-select: none;
-		 -o-user-select: none;
-		 user-select: none;
-}
- .jms-arrows span {
-		 position: absolute;
-		 top: 50%;
-		 margin-top: -10px;
-		 height: 80px;
-		 width: 30px;
-		 cursor: pointer;
-		 z-index: 2000;
-		 box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
-		 border-radius: 3px;
-}
- .jms-arrows span.jms-arrows-prev {
-		 background: #fff url(../images/arrow_left.png) no-repeat 50% 50%;
-		 left: -10px;
-}
- .jms-arrows span.jms-arrows-next {
-		 background: #fff url(../images/arrow_right.png) no-repeat 50% 50%;
-		 right: -10px;
-}
-/* Not supported style */
- .jms-wrapper.not-supported {
-		 background-color: #E3D8FF;
-		 background-color: rgba(227, 216, 268, 1);
-}
- .jms-wrapper.not-supported:after {
-		 content: 'The slideshow functionality is not supported on your device.';
-		 padding: 0px 0px 30px 0px;
-		 text-align: center;
-		 display: block;
-}
- .jms-wrapper.not-supported .step {
-		 display: none;
-		 position: relative;
-		 opacity: 1;
-		 filter: alpha(opacity=99);
-		/* internet explorer */
-		 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
-		/*IE8*/
-		 margin: 20px auto;
-}
- .jms-wrapper.not-supported .step:first-of-type {
-		 display: block;
-}
- .jms-wrapper.not-supported .step:not(.active) a.jms-link {
-		 opacity: 1;
-		 margin-top: 40px;
-}
- .step {
-		 width: 100%;
-		 position: relative;
-}
- .step:not(.active) {
-		 opacity: 1;
-		 filter: alpha(opacity=99);
-		 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
-}
- .step:not(.active) a.jms-link{
-		 opacity: 1;
-		 margin-top: 40px;
-}
-
-
-
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 24%; /* IE10 */
-  flex: 24%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-/*************************************************************/
-
-.footerText
-{
-  margin-bottom:0px;
-}
-
-.awardsRows
-{
-  display: block;
-  text-align: center;
-}
-

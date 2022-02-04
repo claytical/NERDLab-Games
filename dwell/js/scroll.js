@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+	var newNavElement = document.createElement("a");
+	
 	$("#lightgallery").lightGallery(
 		{		mode: 'lg-fade',
 			 download:false,
@@ -43,7 +46,7 @@ $(document).ready(function() {
 
 				// perform animated scrolling by getting top-position of target-element and set it as scroll target
 				$('html, body').stop().animate({
-						scrollTop: $(target).offset().top
+						scrollTop: $(target).offsetTop
 				}, 600, function() {
 						location.hash = target; //attach the hash (#jumptarget) to the pageurl
 				});
@@ -70,4 +73,6 @@ $(window).scroll(function() {
 						$('.navBar a').eq(i).addClass('active');
 				}
 		});
+
+
 }).scroll();
