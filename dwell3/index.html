@@ -224,7 +224,7 @@
           <hr>
 -->
           <div class="page-section" id="3"> 
-                  <h2>Thumbnail Gallery</h2>
+                  <h2>Gallery</h2>
                   <div class="container">
 
                     <div class="content">
@@ -493,41 +493,4 @@
   </script>
 
 
-  <script>
-
-  $('#lightSlider').lightSlider({
-    gallery: true,
-    autoWidth: false,
-    item: 1,
-    loop:true,
-    slideMargin: 2,
-    thumbItem: 9,
-    speed: 1200, //ms'
-       auto: true,
-       loop: false,
-       controls: true,
-       prevHtml: '',
-        nextHtml: '',
-        pause: 4000,
-        currentPagerPosition: 'left',
-    });
-  </script>
-
-  <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
-    <div class="rg-image-wrapper">
-      {{if itemsCount > 1}}
-        <div class="rg-image-nav">
-          <a href="#" class="rg-image-nav-prev">Previous Image</a>
-          <a href="#" class="rg-image-nav-next">Next Image</a>
-        </div>
-      {{/if}}
-      <div class="rg-image"></div>
-      <div class="rg-loading"></div>
-      <div class="rg-caption-wrapper">
-        <div class="rg-caption" style="display:none;">
-          <p></p>
-        </div>
-      </div>
-    </div>
-  </script>
 </html>
