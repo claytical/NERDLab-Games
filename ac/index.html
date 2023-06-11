@@ -1,33 +1,111 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Answer Campus</title>
-  </head>
-  <body style="text-align: center">
-    <canvas id="unity-canvas" width=1920 height=1080 style="width: 1920px; height: 1080px; background: #000000"></canvas>
-    <script src="Build/AC.loader.js"></script>
-    <script>
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // Mobile device style: fill the whole browser client area with the game canvas:
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
-      }
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Answer Campus</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@300&display=swap');
+        /* CSS styles for the website */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #fff;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            font-family: 'Bangers', cursive;
+            background-color: #000;
+            background-image: url("images/ac-capsule-header.png");
+            background-repeat:no-repeat;
+            background-position: center center;
+            color: #fff;
+            text-shadow: 1px 1px 2px black; 
+            padding: 20px;
+            margin-top: 40px;
+            text-align: center;
+            height: 300px;
+        }
 
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/AC.data",
-        frameworkUrl: "Build/AC.framework.js",
-        codeUrl: "Build/AC.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "NERDLab",
-        productName: "Answer Campus",
-        productVersion: "0.5",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      });
-    </script>
-  </body>
+        footer {
+          text-align: center;
+          max-width: 920px;
+          margin: 20px auto;
+
+        }
+
+        
+        .container {
+            max-width: 920px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #611bb8;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-family: 'Bangers', cursive;
+            color: #fff;
+            text-shadow: 1px 1px 2px black; 
+            text-align: center;
+            font-size: 92px;
+            margin-bottom: 20px;
+            letter-spacing: 3px;        
+
+          }
+        
+        h2 {
+          text-align: center;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-shadow: 1px 1px 2px black; 
+            font-family: 'Bangers', cursive;
+            background-color: #ffd600;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+    </header>
+    
+    
+    <div class="container">
+      <h1>Answer Campus</h1>
+
+        <h2>The Real First Year Experience</h2>
+        
+<p>In Answer Campus, you take a journey as a first year college student new to campus. You will explore challenging scenarios around identity markers such as race, gender, sexuality, ableism, and more.<p>
+
+<p>As you navigate the interactive stories, you'll have the opportunity to respond to challenging scenarios and choose from a variety of actions, including being supportive, diplomatic, combative, or disengaged. You'll be able to explore different approaches and learn about the impact of your choices.</p>
+
+<p>With multiple characters and stories in a shared universe, you'll experience the world from different perspectives and gain a deeper understanding of the complexities of identity and discrimination.</p>
+
+<p>Are you ready to explore a world of diversity and challenge your preconceptions? Play today and start your journey towards a more inclusive future.</p>
+        
+        <a class="cta-button" href="https://nerdlab.itch.io/answer-campus">Play Now</a>
+    </div>
+    <footer>
+          <a href="https://nerdlab.miami"><img src="images/nerdlab-cubeWhite.png"/></a>
+          <p class="footertext">NERDLab is a student-faculty cooperative driven by research, development, and an enthusiasm for social impact.</p>
+          <p>For inquiries, please contact <a href="mailto:c.ewing+answer.campus@miami.edu">Clay Ewing</a></p>
+    </footer>
+</body>
 </html>
