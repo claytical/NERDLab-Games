@@ -83,6 +83,22 @@
         .cta-button:hover {
             background-color: #2980b9;
         }
+
+    .slideshow {
+      display: none;
+      position: relative;
+    }
+
+    .slide {
+      display: none;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+    }
+
+
     </style>
 </head>
 <body>
@@ -100,6 +116,35 @@
 
   In Answer Campus, you take a journey as a first year college student new to campus. You will explore challenging scenarios around identity markers such as race, gender, sexuality, ableism, and more.
 </p>
+<div class="slideshow">
+    <div class="slide">
+      <img src="images/1.png" alt="Orientation with Deepak and Leilani">
+    </div>
+
+    <div class="slide">
+      <img src="images/2.png" alt="Professor Blanche">
+    </div>
+
+    <div class="slide">
+      <img src="images/3.png" alt="The Corkboard">
+    </div>
+
+    <div class="slide">
+      <img src="images/4.png" alt="Campus Rep">
+    </div>
+
+    <div class="slide">
+      <img src="images/5.png" alt="Charli and Ji-ah">
+    </div>
+
+    <div class="slide">
+      <img src="images/6.png" alt="Deepak">
+    </div>
+
+    <div class="slide">
+      <img src="images/7.png" alt="Matthew and Breanna">
+    </div>
+</div>
 
 <p>As you navigate the interactive stories, you'll have the opportunity to respond to challenging scenarios and choose from a variety of actions, including being supportive, diplomatic, combative, or disengaged. You'll be able to explore different approaches and learn about the impact of your choices.</p>
 
@@ -113,5 +158,24 @@
           <p class="footertext">NERDLab is a student-faculty cooperative driven by research, development, and an enthusiasm for social impact.</p>
           <p>For inquiries, please contact <a href="mailto:c.ewing+answer.campus@miami.edu">Clay Ewing</a></p>
     </footer>
+
+  <script>
+    var slideIndex = 0;
+    var slides = document.getElementsByClassName("slide");
+
+    function showNextSlide() {
+      slides[slideIndex].style.display = "none";
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].style.display = "block";
+    }
+
+    function startSlideshow() {
+      showNextSlide(); // Show the first slide initially
+      setInterval(showNextSlide, 10000); // Advance slides every 2 seconds (adjust the timing as needed)
+    }
+
+    // Start the slideshow
+    startSlideshow();
+</script>
 </body>
 </html>
