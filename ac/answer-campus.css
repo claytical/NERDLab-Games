@@ -1,0 +1,103 @@
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@300&display=swap');
+
+    /* CSS styles for the website */
+    body {
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        background-color: #000;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header {
+        font-family: 'Bangers', cursive;
+        background-color: #000;
+        background-image: url("images/ac-capsule-header.png");
+        background-repeat:no-repeat;
+        background-position: center center;
+        color: #fff;
+        text-shadow: 1px 1px 2px black; 
+        padding: 20px;
+        margin-top: 40px;
+        text-align: center;
+        height: 300px;
+    }
+
+    footer {
+      text-align: center;
+      max-width: 920px;
+      margin: 20px auto;
+    }
+
+    .container {
+        max-width: 920px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #611bb8;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+        font-family: 'Bangers', cursive;
+        color: #fff;
+        text-shadow: 1px 1px 2px black; 
+        text-align: center;
+        font-size: 92px;
+        margin-bottom: 20px;
+        letter-spacing: 3px;        
+
+      }
+    
+    h2 {
+      text-align: center;
+    }
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .small-button {
+        display: inline-block;
+        font-size: 18px;        
+        background-color: #ffd600;
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Bangers', cursive;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-shadow: 1px 1px 2px black; 
+
+    }
+    .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 36px;
+        text-shadow: 1px 1px 2px black; 
+        font-family: 'Bangers', cursive;
+        background-color: #ffd600;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 1px 1px black;
+        float: right;
+        margin: 10px;
+    }
+        
+    .cta-button:hover {
+        background-color: #2980b9;
+    }
+
+    .slideshow {
+      display: none;
+      position: relative;
+    }
+
+    .slide {
+      display: none;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+    }
