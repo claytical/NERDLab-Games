@@ -87,6 +87,7 @@
     }
 
     function startSlideshow() {
+      document.getElementsByClassName("slideshow")[0].style.display = "block";
       showNextSlide(); // Show the first slide initially
       setInterval(showNextSlide, 10000); // Advance slides every 2 seconds (adjust the timing as needed)
     }
