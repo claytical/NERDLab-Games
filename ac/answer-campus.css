@@ -8,42 +8,126 @@
         margin: 0;
         padding: 0;
     }
-    
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }    
+    .about {
+        margin-top: 5em;
+        min-height: 50vh;
+    }
     .header {
         font-family: 'Bangers', cursive;
         background-color: #000;
-        background-image: url("images/ac-capsule-header.png");
         background-repeat:no-repeat;
         background-position: center center;
         color: #fff;
         text-shadow: 1px 1px 2px black; 
-        padding: 20px;
-        margin-top: 40px;
+        margin-top: 0px;
         text-align: center;
-        height: 300px;
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        border-bottom: 2px solid #333333s;
+    }
+    .header ul > li {
+        display: inline-block;
+        padding: 1em;
+    }
+    .header ul > li a {
+        font-size: 2em;
+    }
+
+    a:active {
+        color: #ffffff;
+    }
+
+    .header ul > li:hover,.header ul > li:visited  {
+        color: #ffffff;
+        background: purple;
+    }
+
+
+    .top {
+        width: 100%;
+    }
+    .middle {
+        margin-top: 3em;
+        text-align: center;
+    }
+    .bottom {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        max-height: 100vh;
+    }
+    .center  {
+        display: block;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .right {
+        float: right;
+        width: 40vh;
     }
 
     footer {
-      text-align: center;
-      max-width: 920px;
-      margin: 20px auto;
+        padding: 2em;
+        text-align: center;
+        margin: 0 auto;
+        background: rgb(134,0,209);
+        background: radial-gradient(circle, rgba(134,0,209,1) 0%, rgba(0,0,0,1) 100%);
+
     }
 
+
     .container {
-        max-width: 920px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #611bb8;
-        border-radius: 5px;
+        margin: 0px auto;
+        padding-top: 20px;
+        background: rgb(134,0,209);
+        background: radial-gradient(circle, rgba(134,0,209,1) 0%, rgba(0,0,0,1) 100%);
+        min-height: 100vh;
+        /* border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    */
     }
+
+    #slideshow {
+        margin: 0px auto;       
+
+    }
+
+    .top p {
+        text-align: center;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .green {
+        background-image: url(images/leilani-beau.png), url(images/campus.png);
+        width: 100%;
+        background-repeat: no-repeat, no-repeat;
+        background-position: bottom, bottom;
+        background-size: contain, cover;
+    }
+
     
+    #characters {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        max-height: 90vh;
+    }
     h1 {
         font-family: 'Bangers', cursive;
         color: #fff;
         text-shadow: 1px 1px 2px black; 
         text-align: center;
-        font-size: 92px;
+        font-size: 16vh;
         margin-bottom: 20px;
         letter-spacing: 3px;        
 
@@ -51,9 +135,10 @@
     
     h2 {
       text-align: center;
+      margin-bottom:40px;
     }
     p {
-        font-size: 18px;
+        font-size: 1.2em;
         line-height: 1.5;
         margin-bottom: 20px;
     }
@@ -80,7 +165,6 @@
         text-decoration: none;
         border-radius: 5px;
         box-shadow: 2px 2px 1px 1px black;
-        float: right;
         margin: 10px;
     }
         
@@ -101,3 +185,15 @@
       width: 100%;
       height: auto;
     }
+
+@media (min-width: 1796px) {
+    .green {
+        background-position-y: 6em;
+    }
+}
+
+@media (min-width: 1600px) {
+    .about {
+/*        margin-top: 2em;*/
+    }
+} 
