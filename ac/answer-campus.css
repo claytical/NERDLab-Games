@@ -186,6 +186,13 @@
       height: auto;
     }
 
+#awards {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+}
+
 @media (min-width: 1796px) {
     .green {
         background-position-y: 6em;
